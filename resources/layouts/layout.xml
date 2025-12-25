@@ -1,0 +1,27 @@
+<layout id="MainLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <label id="Feed" x="25%" y="80%" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    
+    <label id="Hunger" x="30%" y="10%" font="@Fonts.Font18" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="HungerIcon1" x="45%" y="10%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="HungerIcon2" x="52%" y="10%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="HungerIcon3" x="59%" y="10%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="HungerIcon4" x="66%" y="10%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="HungerIcon5" x="73%" y="10%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    
+    
+    <label id="Energy" x="30%" y="18%" font="@Fonts.Font18" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="EnergyIcon1" x="45%" y="18%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="EnergyIcon2" x="52%" y="18%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="EnergyIcon3" x="59%" y="18%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="EnergyIcon4" x="66%" y="18%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="EnergyIcon5" x="73%" y="18%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+
+
+    <label id="Happiness" x="26%" y="26%" font="@Fonts.Font18" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="HappinessIcon1" x="45%" y="26%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="HappinessIcon2" x="52%" y="26%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="HappinessIcon3" x="59%" y="26%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="HappinessIcon4" x="66%" y="26%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="HappinessIcon5" x="73%" y="26%" font="@Fonts.IconSet" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+
+</layout>
