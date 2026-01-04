@@ -11,6 +11,9 @@ module Rez {
         (:initialized) var petPlay as ResourceId;
         (:initialized) var petSad as ResourceId;
         (:initialized) var petSleeping as ResourceId;
+        (:initialized) var petEating1 as ResourceId;
+        (:initialized) var petEating2 as ResourceId;
+        (:initialized) var petEating3 as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
 
@@ -69,8 +72,7 @@ module Rez {
         class MainMenu extends WatchUi.Menu {
             function initialize() {
                 Menu.initialize();
-                addItem((WatchUi.loadResource($.Rez.Strings.menu_label_1) as String), :item_1);
-                addItem((WatchUi.loadResource($.Rez.Strings.menu_label_2) as String), :item_2);
+                addItem("Exit", :item_1);
             }
         }
     } // Menus

@@ -13,6 +13,8 @@ class TamagotchiApp extends Application.AppBase {
 
     private var indexAction = 0;
 
+    private var feedAnimation = false;
+
     function initialize() {
         AppBase.initialize();
     }
@@ -161,6 +163,14 @@ class TamagotchiApp extends Application.AppBase {
         hunger = statMinMax(savedHunger - hungerDecay);
         energy = statMinMax(savedEnergy - energyDecay);
         happiness = statMinMax(savedHappiness - happinessDecay);
+    }
+
+    private function getFeedAnimation() {
+        return feedAnimation;
+    }
+
+    private function setFeedAnimation(boolean as Boolean) {
+        feedAnimation = boolean;
     }
 
 }

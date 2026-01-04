@@ -75,9 +75,9 @@ _Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiD
     }
     [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc"; @line = 22; @symbol_functiondef = [onSelect,22,13,21]; @symbol_return<0> = [Boolean,22,27,34]; ]
     function onSelect() as Boolean {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_22_35_41_4_start:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_22_35_44_4_start:
 [ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 23 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_22_35_41_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_22_35_41_4_stop" ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_22_35_44_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_22_35_44_4_stop" ]
         %indexAction.1 = local;
         symbol [ indexAction %indexAction.1 23 12 23 ];
         symbol [ app %tmp.2 23 26 29 ];
@@ -88,14 +88,14 @@ _Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiD
         lputv %indexAction.1 %tmp.4;
         symbol [ indexAction %indexAction.1 23 12 23 ];
 [ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 25 8 ]
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_8_38_8_if_stmt:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_8_41_8_if_stmt:
         %tmp.5 = lgetv %indexAction.1;
         symbol [ indexAction %tmp.5 25 12 23 ];
         %tmp.6 = 0;
         %tmp.7 = eq %tmp.5 %tmp.6;
-        bf %tmp.7 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_8_38_8_if_false;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_8_38_8_if_true:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_30_28_8_start:
+        bf %tmp.7 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_8_41_8_if_false;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_8_41_8_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_30_31_8_start:
 [ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 26 12 ]
         symbol [ app %tmp.9 26 12 15 ];
         %tmp.9 = getv ? :app;
@@ -103,68 +103,88 @@ _Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiD
         %tmp.10 = getv function %tmp.9 :feed;
         invoke %tmp.9 %tmp.10();
 [ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 27 12 ]
-        symbol [ WatchUi %tmp.11 27 12 19 ];
-        %tmp.11 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.12 27 20 33 ];
-        %tmp.12 = getv function %tmp.11 :requestUpdate;
-        invoke %tmp.11 %tmp.12();
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_30_28_8_stop:
-        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_8_38_8_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_8_38_8_if_false:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 30 13 ]
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_30_13_38_8_if_stmt:
-        %tmp.13 = lgetv %indexAction.1;
-        symbol [ indexAction %tmp.13 30 17 28 ];
-        %tmp.14 = 1;
-        %tmp.15 = eq %tmp.13 %tmp.14;
-        bf %tmp.15 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_30_13_38_8_if_false;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_30_13_38_8_if_true:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_30_35_33_8_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 31 12 ]
-        symbol [ app %tmp.17 31 12 15 ];
-        %tmp.17 = getv ? :app;
-        symbol [ play %tmp.18 31 16 20 ];
-        %tmp.18 = getv function %tmp.17 :play;
-        invoke %tmp.17 %tmp.18();
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 32 12 ]
-        symbol [ WatchUi %tmp.19 32 12 19 ];
-        %tmp.19 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.20 32 20 33 ];
-        %tmp.20 = getv function %tmp.19 :requestUpdate;
-        invoke %tmp.19 %tmp.20();
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_30_35_33_8_stop:
-        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_30_13_38_8_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_30_13_38_8_if_false:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 35 13 ]
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_35_13_38_8_if_stmt:
-        %tmp.21 = lgetv %indexAction.1;
-        symbol [ indexAction %tmp.21 35 17 28 ];
-        %tmp.22 = 2;
-        %tmp.23 = eq %tmp.21 %tmp.22;
-        bf %tmp.23 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_35_13_38_8_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_35_13_38_8_if_true:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_35_35_38_8_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 36 12 ]
-        symbol [ app %tmp.25 36 12 15 ];
-        %tmp.25 = getv ? :app;
-        symbol [ sleep %tmp.26 36 16 21 ];
-        %tmp.26 = getv function %tmp.25 :sleep;
-        invoke %tmp.25 %tmp.26();
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 37 12 ]
-        symbol [ WatchUi %tmp.27 37 12 19 ];
-        %tmp.27 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.28 37 20 33 ];
-        %tmp.28 = getv function %tmp.27 :requestUpdate;
+        symbol [ app %tmp.12 27 12 15 ];
+        %tmp.12 = getv ? :app;
+        symbol [ setFeedAnimation %tmp.13 27 16 32 ];
+        %tmp.13 = getv function %tmp.12 :setFeedAnimation;
+        %tmp.14 = true;
+        invoke %tmp.12 %tmp.13(%tmp.14);
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 28 12 ]
+        symbol [ WatchUi %tmp.15 28 12 19 ];
+        %tmp.15 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.16 28 20 33 ];
+        %tmp.16 = getv function %tmp.15 :requestUpdate;
+        invoke %tmp.15 %tmp.16();
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 29 12 ]
+        symbol [ app %tmp.18 29 12 15 ];
+        %tmp.18 = getv ? :app;
+        symbol [ setFeedAnimation %tmp.19 29 16 32 ];
+        %tmp.19 = getv function %tmp.18 :setFeedAnimation;
+        %tmp.20 = false;
+        invoke %tmp.18 %tmp.19(%tmp.20);
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 30 12 ]
+        symbol [ WatchUi %tmp.21 30 12 19 ];
+        %tmp.21 = getm $.Toybox.WatchUi;
+        symbol [ getCurrentView %tmp.22 30 20 34 ];
+        %tmp.22 = getv function %tmp.21 :getCurrentView;
+        invoke %tmp.21 %tmp.22();
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_30_31_8_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_8_41_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_8_41_8_if_false:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 33 13 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_33_13_41_8_if_stmt:
+        %tmp.23 = lgetv %indexAction.1;
+        symbol [ indexAction %tmp.23 33 17 28 ];
+        %tmp.24 = 1;
+        %tmp.25 = eq %tmp.23 %tmp.24;
+        bf %tmp.25 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_33_13_41_8_if_false;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_33_13_41_8_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_33_35_36_8_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 34 12 ]
+        symbol [ app %tmp.27 34 12 15 ];
+        %tmp.27 = getv ? :app;
+        symbol [ play %tmp.28 34 16 20 ];
+        %tmp.28 = getv function %tmp.27 :play;
         invoke %tmp.27 %tmp.28();
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_35_35_38_8_stop:
-        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_35_13_38_8_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_35_13_38_8_if_end:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_30_13_38_8_if_end:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_8_38_8_if_end:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 40 8 ]
-        %tmp.29 = true;
-        ret %tmp.29;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_22_35_41_4_stop:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 35 12 ]
+        symbol [ WatchUi %tmp.29 35 12 19 ];
+        %tmp.29 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.30 35 20 33 ];
+        %tmp.30 = getv function %tmp.29 :requestUpdate;
+        invoke %tmp.29 %tmp.30();
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_33_35_36_8_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_33_13_41_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_33_13_41_8_if_false:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 38 13 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_38_13_41_8_if_stmt:
+        %tmp.31 = lgetv %indexAction.1;
+        symbol [ indexAction %tmp.31 38 17 28 ];
+        %tmp.32 = 2;
+        %tmp.33 = eq %tmp.31 %tmp.32;
+        bf %tmp.33 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_38_13_41_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_38_13_41_8_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_38_35_41_8_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 39 12 ]
+        symbol [ app %tmp.35 39 12 15 ];
+        %tmp.35 = getv ? :app;
+        symbol [ sleep %tmp.36 39 16 21 ];
+        %tmp.36 = getv function %tmp.35 :sleep;
+        invoke %tmp.35 %tmp.36();
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 40 12 ]
+        symbol [ WatchUi %tmp.37 40 12 19 ];
+        %tmp.37 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.38 40 20 33 ];
+        %tmp.38 = getv function %tmp.37 :requestUpdate;
+        invoke %tmp.37 %tmp.38();
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_38_35_41_8_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_38_13_41_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_38_13_41_8_if_end:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_33_13_41_8_if_end:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_25_8_41_8_if_end:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" 43 8 ]
+        %tmp.39 = true;
+        ret %tmp.39;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiDelegate_mc_22_35_44_4_stop:
     }
 }
 [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc"; @line = 1; ]

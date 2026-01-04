@@ -8,6 +8,9 @@ class TamagotchiView extends WatchUi.View {
     private var petPlayBitmap as BitmapResource?;
     private var petSadBitmap as BitmapResource?;
     private var petSleepingBitmap as BitmapResource?;
+    private var petEating1 as BitmapResource?;
+    private var petEating2 as BitmapResource?;
+    private var petEating3 as BitmapResource?;
     private var font18;
     private var app = getApp();
 
@@ -30,6 +33,10 @@ class TamagotchiView extends WatchUi.View {
         petSadBitmap = WatchUi.loadResource(Rez.Drawables.petSad) as BitmapResource;
         petSleepingBitmap = WatchUi.loadResource(Rez.Drawables.petSleeping) as BitmapResource;
         font18 = WatchUi.loadResource(Rez.Fonts.Font18) as BitmapResource;
+
+        petEating1 = WatchUi.loadResource(Rez.Drawables.petEating1) as BitmapResource;
+        petEating2 = WatchUi.loadResource(Rez.Drawables.petEating2) as BitmapResource;
+        petEating3 = WatchUi.loadResource(Rez.Drawables.petEating3) as BitmapResource;
     }
 
     // Update the view
@@ -169,6 +176,12 @@ class TamagotchiView extends WatchUi.View {
         }
 
     }
+
+    function feedingAnimation(dc as Dc) as Void {
+        
+    }
+
+    
 
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from

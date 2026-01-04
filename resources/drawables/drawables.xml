@@ -5,4 +5,7 @@
     <bitmap id="petPlay" filename="petPlay.jpg" dithering="none"/>
     <bitmap id="petSad" filename="petSad.jpg" dithering="none"/>
     <bitmap id="petSleeping" filename="petSleeping.jpg" dithering="none"/>
+    <bitmap id="petEating1" filename="eating1.jpg" dithering="none"/>
+    <bitmap id="petEating2" filename="eating2.jpg" dithering="none"/>
+    <bitmap id="petEating3" filename="eating3.jpg" dithering="none"/>
 </drawables>

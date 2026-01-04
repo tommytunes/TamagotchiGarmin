@@ -24,7 +24,10 @@ class TamagotchiDelegate extends WatchUi.BehaviorDelegate {
 
         if (indexAction == 0) {
             app.feed();
+            app.setFeedAnimation(true);
             WatchUi.requestUpdate();
+            app.setFeedAnimation(false);
+            WatchUi.getCurrentView();
         }
 
         else if (indexAction == 1) {
