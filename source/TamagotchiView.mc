@@ -1,5 +1,6 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
+import Toybox.Timer;
 
 class TamagotchiView extends WatchUi.View {
 
@@ -13,6 +14,17 @@ class TamagotchiView extends WatchUi.View {
     private var petEating3 as BitmapResource?;
     private var font18;
     private var app = getApp();
+
+    // Animation state
+    private var isAnimating = false;
+    private var currentFrame = 0;
+    private var framesDisplayed = 0;
+    private var animTimer;
+    private var animationFrames;
+
+    // Animation configuration
+    private const FRAME_DURATION_MS = 150;  // ~6.7 FPS
+    private const TOTAL_FRAMES = 9;         // 3 frames × 3 cycles
 
     function initialize() {
         View.initialize();
@@ -37,10 +49,18 @@ class TamagotchiView extends WatchUi.View {
         petEating1 = WatchUi.loadResource(Rez.Drawables.petEating1) as BitmapResource;
         petEating2 = WatchUi.loadResource(Rez.Drawables.petEating2) as BitmapResource;
         petEating3 = WatchUi.loadResource(Rez.Drawables.petEating3) as BitmapResource;
+
+        // Build animation frame sequence
+        animationFrames = [petEating1, petEating2, petEating3];
     }
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
+        // Check if animation should start
+        if (app.checkAndClearAnimationFlag()) {
+            feedingAnimation();
+        }
+
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
 
@@ -56,7 +76,15 @@ class TamagotchiView extends WatchUi.View {
     }
 
     function petDraw(dc as Dc, w, h) as Void {
-        var currentBitmap = getPetStateBitmap();
+        var currentBitmap;
+
+        // Show animation frames if animating, otherwise show normal state
+        if (isAnimating && animationFrames != null) {
+            currentBitmap = animationFrames[currentFrame];
+        } else {
+            currentBitmap = getPetStateBitmap();
+        }
+
         dc.drawBitmap(w * 0.32, h * 0.4, currentBitmap);
     }
 
@@ -177,8 +205,52 @@ class TamagotchiView extends WatchUi.View {
 
     }
 
-    function feedingAnimation(dc as Dc) as Void {
-        
+    function feedingAnimation() as Void {
+        // Initialize animation state
+        isAnimating = true;
+        currentFrame = 0;
+        framesDisplayed = 0;
+
+        // Create and start timer
+        animTimer = new Timer.Timer();
+        animTimer.start(method(:onAnimationFrame), FRAME_DURATION_MS, true);
+
+        // Trigger first frame immediately
+        WatchUi.requestUpdate();
+    }
+
+    // Timer callback - executed every FRAME_DURATION_MS
+    function onAnimationFrame() as Void {
+        if (!isAnimating) {
+            return;  // Safety check
+        }
+
+        // Cycle through frames: 0 → 1 → 2 → 0 → 1 → 2 ...
+        currentFrame = (currentFrame + 1) % animationFrames.size();
+        framesDisplayed++;
+
+        // Request redraw with new frame
+        WatchUi.requestUpdate();
+
+        // Check if animation complete
+        if (framesDisplayed >= TOTAL_FRAMES) {
+            stopAnimation();
+        }
+    }
+
+    // Stop animation and return to normal state
+    private function stopAnimation() as Void {
+        if (animTimer != null) {
+            animTimer.stop();
+            animTimer = null;
+        }
+
+        isAnimating = false;
+        currentFrame = 0;
+        framesDisplayed = 0;
+
+        // Final update to show normal pet state
+        WatchUi.requestUpdate();
     }
 
     
@@ -187,6 +259,12 @@ class TamagotchiView extends WatchUi.View {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
+        // Stop animation if view is hidden
+        if (animTimer != null) {
+            animTimer.stop();
+            animTimer = null;
+        }
+        isAnimating = false;
     }
 
 }

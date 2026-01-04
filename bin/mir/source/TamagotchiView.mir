@@ -2,476 +2,566 @@
 import Toybox.Graphics;
 [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
 import Toybox.WatchUi;
-[ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 4; @symbol_classdef = [TamagotchiView,4,6,20]; @symbol_extends<0> = [WatchUi,4,29,36]; @symbol_extends<1> = [View,4,37,41]; ]
+[ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Timer,3,14,19]; ]
+import Toybox.Timer;
+[ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 5; @symbol_classdef = [TamagotchiView,5,6,20]; @symbol_extends<0> = [WatchUi,5,29,36]; @symbol_extends<1> = [View,5,37,41]; ]
 class TamagotchiView extends WatchUi.View {
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 4; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 5; ]
     <init> {
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 15 16 ]
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 16 16 ]
         %tmp.1 = self;
-        symbol [ getApp %tmp.2 15 22 28 ];
+        symbol [ getApp %tmp.2 16 22 28 ];
         %tmp.2 = getv function %tmp.1 :getApp;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         putv self :app %tmp.3;
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 4; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 5; ]
     static
     <init> {
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 6; @position = 16; @symbol_vardef = [petHappyBitmap,6,16,30]; @symbol_type<0> = [BitmapResource,6,34,48]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 7; @position = 16; @symbol_vardef = [petHappyBitmap,7,16,30]; @symbol_type<0> = [BitmapResource,7,34,48]; ]
     private
     var petHappyBitmap as BitmapResource or Null;
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 7; @position = 16; @symbol_vardef = [petHungryBitmap,7,16,31]; @symbol_type<0> = [BitmapResource,7,35,49]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 8; @position = 16; @symbol_vardef = [petHungryBitmap,8,16,31]; @symbol_type<0> = [BitmapResource,8,35,49]; ]
     private
     var petHungryBitmap as BitmapResource or Null;
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 8; @position = 16; @symbol_vardef = [petPlayBitmap,8,16,29]; @symbol_type<0> = [BitmapResource,8,33,47]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 9; @position = 16; @symbol_vardef = [petPlayBitmap,9,16,29]; @symbol_type<0> = [BitmapResource,9,33,47]; ]
     private
     var petPlayBitmap as BitmapResource or Null;
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 9; @position = 16; @symbol_vardef = [petSadBitmap,9,16,28]; @symbol_type<0> = [BitmapResource,9,32,46]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 10; @position = 16; @symbol_vardef = [petSadBitmap,10,16,28]; @symbol_type<0> = [BitmapResource,10,32,46]; ]
     private
     var petSadBitmap as BitmapResource or Null;
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 10; @position = 16; @symbol_vardef = [petSleepingBitmap,10,16,33]; @symbol_type<0> = [BitmapResource,10,37,51]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 11; @position = 16; @symbol_vardef = [petSleepingBitmap,11,16,33]; @symbol_type<0> = [BitmapResource,11,37,51]; ]
     private
     var petSleepingBitmap as BitmapResource or Null;
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 11; @position = 16; @symbol_vardef = [petEating1,11,16,26]; @symbol_type<0> = [BitmapResource,11,30,44]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 12; @position = 16; @symbol_vardef = [petEating1,12,16,26]; @symbol_type<0> = [BitmapResource,12,30,44]; ]
     private
     var petEating1 as BitmapResource or Null;
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 12; @position = 16; @symbol_vardef = [petEating2,12,16,26]; @symbol_type<0> = [BitmapResource,12,30,44]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 13; @position = 16; @symbol_vardef = [petEating2,13,16,26]; @symbol_type<0> = [BitmapResource,13,30,44]; ]
     private
     var petEating2 as BitmapResource or Null;
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 13; @position = 16; @symbol_vardef = [petEating3,13,16,26]; @symbol_type<0> = [BitmapResource,13,30,44]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 14; @position = 16; @symbol_vardef = [petEating3,14,16,26]; @symbol_type<0> = [BitmapResource,14,30,44]; ]
     private
     var petEating3 as BitmapResource or Null;
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 14; @position = 16; @symbol_vardef = [font18,14,16,22]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 15; @position = 16; @symbol_vardef = [font18,15,16,22]; ]
     private
     var font18;
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 15; @position = 16; @symbol_vardef = [app,15,16,19]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 16; @position = 16; @symbol_vardef = [app,16,16,19]; ]
     private
     var app;
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 17; @symbol_functiondef = [initialize,17,13,23]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 19; @position = 16; @symbol_vardef = [isAnimating,19,16,27]; ]
+    private
+    var isAnimating = false;
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 20; @position = 16; @symbol_vardef = [currentFrame,20,16,28]; ]
+    private
+    var currentFrame = 0;
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 21; @position = 16; @symbol_vardef = [framesDisplayed,21,16,31]; ]
+    private
+    var framesDisplayed = 0;
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 22; @position = 16; @symbol_vardef = [animTimer,22,16,25]; ]
+    private
+    var animTimer;
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 23; @position = 16; @symbol_vardef = [animationFrames,23,16,31]; ]
+    private
+    var animationFrames;
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 26; @position = 18; @symbol_constdef = [FRAME_DURATION_MS,26,18,35]; ]
+    private
+    const FRAME_DURATION_MS = 150;
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 27; @position = 18; @symbol_constdef = [TOTAL_FRAMES,27,18,30]; ]
+    private
+    const TOTAL_FRAMES = 9;
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 29; @symbol_functiondef = [initialize,29,13,23]; ]
     function initialize() as Void {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_17_26_19_4_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 18 8 ]
-        symbol [ View %tmp.2 18 8 12 ];
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_29_26_31_4_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 30 8 ]
+        symbol [ View %tmp.2 30 8 12 ];
         %tmp.2 = getv ? :View;
-        symbol [ initialize %tmp.3 18 13 23 ];
+        symbol [ initialize %tmp.3 30 13 23 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_17_26_19_4_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_29_26_31_4_stop:
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 22; @symbol_functiondef = [onLayout,22,13,21]; @symbol_param<0> = [dc,22,22,24]; @symbol_param<0>_type<0> = [Dc,22,28,30]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 34; @symbol_functiondef = [onLayout,34,13,21]; @symbol_param<0> = [dc,34,22,24]; @symbol_param<0>_type<0> = [Dc,34,28,30]; ]
     function onLayout(dc as Dc) as Void {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_22_40_24_4_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 23 8 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_34_40_36_4_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 35 8 ]
         %tmp.1 = self;
-        symbol [ setLayout %tmp.2 23 8 17 ];
+        symbol [ setLayout %tmp.2 35 8 17 ];
         %tmp.2 = getv function %tmp.1 :setLayout;
-        symbol [ Rez %tmp.4 23 18 21 ];
+        symbol [ Rez %tmp.4 35 18 21 ];
         %tmp.4 = getv ? :Rez;
-        symbol [ Layouts %tmp.5 23 22 29 ];
+        symbol [ Layouts %tmp.5 35 22 29 ];
         %tmp.5 = getv %tmp.4 :Layouts;
-        symbol [ MainLayout %tmp.6 23 30 40 ];
+        symbol [ MainLayout %tmp.6 35 30 40 ];
         %tmp.6 = getv function %tmp.5 :MainLayout;
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 23 41 43 ];
+        symbol [ dc %tmp.7 35 41 43 ];
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         invoke %tmp.1 %tmp.2(%tmp.8);
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_22_40_24_4_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_34_40_36_4_stop:
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 29; @symbol_functiondef = [onShow,29,13,19]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 41; @symbol_functiondef = [onShow,41,13,19]; ]
     function onShow() as Void {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_29_30_40_4_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 30 8 ]
-        symbol [ WatchUi %tmp.1 30 25 32 ];
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_41_30_55_4_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 42 8 ]
+        symbol [ WatchUi %tmp.1 42 25 32 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.2 30 33 45 ];
+        symbol [ loadResource %tmp.2 42 33 45 ];
         %tmp.2 = getv function %tmp.1 :loadResource;
-        symbol [ Rez %tmp.4 30 46 49 ];
+        symbol [ Rez %tmp.4 42 46 49 ];
         %tmp.4 = getv ? :Rez;
-        symbol [ Drawables %tmp.5 30 50 59 ];
+        symbol [ Drawables %tmp.5 42 50 59 ];
         %tmp.5 = getv %tmp.4 :Drawables;
-        symbol [ petHappy %tmp.6 30 60 68 ];
+        symbol [ petHappy %tmp.6 42 60 68 ];
         %tmp.6 = getv %tmp.5 :petHappy;
         %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
         %tmp.8 = as %tmp.7 BitmapResource;
-        symbol [ BitmapResource %tmp.8 30 73 87 ];
-        symbol [ petHappyBitmap ? 30 8 22 ];
+        symbol [ BitmapResource %tmp.8 42 73 87 ];
+        symbol [ petHappyBitmap ? 42 8 22 ];
         putv self :petHappyBitmap %tmp.8;
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 31 8 ]
-        symbol [ WatchUi %tmp.9 31 26 33 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 43 8 ]
+        symbol [ WatchUi %tmp.9 43 26 33 ];
         %tmp.9 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.10 31 34 46 ];
+        symbol [ loadResource %tmp.10 43 34 46 ];
         %tmp.10 = getv function %tmp.9 :loadResource;
-        symbol [ Rez %tmp.12 31 47 50 ];
+        symbol [ Rez %tmp.12 43 47 50 ];
         %tmp.12 = getv ? :Rez;
-        symbol [ Drawables %tmp.13 31 51 60 ];
+        symbol [ Drawables %tmp.13 43 51 60 ];
         %tmp.13 = getv %tmp.12 :Drawables;
-        symbol [ petHungry %tmp.14 31 61 70 ];
+        symbol [ petHungry %tmp.14 43 61 70 ];
         %tmp.14 = getv %tmp.13 :petHungry;
         %tmp.15 = invoke %tmp.9 %tmp.10(%tmp.14);
         %tmp.16 = as %tmp.15 BitmapResource;
-        symbol [ BitmapResource %tmp.16 31 75 89 ];
-        symbol [ petHungryBitmap ? 31 8 23 ];
+        symbol [ BitmapResource %tmp.16 43 75 89 ];
+        symbol [ petHungryBitmap ? 43 8 23 ];
         putv self :petHungryBitmap %tmp.16;
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 32 8 ]
-        symbol [ WatchUi %tmp.17 32 24 31 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 44 8 ]
+        symbol [ WatchUi %tmp.17 44 24 31 ];
         %tmp.17 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.18 32 32 44 ];
+        symbol [ loadResource %tmp.18 44 32 44 ];
         %tmp.18 = getv function %tmp.17 :loadResource;
-        symbol [ Rez %tmp.20 32 45 48 ];
+        symbol [ Rez %tmp.20 44 45 48 ];
         %tmp.20 = getv ? :Rez;
-        symbol [ Drawables %tmp.21 32 49 58 ];
+        symbol [ Drawables %tmp.21 44 49 58 ];
         %tmp.21 = getv %tmp.20 :Drawables;
-        symbol [ petPlay %tmp.22 32 59 66 ];
+        symbol [ petPlay %tmp.22 44 59 66 ];
         %tmp.22 = getv %tmp.21 :petPlay;
         %tmp.23 = invoke %tmp.17 %tmp.18(%tmp.22);
         %tmp.24 = as %tmp.23 BitmapResource;
-        symbol [ BitmapResource %tmp.24 32 71 85 ];
-        symbol [ petPlayBitmap ? 32 8 21 ];
+        symbol [ BitmapResource %tmp.24 44 71 85 ];
+        symbol [ petPlayBitmap ? 44 8 21 ];
         putv self :petPlayBitmap %tmp.24;
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 33 8 ]
-        symbol [ WatchUi %tmp.25 33 23 30 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 45 8 ]
+        symbol [ WatchUi %tmp.25 45 23 30 ];
         %tmp.25 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.26 33 31 43 ];
+        symbol [ loadResource %tmp.26 45 31 43 ];
         %tmp.26 = getv function %tmp.25 :loadResource;
-        symbol [ Rez %tmp.28 33 44 47 ];
+        symbol [ Rez %tmp.28 45 44 47 ];
         %tmp.28 = getv ? :Rez;
-        symbol [ Drawables %tmp.29 33 48 57 ];
+        symbol [ Drawables %tmp.29 45 48 57 ];
         %tmp.29 = getv %tmp.28 :Drawables;
-        symbol [ petSad %tmp.30 33 58 64 ];
+        symbol [ petSad %tmp.30 45 58 64 ];
         %tmp.30 = getv %tmp.29 :petSad;
         %tmp.31 = invoke %tmp.25 %tmp.26(%tmp.30);
         %tmp.32 = as %tmp.31 BitmapResource;
-        symbol [ BitmapResource %tmp.32 33 69 83 ];
-        symbol [ petSadBitmap ? 33 8 20 ];
+        symbol [ BitmapResource %tmp.32 45 69 83 ];
+        symbol [ petSadBitmap ? 45 8 20 ];
         putv self :petSadBitmap %tmp.32;
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 34 8 ]
-        symbol [ WatchUi %tmp.33 34 28 35 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 46 8 ]
+        symbol [ WatchUi %tmp.33 46 28 35 ];
         %tmp.33 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.34 34 36 48 ];
+        symbol [ loadResource %tmp.34 46 36 48 ];
         %tmp.34 = getv function %tmp.33 :loadResource;
-        symbol [ Rez %tmp.36 34 49 52 ];
+        symbol [ Rez %tmp.36 46 49 52 ];
         %tmp.36 = getv ? :Rez;
-        symbol [ Drawables %tmp.37 34 53 62 ];
+        symbol [ Drawables %tmp.37 46 53 62 ];
         %tmp.37 = getv %tmp.36 :Drawables;
-        symbol [ petSleeping %tmp.38 34 63 74 ];
+        symbol [ petSleeping %tmp.38 46 63 74 ];
         %tmp.38 = getv %tmp.37 :petSleeping;
         %tmp.39 = invoke %tmp.33 %tmp.34(%tmp.38);
         %tmp.40 = as %tmp.39 BitmapResource;
-        symbol [ BitmapResource %tmp.40 34 79 93 ];
-        symbol [ petSleepingBitmap ? 34 8 25 ];
+        symbol [ BitmapResource %tmp.40 46 79 93 ];
+        symbol [ petSleepingBitmap ? 46 8 25 ];
         putv self :petSleepingBitmap %tmp.40;
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 35 8 ]
-        symbol [ WatchUi %tmp.41 35 17 24 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 47 8 ]
+        symbol [ WatchUi %tmp.41 47 17 24 ];
         %tmp.41 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.42 35 25 37 ];
+        symbol [ loadResource %tmp.42 47 25 37 ];
         %tmp.42 = getv function %tmp.41 :loadResource;
-        symbol [ Rez %tmp.44 35 38 41 ];
+        symbol [ Rez %tmp.44 47 38 41 ];
         %tmp.44 = getv ? :Rez;
-        symbol [ Fonts %tmp.45 35 42 47 ];
+        symbol [ Fonts %tmp.45 47 42 47 ];
         %tmp.45 = getv %tmp.44 :Fonts;
-        symbol [ Font18 %tmp.46 35 48 54 ];
+        symbol [ Font18 %tmp.46 47 48 54 ];
         %tmp.46 = getv %tmp.45 :Font18;
         %tmp.47 = invoke %tmp.41 %tmp.42(%tmp.46);
         %tmp.48 = as %tmp.47 BitmapResource;
-        symbol [ BitmapResource %tmp.48 35 59 73 ];
-        symbol [ font18 ? 35 8 14 ];
+        symbol [ BitmapResource %tmp.48 47 59 73 ];
+        symbol [ font18 ? 47 8 14 ];
         putv self :font18 %tmp.48;
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 37 8 ]
-        symbol [ WatchUi %tmp.49 37 21 28 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 49 8 ]
+        symbol [ WatchUi %tmp.49 49 21 28 ];
         %tmp.49 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.50 37 29 41 ];
+        symbol [ loadResource %tmp.50 49 29 41 ];
         %tmp.50 = getv function %tmp.49 :loadResource;
-        symbol [ Rez %tmp.52 37 42 45 ];
+        symbol [ Rez %tmp.52 49 42 45 ];
         %tmp.52 = getv ? :Rez;
-        symbol [ Drawables %tmp.53 37 46 55 ];
+        symbol [ Drawables %tmp.53 49 46 55 ];
         %tmp.53 = getv %tmp.52 :Drawables;
-        symbol [ petEating1 %tmp.54 37 56 66 ];
+        symbol [ petEating1 %tmp.54 49 56 66 ];
         %tmp.54 = getv %tmp.53 :petEating1;
         %tmp.55 = invoke %tmp.49 %tmp.50(%tmp.54);
         %tmp.56 = as %tmp.55 BitmapResource;
-        symbol [ BitmapResource %tmp.56 37 71 85 ];
-        symbol [ petEating1 ? 37 8 18 ];
+        symbol [ BitmapResource %tmp.56 49 71 85 ];
+        symbol [ petEating1 ? 49 8 18 ];
         putv self :petEating1 %tmp.56;
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 38 8 ]
-        symbol [ WatchUi %tmp.57 38 21 28 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 50 8 ]
+        symbol [ WatchUi %tmp.57 50 21 28 ];
         %tmp.57 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.58 38 29 41 ];
+        symbol [ loadResource %tmp.58 50 29 41 ];
         %tmp.58 = getv function %tmp.57 :loadResource;
-        symbol [ Rez %tmp.60 38 42 45 ];
+        symbol [ Rez %tmp.60 50 42 45 ];
         %tmp.60 = getv ? :Rez;
-        symbol [ Drawables %tmp.61 38 46 55 ];
+        symbol [ Drawables %tmp.61 50 46 55 ];
         %tmp.61 = getv %tmp.60 :Drawables;
-        symbol [ petEating2 %tmp.62 38 56 66 ];
+        symbol [ petEating2 %tmp.62 50 56 66 ];
         %tmp.62 = getv %tmp.61 :petEating2;
         %tmp.63 = invoke %tmp.57 %tmp.58(%tmp.62);
         %tmp.64 = as %tmp.63 BitmapResource;
-        symbol [ BitmapResource %tmp.64 38 71 85 ];
-        symbol [ petEating2 ? 38 8 18 ];
+        symbol [ BitmapResource %tmp.64 50 71 85 ];
+        symbol [ petEating2 ? 50 8 18 ];
         putv self :petEating2 %tmp.64;
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 39 8 ]
-        symbol [ WatchUi %tmp.65 39 21 28 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 51 8 ]
+        symbol [ WatchUi %tmp.65 51 21 28 ];
         %tmp.65 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.66 39 29 41 ];
+        symbol [ loadResource %tmp.66 51 29 41 ];
         %tmp.66 = getv function %tmp.65 :loadResource;
-        symbol [ Rez %tmp.68 39 42 45 ];
+        symbol [ Rez %tmp.68 51 42 45 ];
         %tmp.68 = getv ? :Rez;
-        symbol [ Drawables %tmp.69 39 46 55 ];
+        symbol [ Drawables %tmp.69 51 46 55 ];
         %tmp.69 = getv %tmp.68 :Drawables;
-        symbol [ petEating3 %tmp.70 39 56 66 ];
+        symbol [ petEating3 %tmp.70 51 56 66 ];
         %tmp.70 = getv %tmp.69 :petEating3;
         %tmp.71 = invoke %tmp.65 %tmp.66(%tmp.70);
         %tmp.72 = as %tmp.71 BitmapResource;
-        symbol [ BitmapResource %tmp.72 39 71 85 ];
-        symbol [ petEating3 ? 39 8 18 ];
+        symbol [ BitmapResource %tmp.72 51 71 85 ];
+        symbol [ petEating3 ? 51 8 18 ];
         putv self :petEating3 %tmp.72;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_29_30_40_4_stop:
-    }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 43; @symbol_functiondef = [onUpdate,43,13,21]; @symbol_param<0> = [dc,43,22,24]; @symbol_param<0>_type<0> = [Dc,43,28,30]; ]
-    function onUpdate(dc as Dc) as Void {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_43_40_56_4_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 45 8 ]
-        symbol [ View %tmp.2 45 8 12 ];
-        %tmp.2 = getv ? :View;
-        symbol [ onUpdate %tmp.3 45 13 21 ];
-        %tmp.3 = getv function %tmp.2 :onUpdate;
-        %tmp.4 = lgetv %dc;
-        symbol [ dc %tmp.4 45 22 24 ];
-        invoke %tmp.2 %tmp.3(%tmp.4);
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 47 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_43_40_56_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_43_40_56_4_stop" ]
-        %w.1 = local;
-        symbol [ w %w.1 47 12 13 ];
-        %tmp.5 = lgetv %dc;
-        symbol [ dc %tmp.5 47 16 18 ];
-        symbol [ getWidth %tmp.6 47 19 27 ];
-        %tmp.6 = getv function %tmp.5 :getWidth;
-        %tmp.7 = invoke %tmp.5 %tmp.6();
-        lputv %w.1 %tmp.7;
-        symbol [ w %w.1 47 12 13 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 48 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_43_40_56_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_43_40_56_4_stop" ]
-        %h.2 = local;
-        symbol [ h %h.2 48 12 13 ];
-        %tmp.8 = lgetv %dc;
-        symbol [ dc %tmp.8 48 16 18 ];
-        symbol [ getHeight %tmp.9 48 19 28 ];
-        %tmp.9 = getv function %tmp.8 :getHeight;
-        %tmp.10 = invoke %tmp.8 %tmp.9();
-        lputv %h.2 %tmp.10;
-        symbol [ h %h.2 48 12 13 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 50 8 ]
-        %tmp.11 = self;
-        symbol [ petDraw %tmp.12 50 8 15 ];
-        %tmp.12 = getv function %tmp.11 :petDraw;
-        %tmp.13 = lgetv %dc;
-        symbol [ dc %tmp.13 50 16 18 ];
-        %tmp.14 = lgetv %w.1;
-        symbol [ w %tmp.14 50 20 21 ];
-        %tmp.15 = lgetv %h.2;
-        symbol [ h %tmp.15 50 23 24 ];
-        invoke %tmp.11 %tmp.12(%tmp.13, %tmp.14, %tmp.15);
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 51 8 ]
-        %tmp.16 = self;
-        symbol [ actionMenu %tmp.17 51 8 18 ];
-        %tmp.17 = getv function %tmp.16 :actionMenu;
-        %tmp.18 = lgetv %dc;
-        symbol [ dc %tmp.18 51 19 21 ];
-        %tmp.19 = lgetv %w.1;
-        symbol [ w %tmp.19 51 23 24 ];
-        %tmp.20 = lgetv %h.2;
-        symbol [ h %tmp.20 51 26 27 ];
-        invoke %tmp.16 %tmp.17(%tmp.18, %tmp.19, %tmp.20);
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 52 8 ]
-        %tmp.21 = self;
-        symbol [ hungerStatView %tmp.22 52 8 22 ];
-        %tmp.22 = getv function %tmp.21 :hungerStatView;
-        %tmp.23 = lgetv %dc;
-        symbol [ dc %tmp.23 52 23 25 ];
-        invoke %tmp.21 %tmp.22(%tmp.23);
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 53 8 ]
-        %tmp.24 = self;
-        symbol [ energyStatView %tmp.25 53 8 22 ];
-        %tmp.25 = getv function %tmp.24 :energyStatView;
-        %tmp.26 = lgetv %dc;
-        symbol [ dc %tmp.26 53 23 25 ];
-        invoke %tmp.24 %tmp.25(%tmp.26);
 [ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 54 8 ]
-        %tmp.27 = self;
-        symbol [ happinessStatView %tmp.28 54 8 25 ];
-        %tmp.28 = getv function %tmp.27 :happinessStatView;
-        %tmp.29 = lgetv %dc;
-        symbol [ dc %tmp.29 54 26 28 ];
-        invoke %tmp.27 %tmp.28(%tmp.29);
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_43_40_56_4_stop:
+        %tmp.73 = newa 3;
+        symbol [ petEating1 %tmp.75 54 27 37 ];
+        %tmp.75 = getv ? :petEating1;
+        %tmp.76 = dup %tmp.73;
+        %tmp.77 = aputv %tmp.76 0 %tmp.75;
+        symbol [ petEating2 %tmp.79 54 39 49 ];
+        %tmp.79 = getv ? :petEating2;
+        %tmp.80 = dup %tmp.77;
+        %tmp.81 = aputv %tmp.80 1 %tmp.79;
+        symbol [ petEating3 %tmp.83 54 51 61 ];
+        %tmp.83 = getv ? :petEating3;
+        %tmp.84 = dup %tmp.81;
+        %tmp.85 = aputv %tmp.84 2 %tmp.83;
+        symbol [ animationFrames ? 54 8 23 ];
+        putv self :animationFrames %tmp.85;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_41_30_55_4_stop:
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 58; @symbol_functiondef = [petDraw,58,13,20]; @symbol_param<0> = [dc,58,21,23]; @symbol_param<0>_type<0> = [Dc,58,27,29]; @symbol_param<1> = [w,58,31,32]; @symbol_param<2> = [h,58,34,35]; ]
-    function petDraw(dc as Dc, w, h) as Void {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_58_45_61_4_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 59 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_58_45_61_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_58_45_61_4_stop" ]
-        %currentBitmap.1 = local;
-        symbol [ currentBitmap %currentBitmap.1 59 12 25 ];
-        %tmp.1 = self;
-        symbol [ getPetStateBitmap %tmp.2 59 28 45 ];
-        %tmp.2 = getv function %tmp.1 :getPetStateBitmap;
-        %tmp.3 = invoke %tmp.1 %tmp.2();
-        lputv %currentBitmap.1 %tmp.3;
-        symbol [ currentBitmap %currentBitmap.1 59 12 25 ];
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 58; @symbol_functiondef = [onUpdate,58,13,21]; @symbol_param<0> = [dc,58,22,24]; @symbol_param<0>_type<0> = [Dc,58,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_58_40_76_4_start:
 [ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 60 8 ]
-        %tmp.4 = lgetv %dc;
-        symbol [ dc %tmp.4 60 8 10 ];
-        symbol [ drawBitmap %tmp.5 60 11 21 ];
-        %tmp.5 = getv function %tmp.4 :drawBitmap;
-        %tmp.6 = lgetv %w;
-        symbol [ w %tmp.6 60 22 23 ];
-        %tmp.7 = 0.32;
-        %tmp.8 = mul %tmp.6 %tmp.7;
-        %tmp.9 = lgetv %h;
-        symbol [ h %tmp.9 60 32 33 ];
-        %tmp.10 = 0.4;
-        %tmp.11 = mul %tmp.9 %tmp.10;
-        %tmp.12 = lgetv %currentBitmap.1;
-        symbol [ currentBitmap %tmp.12 60 41 54 ];
-        invoke %tmp.4 %tmp.5(%tmp.8, %tmp.11, %tmp.12);
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_58_45_61_4_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_60_8_62_8_if_stmt:
+        symbol [ app %tmp.2 60 12 15 ];
+        %tmp.2 = getv ? :app;
+        symbol [ checkAndClearAnimationFlag %tmp.3 60 16 42 ];
+        %tmp.3 = getv function %tmp.2 :checkAndClearAnimationFlag;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        bf %tmp.4 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_60_8_62_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_60_8_62_8_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_60_46_62_8_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 61 12 ]
+        %tmp.5 = self;
+        symbol [ feedingAnimation %tmp.6 61 12 28 ];
+        %tmp.6 = getv function %tmp.5 :feedingAnimation;
+        invoke %tmp.5 %tmp.6();
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_60_46_62_8_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_60_8_62_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_60_8_62_8_if_end:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 65 8 ]
+        symbol [ View %tmp.8 65 8 12 ];
+        %tmp.8 = getv ? :View;
+        symbol [ onUpdate %tmp.9 65 13 21 ];
+        %tmp.9 = getv function %tmp.8 :onUpdate;
+        %tmp.10 = lgetv %dc;
+        symbol [ dc %tmp.10 65 22 24 ];
+        invoke %tmp.8 %tmp.9(%tmp.10);
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 67 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_58_40_76_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_58_40_76_4_stop" ]
+        %w.1 = local;
+        symbol [ w %w.1 67 12 13 ];
+        %tmp.11 = lgetv %dc;
+        symbol [ dc %tmp.11 67 16 18 ];
+        symbol [ getWidth %tmp.12 67 19 27 ];
+        %tmp.12 = getv function %tmp.11 :getWidth;
+        %tmp.13 = invoke %tmp.11 %tmp.12();
+        lputv %w.1 %tmp.13;
+        symbol [ w %w.1 67 12 13 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 68 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_58_40_76_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_58_40_76_4_stop" ]
+        %h.2 = local;
+        symbol [ h %h.2 68 12 13 ];
+        %tmp.14 = lgetv %dc;
+        symbol [ dc %tmp.14 68 16 18 ];
+        symbol [ getHeight %tmp.15 68 19 28 ];
+        %tmp.15 = getv function %tmp.14 :getHeight;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        lputv %h.2 %tmp.16;
+        symbol [ h %h.2 68 12 13 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 70 8 ]
+        %tmp.17 = self;
+        symbol [ petDraw %tmp.18 70 8 15 ];
+        %tmp.18 = getv function %tmp.17 :petDraw;
+        %tmp.19 = lgetv %dc;
+        symbol [ dc %tmp.19 70 16 18 ];
+        %tmp.20 = lgetv %w.1;
+        symbol [ w %tmp.20 70 20 21 ];
+        %tmp.21 = lgetv %h.2;
+        symbol [ h %tmp.21 70 23 24 ];
+        invoke %tmp.17 %tmp.18(%tmp.19, %tmp.20, %tmp.21);
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 71 8 ]
+        %tmp.22 = self;
+        symbol [ actionMenu %tmp.23 71 8 18 ];
+        %tmp.23 = getv function %tmp.22 :actionMenu;
+        %tmp.24 = lgetv %dc;
+        symbol [ dc %tmp.24 71 19 21 ];
+        %tmp.25 = lgetv %w.1;
+        symbol [ w %tmp.25 71 23 24 ];
+        %tmp.26 = lgetv %h.2;
+        symbol [ h %tmp.26 71 26 27 ];
+        invoke %tmp.22 %tmp.23(%tmp.24, %tmp.25, %tmp.26);
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 72 8 ]
+        %tmp.27 = self;
+        symbol [ hungerStatView %tmp.28 72 8 22 ];
+        %tmp.28 = getv function %tmp.27 :hungerStatView;
+        %tmp.29 = lgetv %dc;
+        symbol [ dc %tmp.29 72 23 25 ];
+        invoke %tmp.27 %tmp.28(%tmp.29);
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 73 8 ]
+        %tmp.30 = self;
+        symbol [ energyStatView %tmp.31 73 8 22 ];
+        %tmp.31 = getv function %tmp.30 :energyStatView;
+        %tmp.32 = lgetv %dc;
+        symbol [ dc %tmp.32 73 23 25 ];
+        invoke %tmp.30 %tmp.31(%tmp.32);
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 74 8 ]
+        %tmp.33 = self;
+        symbol [ happinessStatView %tmp.34 74 8 25 ];
+        %tmp.34 = getv function %tmp.33 :happinessStatView;
+        %tmp.35 = lgetv %dc;
+        symbol [ dc %tmp.35 74 26 28 ];
+        invoke %tmp.33 %tmp.34(%tmp.35);
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_58_40_76_4_stop:
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 64; @symbol_functiondef = [getPetStateBitmap,64,21,38]; @symbol_return<0> = [BitmapResource,64,44,58]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 78; @symbol_functiondef = [petDraw,78,13,20]; @symbol_param<0> = [dc,78,21,23]; @symbol_param<0>_type<0> = [Dc,78,27,29]; @symbol_param<1> = [w,78,31,32]; @symbol_param<2> = [h,78,34,35]; ]
+    function petDraw(dc as Dc, w, h) as Void {
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_78_45_89_4_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 79 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_78_45_89_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_78_45_89_4_stop" ]
+        %currentBitmap.1 = local;
+        symbol [ currentBitmap %currentBitmap.1 79 12 25 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 82 8 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_8_86_8_if_stmt:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_12_82_46_begin:
+        symbol [ isAnimating %tmp.2 82 12 23 ];
+        %tmp.2 = getv ? :isAnimating;
+        bf %tmp.2 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_8_86_8_if_else_false;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_27_82_46_true:
+        symbol [ animationFrames %tmp.4 82 27 42 ];
+        %tmp.4 = getv ? :animationFrames;
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        push %tmp.6;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_27_82_46_end:
+        %tmp.7 = phi [%tmp.2 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_12_82_46_begin] [%tmp.6 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_27_82_46_true] [%tmp.7 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_27_82_46_end];
+        bf %tmp.7 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_8_86_8_if_else_false;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_8_86_8_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_52_84_8_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 83 12 ]
+        symbol [ animationFrames %tmp.9 83 28 43 ];
+        %tmp.9 = getv ? :animationFrames;
+        %tmp.10 = as %tmp.9 { (!Null) };
+        symbol [ currentFrame %tmp.12 83 44 56 ];
+        %tmp.12 = getv ? :currentFrame;
+        %tmp.13 = agetv %tmp.10 %tmp.12;
+        lputv %currentBitmap.1 %tmp.13;
+        symbol [ currentBitmap %currentBitmap.1 83 12 25 ];
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_52_84_8_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_8_86_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_8_86_8_if_else_false:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_84_15_86_8_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 85 12 ]
+        %tmp.14 = self;
+        symbol [ getPetStateBitmap %tmp.15 85 28 45 ];
+        %tmp.15 = getv function %tmp.14 :getPetStateBitmap;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        lputv %currentBitmap.1 %tmp.16;
+        symbol [ currentBitmap %currentBitmap.1 85 12 25 ];
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_84_15_86_8_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_8_86_8_if_end:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 88 8 ]
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 88 8 10 ];
+        symbol [ drawBitmap %tmp.18 88 11 21 ];
+        %tmp.18 = getv function %tmp.17 :drawBitmap;
+        %tmp.19 = lgetv %w;
+        symbol [ w %tmp.19 88 22 23 ];
+        %tmp.20 = 0.32;
+        %tmp.21 = mul %tmp.19 %tmp.20;
+        %tmp.22 = lgetv %h;
+        symbol [ h %tmp.22 88 32 33 ];
+        %tmp.23 = 0.4;
+        %tmp.24 = mul %tmp.22 %tmp.23;
+        %tmp.25 = lgetv %currentBitmap.1;
+        symbol [ currentBitmap %tmp.25 88 41 54 ];
+        invoke %tmp.17 %tmp.18(%tmp.21, %tmp.24, %tmp.25);
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_78_45_89_4_stop:
+    }
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 92; @symbol_functiondef = [getPetStateBitmap,92,21,38]; @symbol_return<0> = [BitmapResource,92,44,58]; ]
     private
     function getPetStateBitmap() as BitmapResource {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_64_59_93_4_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 65 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_64_59_93_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_64_59_93_4_stop" ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_92_59_121_4_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 93 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_92_59_121_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_92_59_121_4_stop" ]
         %hunger.1 = local;
-        symbol [ hunger %hunger.1 65 12 18 ];
-        symbol [ app %tmp.2 65 21 24 ];
+        symbol [ hunger %hunger.1 93 12 18 ];
+        symbol [ app %tmp.2 93 21 24 ];
         %tmp.2 = getv ? :app;
-        symbol [ getHunger %tmp.3 65 25 34 ];
+        symbol [ getHunger %tmp.3 93 25 34 ];
         %tmp.3 = getv function %tmp.2 :getHunger;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         lputv %hunger.1 %tmp.4;
-        symbol [ hunger %hunger.1 65 12 18 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 66 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_64_59_93_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_64_59_93_4_stop" ]
+        symbol [ hunger %hunger.1 93 12 18 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 94 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_92_59_121_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_92_59_121_4_stop" ]
         %energy.2 = local;
-        symbol [ energy %energy.2 66 12 18 ];
-        symbol [ app %tmp.6 66 21 24 ];
+        symbol [ energy %energy.2 94 12 18 ];
+        symbol [ app %tmp.6 94 21 24 ];
         %tmp.6 = getv ? :app;
-        symbol [ getEnergy %tmp.7 66 25 34 ];
+        symbol [ getEnergy %tmp.7 94 25 34 ];
         %tmp.7 = getv function %tmp.6 :getEnergy;
         %tmp.8 = invoke %tmp.6 %tmp.7();
         lputv %energy.2 %tmp.8;
-        symbol [ energy %energy.2 66 12 18 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 67 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_64_59_93_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_64_59_93_4_stop" ]
+        symbol [ energy %energy.2 94 12 18 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 95 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_92_59_121_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_92_59_121_4_stop" ]
         %happiness.3 = local;
-        symbol [ happiness %happiness.3 67 12 21 ];
-        symbol [ app %tmp.10 67 24 27 ];
+        symbol [ happiness %happiness.3 95 12 21 ];
+        symbol [ app %tmp.10 95 24 27 ];
         %tmp.10 = getv ? :app;
-        symbol [ getHappiness %tmp.11 67 28 40 ];
+        symbol [ getHappiness %tmp.11 95 28 40 ];
         %tmp.11 = getv function %tmp.10 :getHappiness;
         %tmp.12 = invoke %tmp.10 %tmp.11();
         lputv %happiness.3 %tmp.12;
-        symbol [ happiness %happiness.3 67 12 21 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 72 8 ]
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_72_8_74_8_if_stmt:
+        symbol [ happiness %happiness.3 95 12 21 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 100 8 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_8_102_8_if_stmt:
         %tmp.13 = lgetv %energy.2;
-        symbol [ energy %tmp.13 72 12 18 ];
+        symbol [ energy %tmp.13 100 12 18 ];
         %tmp.14 = 20;
         %tmp.15 = lt %tmp.13 %tmp.14;
-        bf %tmp.15 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_72_8_74_8_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_72_8_74_8_if_true:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_72_25_74_8_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 73 12 ]
-        symbol [ petSleepingBitmap %tmp.17 73 19 36 ];
+        bf %tmp.15 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_8_102_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_8_102_8_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_25_102_8_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 101 12 ]
+        symbol [ petSleepingBitmap %tmp.17 101 19 36 ];
         %tmp.17 = getv ? :petSleepingBitmap;
         ret %tmp.17;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_72_25_74_8_stop:
-        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_72_8_74_8_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_72_8_74_8_if_end:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 77 8 ]
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_77_8_79_8_if_stmt:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_25_102_8_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_8_102_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_8_102_8_if_end:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 105 8 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_8_107_8_if_stmt:
         %tmp.18 = lgetv %hunger.1;
-        symbol [ hunger %tmp.18 77 12 18 ];
+        symbol [ hunger %tmp.18 105 12 18 ];
         %tmp.19 = 30;
         %tmp.20 = lt %tmp.18 %tmp.19;
-        bf %tmp.20 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_77_8_79_8_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_77_8_79_8_if_true:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_77_25_79_8_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 78 12 ]
-        symbol [ petHungryBitmap %tmp.22 78 19 34 ];
+        bf %tmp.20 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_8_107_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_8_107_8_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_25_107_8_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 106 12 ]
+        symbol [ petHungryBitmap %tmp.22 106 19 34 ];
         %tmp.22 = getv ? :petHungryBitmap;
         ret %tmp.22;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_77_25_79_8_stop:
-        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_77_8_79_8_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_77_8_79_8_if_end:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 82 8 ]
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_8_84_8_if_stmt:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_25_107_8_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_8_107_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_8_107_8_if_end:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 110 8 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_110_8_112_8_if_stmt:
         %tmp.23 = lgetv %happiness.3;
-        symbol [ happiness %tmp.23 82 12 21 ];
+        symbol [ happiness %tmp.23 110 12 21 ];
         %tmp.24 = 20;
         %tmp.25 = lt %tmp.23 %tmp.24;
-        bf %tmp.25 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_8_84_8_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_8_84_8_if_true:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_28_84_8_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 83 12 ]
-        symbol [ petSadBitmap %tmp.27 83 19 31 ];
+        bf %tmp.25 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_110_8_112_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_110_8_112_8_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_110_28_112_8_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 111 12 ]
+        symbol [ petSadBitmap %tmp.27 111 19 31 ];
         %tmp.27 = getv ? :petSadBitmap;
         ret %tmp.27;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_28_84_8_stop:
-        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_8_84_8_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_82_8_84_8_if_end:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 87 8 ]
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_87_8_89_8_if_stmt:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_87_12_87_39_begin:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_110_28_112_8_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_110_8_112_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_110_8_112_8_if_end:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 115 8 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_115_8_117_8_if_stmt:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_115_12_115_39_begin:
         %tmp.28 = lgetv %energy.2;
-        symbol [ energy %tmp.28 87 12 18 ];
+        symbol [ energy %tmp.28 115 12 18 ];
         %tmp.29 = 60;
         %tmp.30 = gt %tmp.28 %tmp.29;
-        bf %tmp.30 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_87_8_89_8_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_87_27_87_39_true:
+        bf %tmp.30 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_115_8_117_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_115_27_115_39_true:
         %tmp.31 = lgetv %happiness.3;
-        symbol [ happiness %tmp.31 87 27 36 ];
+        symbol [ happiness %tmp.31 115 27 36 ];
         %tmp.32 = 40;
         %tmp.33 = gt %tmp.31 %tmp.32;
         push %tmp.33;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_87_27_87_39_end:
-        %tmp.34 = phi [%tmp.30 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_87_12_87_39_begin] [%tmp.33 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_87_27_87_39_true] [%tmp.34 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_87_27_87_39_end];
-        bf %tmp.34 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_87_8_89_8_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_87_8_89_8_if_true:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_87_43_89_8_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 88 12 ]
-        symbol [ petPlayBitmap %tmp.36 88 19 32 ];
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_115_27_115_39_end:
+        %tmp.34 = phi [%tmp.30 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_115_12_115_39_begin] [%tmp.33 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_115_27_115_39_true] [%tmp.34 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_115_27_115_39_end];
+        bf %tmp.34 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_115_8_117_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_115_8_117_8_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_115_43_117_8_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 116 12 ]
+        symbol [ petPlayBitmap %tmp.36 116 19 32 ];
         %tmp.36 = getv ? :petPlayBitmap;
         ret %tmp.36;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_87_43_89_8_stop:
-        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_87_8_89_8_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_87_8_89_8_if_end:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 92 8 ]
-        symbol [ petHappyBitmap %tmp.38 92 15 29 ];
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_115_43_117_8_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_115_8_117_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_115_8_117_8_if_end:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 120 8 ]
+        symbol [ petHappyBitmap %tmp.38 120 15 29 ];
         %tmp.38 = getv ? :petHappyBitmap;
         ret %tmp.38;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_64_59_93_4_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_92_59_121_4_stop:
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 95; @symbol_functiondef = [actionMenu,95,13,23]; @symbol_param<0> = [dc,95,24,26]; @symbol_param<0>_type<0> = [Dc,95,30,32]; @symbol_param<1> = [w,95,34,35]; @symbol_param<2> = [h,95,37,38]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 123; @symbol_functiondef = [actionMenu,123,13,23]; @symbol_param<0> = [dc,123,24,26]; @symbol_param<0>_type<0> = [Dc,123,30,32]; @symbol_param<1> = [w,123,34,35]; @symbol_param<2> = [h,123,37,38]; ]
     function actionMenu(dc as Dc, w, h) as Void {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_95_48_126_4_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 96 6 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_95_48_126_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_95_48_126_4_stop" ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_48_154_4_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 124 6 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_48_154_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_48_154_4_stop" ]
         %indexAction.1 = local;
-        symbol [ indexAction %indexAction.1 96 10 21 ];
+        symbol [ indexAction %indexAction.1 124 10 21 ];
         %tmp.1 = self;
-        symbol [ getApp %tmp.2 96 24 30 ];
+        symbol [ getApp %tmp.2 124 24 30 ];
         %tmp.2 = getv function %tmp.1 :getApp;
         %tmp.3 = invoke %tmp.1 %tmp.2();
-        symbol [ getIndexAction %tmp.4 96 33 47 ];
+        symbol [ getIndexAction %tmp.4 124 33 47 ];
         %tmp.4 = getv function %tmp.3 :getIndexAction;
         %tmp.5 = invoke %tmp.3 %tmp.4();
         lputv %indexAction.1 %tmp.5;
-        symbol [ indexAction %indexAction.1 96 10 21 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 97 6 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_95_48_126_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_95_48_126_4_stop" ]
+        symbol [ indexAction %indexAction.1 124 10 21 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 125 6 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_48_154_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_48_154_4_stop" ]
         %menuItems.2 = local;
-        symbol [ menuItems %menuItems.2 97 10 19 ];
+        symbol [ menuItems %menuItems.2 125 10 19 ];
         %tmp.6 = newa 3;
         %tmp.7 = "Feed";
         %tmp.8 = dup %tmp.6;
@@ -483,11 +573,11 @@ _Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiV
         %tmp.14 = dup %tmp.12;
         %tmp.15 = aputv %tmp.14 2 %tmp.13;
         lputv %menuItems.2 %tmp.15;
-        symbol [ menuItems %menuItems.2 97 10 19 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 98 6 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_95_48_126_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_95_48_126_4_stop" ]
+        symbol [ menuItems %menuItems.2 125 10 19 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 126 6 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_48_154_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_48_154_4_stop" ]
         %positions.3 = local;
-        symbol [ positions %positions.3 98 10 19 ];
+        symbol [ positions %positions.3 126 10 19 ];
         %tmp.16 = newa 3;
         %tmp.17 = 0.25;
         %tmp.18 = dup %tmp.16;
@@ -499,213 +589,213 @@ _Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiV
         %tmp.24 = dup %tmp.22;
         %tmp.25 = aputv %tmp.24 2 %tmp.23;
         lputv %positions.3 %tmp.25;
-        symbol [ positions %positions.3 98 10 19 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 100 6 ]
-        for @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_6_121_6_for_test @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_6_121_6_for_incr @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_6_121_6_for_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_6_121_6_for_init:
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_6_121_6_for_begin" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_6_121_6_for_end" ]
+        symbol [ positions %positions.3 126 10 19 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 128 6 ]
+        for @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_6_149_6_for_test @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_6_149_6_for_incr @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_6_149_6_for_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_6_149_6_for_init:
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_6_149_6_for_begin" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_6_149_6_for_end" ]
         %i.4 = local;
-        symbol [ i %i.4 100 15 16 ];
+        symbol [ i %i.4 128 15 16 ];
         %tmp.26 = 0;
         lputv %i.4 %tmp.26;
-        symbol [ i %i.4 100 15 16 ];
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_6_121_6_for_test:
+        symbol [ i %i.4 128 15 16 ];
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_6_149_6_for_test:
         %tmp.27 = lgetv %i.4;
-        symbol [ i %tmp.27 100 22 23 ];
+        symbol [ i %tmp.27 128 22 23 ];
         %tmp.28 = lgetv %menuItems.2;
-        symbol [ menuItems %tmp.28 100 26 35 ];
-        symbol [ size %tmp.29 100 36 40 ];
+        symbol [ menuItems %tmp.28 128 26 35 ];
+        symbol [ size %tmp.29 128 36 40 ];
         %tmp.29 = getv function %tmp.28 :size;
         %tmp.30 = invoke %tmp.28 %tmp.29();
         %tmp.31 = lt %tmp.27 %tmp.30;
-        bf %tmp.31 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_6_121_6_for_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_6_121_6_for_begin:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_49_121_6_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 101 10 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_49_121_6_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_49_121_6_stop" ]
+        bf %tmp.31 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_6_149_6_for_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_6_149_6_for_begin:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_49_149_6_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 129 10 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_49_149_6_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_49_149_6_stop" ]
         %xPos.5 = local;
-        symbol [ xPos %xPos.5 101 14 18 ];
+        symbol [ xPos %xPos.5 129 14 18 ];
         %tmp.32 = lgetv %w;
-        symbol [ w %tmp.32 101 21 22 ];
+        symbol [ w %tmp.32 129 21 22 ];
         %tmp.33 = lgetv %positions.3;
-        symbol [ positions %tmp.33 101 25 34 ];
+        symbol [ positions %tmp.33 129 25 34 ];
         %tmp.34 = lgetv %i.4;
-        symbol [ i %tmp.34 101 35 36 ];
+        symbol [ i %tmp.34 129 35 36 ];
         %tmp.35 = agetv %tmp.33 %tmp.34;
         %tmp.36 = mul %tmp.32 %tmp.35;
         lputv %xPos.5 %tmp.36;
-        symbol [ xPos %xPos.5 101 14 18 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 102 10 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_49_121_6_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_49_121_6_stop" ]
+        symbol [ xPos %xPos.5 129 14 18 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 130 10 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_49_149_6_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_49_149_6_stop" ]
         %yPos.6 = local;
-        symbol [ yPos %yPos.6 102 14 18 ];
+        symbol [ yPos %yPos.6 130 14 18 ];
         %tmp.37 = lgetv %h;
-        symbol [ h %tmp.37 102 21 22 ];
+        symbol [ h %tmp.37 130 21 22 ];
         %tmp.38 = 0.85;
         %tmp.39 = mul %tmp.37 %tmp.38;
         lputv %yPos.6 %tmp.39;
-        symbol [ yPos %yPos.6 102 14 18 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 105 10 ]
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_10_111_10_if_stmt:
+        symbol [ yPos %yPos.6 130 14 18 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 133 10 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_133_10_139_10_if_stmt:
         %tmp.40 = lgetv %indexAction.1;
-        symbol [ indexAction %tmp.40 105 14 25 ];
+        symbol [ indexAction %tmp.40 133 14 25 ];
         %tmp.41 = lgetv %i.4;
-        symbol [ i %tmp.41 105 29 30 ];
+        symbol [ i %tmp.41 133 29 30 ];
         %tmp.42 = eq %tmp.40 %tmp.41;
-        bf %tmp.42 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_10_111_10_if_else_false;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_10_111_10_if_true:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_32_109_10_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 106 14 ]
+        bf %tmp.42 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_133_10_139_10_if_else_false;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_133_10_139_10_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_133_32_137_10_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 134 14 ]
         %tmp.43 = lgetv %dc;
-        symbol [ dc %tmp.43 106 14 16 ];
-        symbol [ setColor %tmp.44 106 17 25 ];
+        symbol [ dc %tmp.43 134 14 16 ];
+        symbol [ setColor %tmp.44 134 17 25 ];
         %tmp.44 = getv function %tmp.43 :setColor;
-        symbol [ Graphics %tmp.45 106 26 34 ];
+        symbol [ Graphics %tmp.45 134 26 34 ];
         %tmp.45 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.46 106 35 46 ];
+        symbol [ COLOR_WHITE %tmp.46 134 35 46 ];
         %tmp.46 = getv %tmp.45 :COLOR_WHITE;
-        symbol [ Graphics %tmp.47 106 48 56 ];
+        symbol [ Graphics %tmp.47 134 48 56 ];
         %tmp.47 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.48 106 57 74 ];
+        symbol [ COLOR_TRANSPARENT %tmp.48 134 57 74 ];
         %tmp.48 = getv %tmp.47 :COLOR_TRANSPARENT;
         invoke %tmp.43 %tmp.44(%tmp.46, %tmp.48);
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 107 14 ]
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 135 14 ]
         %tmp.49 = lgetv %dc;
-        symbol [ dc %tmp.49 107 14 16 ];
-        symbol [ fillRectangle %tmp.50 107 17 30 ];
+        symbol [ dc %tmp.49 135 14 16 ];
+        symbol [ fillRectangle %tmp.50 135 17 30 ];
         %tmp.50 = getv function %tmp.49 :fillRectangle;
         %tmp.51 = lgetv %xPos.5;
-        symbol [ xPos %tmp.51 107 31 35 ];
+        symbol [ xPos %tmp.51 135 31 35 ];
         %tmp.52 = 20;
         %tmp.53 = sub %tmp.51 %tmp.52;
         %tmp.54 = lgetv %yPos.6;
-        symbol [ yPos %tmp.54 107 42 46 ];
+        symbol [ yPos %tmp.54 135 42 46 ];
         %tmp.55 = 10;
         %tmp.56 = sub %tmp.54 %tmp.55;
         %tmp.57 = 40;
         %tmp.58 = 20;
         invoke %tmp.49 %tmp.50(%tmp.53, %tmp.56, %tmp.57, %tmp.58);
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 108 14 ]
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 136 14 ]
         %tmp.59 = lgetv %dc;
-        symbol [ dc %tmp.59 108 14 16 ];
-        symbol [ setColor %tmp.60 108 17 25 ];
+        symbol [ dc %tmp.59 136 14 16 ];
+        symbol [ setColor %tmp.60 136 17 25 ];
         %tmp.60 = getv function %tmp.59 :setColor;
-        symbol [ Graphics %tmp.61 108 26 34 ];
+        symbol [ Graphics %tmp.61 136 26 34 ];
         %tmp.61 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.62 108 35 46 ];
+        symbol [ COLOR_BLACK %tmp.62 136 35 46 ];
         %tmp.62 = getv %tmp.61 :COLOR_BLACK;
-        symbol [ Graphics %tmp.63 108 48 56 ];
+        symbol [ Graphics %tmp.63 136 48 56 ];
         %tmp.63 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.64 108 57 74 ];
+        symbol [ COLOR_TRANSPARENT %tmp.64 136 57 74 ];
         %tmp.64 = getv %tmp.63 :COLOR_TRANSPARENT;
         invoke %tmp.59 %tmp.60(%tmp.62, %tmp.64);
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_32_109_10_stop:
-        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_10_111_10_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_10_111_10_if_else_false:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_109_17_111_10_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 110 14 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_133_32_137_10_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_133_10_139_10_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_133_10_139_10_if_else_false:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_137_17_139_10_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 138 14 ]
         %tmp.65 = lgetv %dc;
-        symbol [ dc %tmp.65 110 14 16 ];
-        symbol [ setColor %tmp.66 110 17 25 ];
+        symbol [ dc %tmp.65 138 14 16 ];
+        symbol [ setColor %tmp.66 138 17 25 ];
         %tmp.66 = getv function %tmp.65 :setColor;
-        symbol [ Graphics %tmp.67 110 26 34 ];
+        symbol [ Graphics %tmp.67 138 26 34 ];
         %tmp.67 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.68 110 35 46 ];
+        symbol [ COLOR_WHITE %tmp.68 138 35 46 ];
         %tmp.68 = getv %tmp.67 :COLOR_WHITE;
-        symbol [ Graphics %tmp.69 110 48 56 ];
+        symbol [ Graphics %tmp.69 138 48 56 ];
         %tmp.69 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.70 110 57 74 ];
+        symbol [ COLOR_TRANSPARENT %tmp.70 138 57 74 ];
         %tmp.70 = getv %tmp.69 :COLOR_TRANSPARENT;
         invoke %tmp.65 %tmp.66(%tmp.68, %tmp.70);
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_109_17_111_10_stop:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_105_10_111_10_if_end:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 114 10 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_137_17_139_10_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_133_10_139_10_if_end:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 142 10 ]
         %tmp.71 = lgetv %dc;
-        symbol [ dc %tmp.71 114 10 12 ];
-        symbol [ drawText %tmp.72 114 13 21 ];
+        symbol [ dc %tmp.71 142 10 12 ];
+        symbol [ drawText %tmp.72 142 13 21 ];
         %tmp.72 = getv function %tmp.71 :drawText;
         %tmp.73 = lgetv %xPos.5;
-        symbol [ xPos %tmp.73 115 14 18 ];
+        symbol [ xPos %tmp.73 143 14 18 ];
         %tmp.74 = lgetv %yPos.6;
-        symbol [ yPos %tmp.74 116 14 18 ];
-        symbol [ font18 %tmp.76 117 14 20 ];
+        symbol [ yPos %tmp.74 144 14 18 ];
+        symbol [ font18 %tmp.76 145 14 20 ];
         %tmp.76 = getv ? :font18;
         %tmp.77 = lgetv %menuItems.2;
-        symbol [ menuItems %tmp.77 118 14 23 ];
+        symbol [ menuItems %tmp.77 146 14 23 ];
         %tmp.78 = lgetv %i.4;
-        symbol [ i %tmp.78 118 24 25 ];
+        symbol [ i %tmp.78 146 24 25 ];
         %tmp.79 = agetv %tmp.77 %tmp.78;
-        symbol [ Graphics %tmp.80 119 14 22 ];
+        symbol [ Graphics %tmp.80 147 14 22 ];
         %tmp.80 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.81 119 23 42 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.81 147 23 42 ];
         %tmp.81 = getv %tmp.80 :TEXT_JUSTIFY_CENTER;
-        symbol [ Graphics %tmp.82 119 45 53 ];
+        symbol [ Graphics %tmp.82 147 45 53 ];
         %tmp.82 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.83 119 54 74 ];
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.83 147 54 74 ];
         %tmp.83 = getv %tmp.82 :TEXT_JUSTIFY_VCENTER;
         %tmp.84 = bitor %tmp.81 %tmp.83;
         invoke %tmp.71 %tmp.72(%tmp.73, %tmp.74, %tmp.76, %tmp.79, %tmp.84);
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_49_121_6_stop:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_6_121_6_for_incr:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 100 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_49_149_6_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_6_149_6_for_incr:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 128 ]
         %tmp.87 = lgetv %i.4;
-        symbol [ i %tmp.87 100 44 45 ];
+        symbol [ i %tmp.87 128 44 45 ];
         %tmp.88 = add %tmp.87 1;
         lputv %i.4 %tmp.88;
-        symbol [ i %i.4 100 44 45 ];
-        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_6_121_6_for_test;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_100_6_121_6_for_end:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 123 6 ]
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_6_125_6_if_stmt:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_10_123_45_begin:
+        symbol [ i %i.4 128 44 45 ];
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_6_149_6_for_test;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_6_149_6_for_end:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 151 6 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_151_6_153_6_if_stmt:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_151_10_151_45_begin:
         %tmp.89 = lgetv %indexAction.1;
-        symbol [ indexAction %tmp.89 123 10 21 ];
+        symbol [ indexAction %tmp.89 151 10 21 ];
         %tmp.90 = 0;
         %tmp.91 = gte %tmp.89 %tmp.90;
-        bf %tmp.91 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_6_125_6_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_30_123_45_true:
+        bf %tmp.91 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_151_6_153_6_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_151_30_151_45_true:
         %tmp.92 = lgetv %indexAction.1;
-        symbol [ indexAction %tmp.92 123 30 41 ];
+        symbol [ indexAction %tmp.92 151 30 41 ];
         %tmp.93 = 2;
         %tmp.94 = lte %tmp.92 %tmp.93;
         push %tmp.94;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_30_123_45_end:
-        %tmp.95 = phi [%tmp.91 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_10_123_45_begin] [%tmp.94 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_30_123_45_true] [%tmp.95 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_30_123_45_end];
-        bf %tmp.95 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_6_125_6_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_6_125_6_if_true:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_48_125_6_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 124 10 ]
-        symbol [ WatchUi %tmp.96 124 10 17 ];
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_151_30_151_45_end:
+        %tmp.95 = phi [%tmp.91 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_151_10_151_45_begin] [%tmp.94 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_151_30_151_45_true] [%tmp.95 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_151_30_151_45_end];
+        bf %tmp.95 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_151_6_153_6_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_151_6_153_6_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_151_48_153_6_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 152 10 ]
+        symbol [ WatchUi %tmp.96 152 10 17 ];
         %tmp.96 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.97 124 18 31 ];
+        symbol [ requestUpdate %tmp.97 152 18 31 ];
         %tmp.97 = getv function %tmp.96 :requestUpdate;
         invoke %tmp.96 %tmp.97();
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_48_125_6_stop:
-        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_6_125_6_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_6_125_6_if_end:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_95_48_126_4_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_151_48_153_6_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_151_6_153_6_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_151_6_153_6_if_end:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_123_48_154_4_stop:
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 128; @symbol_functiondef = [hungerStatView,128,13,27]; @symbol_param<0> = [dc,128,28,30]; @symbol_param<0>_type<0> = [Dc,128,34,36]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 156; @symbol_functiondef = [hungerStatView,156,13,27]; @symbol_param<0> = [dc,156,28,30]; @symbol_param<0>_type<0> = [Dc,156,34,36]; ]
     function hungerStatView(dc as Dc) as Void {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_46_136_4_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 129 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_46_136_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_46_136_4_stop" ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_156_46_164_4_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 157 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_156_46_164_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_156_46_164_4_stop" ]
         %hungerView.1 = local;
-        symbol [ hungerView %hungerView.1 129 12 22 ];
-        symbol [ View %tmp.2 129 25 29 ];
+        symbol [ hungerView %hungerView.1 157 12 22 ];
+        symbol [ View %tmp.2 157 25 29 ];
         %tmp.2 = getv ? :View;
-        symbol [ findDrawableById %tmp.3 129 30 46 ];
+        symbol [ findDrawableById %tmp.3 157 30 46 ];
         %tmp.3 = getv function %tmp.2 :findDrawableById;
         %tmp.4 = "Hunger";
         %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
         %tmp.6 = as %tmp.5 Text;
-        symbol [ Text %tmp.6 129 60 64 ];
+        symbol [ Text %tmp.6 157 60 64 ];
         lputv %hungerView.1 %tmp.6;
-        symbol [ hungerView %hungerView.1 129 12 22 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 131 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_46_136_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_46_136_4_stop" ]
+        symbol [ hungerView %hungerView.1 157 12 22 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 159 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_156_46_164_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_156_46_164_4_stop" ]
         %iconIds.2 = local;
-        symbol [ iconIds %iconIds.2 131 12 19 ];
+        symbol [ iconIds %iconIds.2 159 12 19 ];
         %tmp.7 = newa 5;
         %tmp.8 = "HungerIcon1";
         %tmp.9 = dup %tmp.7;
@@ -723,62 +813,62 @@ _Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiV
         %tmp.21 = dup %tmp.19;
         %tmp.22 = aputv %tmp.21 4 %tmp.20;
         lputv %iconIds.2 %tmp.22;
-        symbol [ iconIds %iconIds.2 131 12 19 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 132 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_46_136_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_46_136_4_stop" ]
+        symbol [ iconIds %iconIds.2 159 12 19 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 160 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_156_46_164_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_156_46_164_4_stop" ]
         %hunger.3 = local;
-        symbol [ hunger %hunger.3 132 12 18 ];
-        symbol [ app %tmp.24 132 21 24 ];
+        symbol [ hunger %hunger.3 160 12 18 ];
+        symbol [ app %tmp.24 160 21 24 ];
         %tmp.24 = getv ? :app;
-        symbol [ getHunger %tmp.25 132 25 34 ];
+        symbol [ getHunger %tmp.25 160 25 34 ];
         %tmp.25 = getv function %tmp.24 :getHunger;
         %tmp.26 = invoke %tmp.24 %tmp.25();
         lputv %hunger.3 %tmp.26;
-        symbol [ hunger %hunger.3 132 12 18 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 133 8 ]
+        symbol [ hunger %hunger.3 160 12 18 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 161 8 ]
         %tmp.27 = lgetv %hungerView.1;
-        symbol [ hungerView %tmp.27 133 8 18 ];
-        symbol [ setText %tmp.28 133 19 26 ];
+        symbol [ hungerView %tmp.27 161 8 18 ];
+        symbol [ setText %tmp.28 161 19 26 ];
         %tmp.28 = getv function %tmp.27 :setText;
         %tmp.29 = "Hunger:";
         invoke %tmp.27 %tmp.28(%tmp.29);
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 135 8 ]
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 163 8 ]
         %tmp.30 = self;
-        symbol [ updateStatView %tmp.31 135 8 22 ];
+        symbol [ updateStatView %tmp.31 163 8 22 ];
         %tmp.31 = getv function %tmp.30 :updateStatView;
         %tmp.32 = lgetv %hunger.3;
-        symbol [ hunger %tmp.32 135 23 29 ];
+        symbol [ hunger %tmp.32 163 23 29 ];
         %tmp.33 = lgetv %iconIds.2;
-        symbol [ iconIds %tmp.33 135 31 38 ];
-        symbol [ Graphics %tmp.34 135 40 48 ];
+        symbol [ iconIds %tmp.33 163 31 38 ];
+        symbol [ Graphics %tmp.34 163 40 48 ];
         %tmp.34 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.35 135 49 58 ];
+        symbol [ COLOR_RED %tmp.35 163 49 58 ];
         %tmp.35 = getv %tmp.34 :COLOR_RED;
         %tmp.36 = 33;
         invoke %tmp.30 %tmp.31(%tmp.32, %tmp.33, %tmp.35, %tmp.36);
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_128_46_136_4_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_156_46_164_4_stop:
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 138; @symbol_functiondef = [energyStatView,138,13,27]; @symbol_param<0> = [dc,138,28,30]; @symbol_param<0>_type<0> = [Dc,138,34,36]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 166; @symbol_functiondef = [energyStatView,166,13,27]; @symbol_param<0> = [dc,166,28,30]; @symbol_param<0>_type<0> = [Dc,166,34,36]; ]
     function energyStatView(dc as Dc) as Void {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_138_46_148_4_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 139 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_138_46_148_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_138_46_148_4_stop" ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_166_46_176_4_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 167 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_166_46_176_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_166_46_176_4_stop" ]
         %energyView.1 = local;
-        symbol [ energyView %energyView.1 139 12 22 ];
-        symbol [ View %tmp.2 139 25 29 ];
+        symbol [ energyView %energyView.1 167 12 22 ];
+        symbol [ View %tmp.2 167 25 29 ];
         %tmp.2 = getv ? :View;
-        symbol [ findDrawableById %tmp.3 139 30 46 ];
+        symbol [ findDrawableById %tmp.3 167 30 46 ];
         %tmp.3 = getv function %tmp.2 :findDrawableById;
         %tmp.4 = "Energy";
         %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
         %tmp.6 = as %tmp.5 Text;
-        symbol [ Text %tmp.6 139 60 64 ];
+        symbol [ Text %tmp.6 167 60 64 ];
         lputv %energyView.1 %tmp.6;
-        symbol [ energyView %energyView.1 139 12 22 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 141 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_138_46_148_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_138_46_148_4_stop" ]
+        symbol [ energyView %energyView.1 167 12 22 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 169 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_166_46_176_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_166_46_176_4_stop" ]
         %iconIds.2 = local;
-        symbol [ iconIds %iconIds.2 141 12 19 ];
+        symbol [ iconIds %iconIds.2 169 12 19 ];
         %tmp.7 = newa 5;
         %tmp.8 = "EnergyIcon1";
         %tmp.9 = dup %tmp.7;
@@ -796,69 +886,69 @@ _Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiV
         %tmp.21 = dup %tmp.19;
         %tmp.22 = aputv %tmp.21 4 %tmp.20;
         lputv %iconIds.2 %tmp.22;
-        symbol [ iconIds %iconIds.2 141 12 19 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 143 8 ]
+        symbol [ iconIds %iconIds.2 169 12 19 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 171 8 ]
         %tmp.23 = lgetv %energyView.1;
-        symbol [ energyView %tmp.23 143 8 18 ];
-        symbol [ setText %tmp.24 143 19 26 ];
+        symbol [ energyView %tmp.23 171 8 18 ];
+        symbol [ setText %tmp.24 171 19 26 ];
         %tmp.24 = getv function %tmp.23 :setText;
         %tmp.25 = "Energy:";
         invoke %tmp.23 %tmp.24(%tmp.25);
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 145 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_138_46_148_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_138_46_148_4_stop" ]
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 173 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_166_46_176_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_166_46_176_4_stop" ]
         %energy.3 = local;
-        symbol [ energy %energy.3 145 12 18 ];
-        symbol [ app %tmp.27 145 21 24 ];
+        symbol [ energy %energy.3 173 12 18 ];
+        symbol [ app %tmp.27 173 21 24 ];
         %tmp.27 = getv ? :app;
-        symbol [ getEnergy %tmp.28 145 25 34 ];
+        symbol [ getEnergy %tmp.28 173 25 34 ];
         %tmp.28 = getv function %tmp.27 :getEnergy;
         %tmp.29 = invoke %tmp.27 %tmp.28();
         lputv %energy.3 %tmp.29;
-        symbol [ energy %energy.3 145 12 18 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 147 8 ]
+        symbol [ energy %energy.3 173 12 18 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 175 8 ]
         %tmp.30 = self;
-        symbol [ updateStatView %tmp.31 147 8 22 ];
+        symbol [ updateStatView %tmp.31 175 8 22 ];
         %tmp.31 = getv function %tmp.30 :updateStatView;
         %tmp.32 = lgetv %energy.3;
-        symbol [ energy %tmp.32 147 23 29 ];
+        symbol [ energy %tmp.32 175 23 29 ];
         %tmp.33 = lgetv %iconIds.2;
-        symbol [ iconIds %tmp.33 147 31 38 ];
-        symbol [ Graphics %tmp.34 147 40 48 ];
+        symbol [ iconIds %tmp.33 175 31 38 ];
+        symbol [ Graphics %tmp.34 175 40 48 ];
         %tmp.34 = getm $.Toybox.Graphics;
-        symbol [ COLOR_YELLOW %tmp.35 147 49 61 ];
+        symbol [ COLOR_YELLOW %tmp.35 175 49 61 ];
         %tmp.35 = getv %tmp.34 :COLOR_YELLOW;
         %tmp.36 = 34;
         invoke %tmp.30 %tmp.31(%tmp.32, %tmp.33, %tmp.35, %tmp.36);
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_138_46_148_4_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_166_46_176_4_stop:
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 150; @symbol_functiondef = [happinessStatView,150,13,30]; @symbol_param<0> = [dc,150,31,33]; @symbol_param<0>_type<0> = [Dc,150,37,39]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 178; @symbol_functiondef = [happinessStatView,178,13,30]; @symbol_param<0> = [dc,178,31,33]; @symbol_param<0>_type<0> = [Dc,178,37,39]; ]
     function happinessStatView(dc as Dc) as Void {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_150_49_159_4_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 151 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_150_49_159_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_150_49_159_4_stop" ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_178_49_187_4_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 179 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_178_49_187_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_178_49_187_4_stop" ]
         %happinessView.1 = local;
-        symbol [ happinessView %happinessView.1 151 12 25 ];
-        symbol [ View %tmp.2 151 28 32 ];
+        symbol [ happinessView %happinessView.1 179 12 25 ];
+        symbol [ View %tmp.2 179 28 32 ];
         %tmp.2 = getv ? :View;
-        symbol [ findDrawableById %tmp.3 151 33 49 ];
+        symbol [ findDrawableById %tmp.3 179 33 49 ];
         %tmp.3 = getv function %tmp.2 :findDrawableById;
         %tmp.4 = "Happiness";
         %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
         %tmp.6 = as %tmp.5 Text;
-        symbol [ Text %tmp.6 151 66 70 ];
+        symbol [ Text %tmp.6 179 66 70 ];
         lputv %happinessView.1 %tmp.6;
-        symbol [ happinessView %happinessView.1 151 12 25 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 152 8 ]
+        symbol [ happinessView %happinessView.1 179 12 25 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 180 8 ]
         %tmp.7 = lgetv %happinessView.1;
-        symbol [ happinessView %tmp.7 152 8 21 ];
-        symbol [ setText %tmp.8 152 22 29 ];
+        symbol [ happinessView %tmp.7 180 8 21 ];
+        symbol [ setText %tmp.8 180 22 29 ];
         %tmp.8 = getv function %tmp.7 :setText;
         %tmp.9 = "Happiness:";
         invoke %tmp.7 %tmp.8(%tmp.9);
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 154 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_150_49_159_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_150_49_159_4_stop" ]
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 182 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_178_49_187_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_178_49_187_4_stop" ]
         %iconIds.2 = local;
-        symbol [ iconIds %iconIds.2 154 12 19 ];
+        symbol [ iconIds %iconIds.2 182 12 19 ];
         %tmp.10 = newa 5;
         %tmp.11 = "HappinessIcon1";
         %tmp.12 = dup %tmp.10;
@@ -876,42 +966,42 @@ _Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiV
         %tmp.24 = dup %tmp.22;
         %tmp.25 = aputv %tmp.24 4 %tmp.23;
         lputv %iconIds.2 %tmp.25;
-        symbol [ iconIds %iconIds.2 154 12 19 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 156 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_150_49_159_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_150_49_159_4_stop" ]
+        symbol [ iconIds %iconIds.2 182 12 19 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 184 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_178_49_187_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_178_49_187_4_stop" ]
         %happiness.3 = local;
-        symbol [ happiness %happiness.3 156 12 21 ];
-        symbol [ app %tmp.27 156 24 27 ];
+        symbol [ happiness %happiness.3 184 12 21 ];
+        symbol [ app %tmp.27 184 24 27 ];
         %tmp.27 = getv ? :app;
-        symbol [ getHappiness %tmp.28 156 28 40 ];
+        symbol [ getHappiness %tmp.28 184 28 40 ];
         %tmp.28 = getv function %tmp.27 :getHappiness;
         %tmp.29 = invoke %tmp.27 %tmp.28();
         lputv %happiness.3 %tmp.29;
-        symbol [ happiness %happiness.3 156 12 21 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 158 8 ]
+        symbol [ happiness %happiness.3 184 12 21 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 186 8 ]
         %tmp.30 = self;
-        symbol [ updateStatView %tmp.31 158 8 22 ];
+        symbol [ updateStatView %tmp.31 186 8 22 ];
         %tmp.31 = getv function %tmp.30 :updateStatView;
         %tmp.32 = lgetv %happiness.3;
-        symbol [ happiness %tmp.32 158 23 32 ];
+        symbol [ happiness %tmp.32 186 23 32 ];
         %tmp.33 = lgetv %iconIds.2;
-        symbol [ iconIds %tmp.33 158 34 41 ];
-        symbol [ Graphics %tmp.34 158 43 51 ];
+        symbol [ iconIds %tmp.33 186 34 41 ];
+        symbol [ Graphics %tmp.34 186 43 51 ];
         %tmp.34 = getm $.Toybox.Graphics;
-        symbol [ COLOR_GREEN %tmp.35 158 52 63 ];
+        symbol [ COLOR_GREEN %tmp.35 186 52 63 ];
         %tmp.35 = getv %tmp.34 :COLOR_GREEN;
         %tmp.36 = 35;
         invoke %tmp.30 %tmp.31(%tmp.32, %tmp.33, %tmp.35, %tmp.36);
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_150_49_159_4_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_178_49_187_4_stop:
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 161; @symbol_functiondef = [updateStatView,161,21,35]; @symbol_param<0> = [state,161,36,41]; @symbol_param<1> = [iconIds,161,43,50]; @symbol_param<2> = [activeColor,161,52,63]; @symbol_param<3> = [charNum,161,65,72]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 189; @symbol_functiondef = [updateStatView,189,21,35]; @symbol_param<0> = [state,189,36,41]; @symbol_param<1> = [iconIds,189,43,50]; @symbol_param<2> = [activeColor,189,52,63]; @symbol_param<3> = [charNum,189,65,72]; ]
     private
     function updateStatView(state, iconIds, activeColor, charNum) as Void {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_161_82_178_4_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 163 8 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_161_82_178_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_161_82_178_4_stop" ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_189_82_206_4_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 191 8 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_189_82_206_4_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_189_82_206_4_stop" ]
         %thresholds.1 = local;
-        symbol [ thresholds %thresholds.1 163 12 22 ];
+        symbol [ thresholds %thresholds.1 191 12 22 ];
         %tmp.1 = newa 5;
         %tmp.2 = 0;
         %tmp.3 = dup %tmp.1;
@@ -929,114 +1019,294 @@ _Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiV
         %tmp.15 = dup %tmp.13;
         %tmp.16 = aputv %tmp.15 4 %tmp.14;
         lputv %thresholds.1 %tmp.16;
-        symbol [ thresholds %thresholds.1 163 12 22 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 165 8 ]
-        for @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_8_176_8_for_test @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_8_176_8_for_incr @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_8_176_8_for_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_8_176_8_for_init:
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_8_176_8_for_begin" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_8_176_8_for_end" ]
+        symbol [ thresholds %thresholds.1 191 12 22 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 193 8 ]
+        for @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_8_204_8_for_test @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_8_204_8_for_incr @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_8_204_8_for_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_8_204_8_for_init:
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_8_204_8_for_begin" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_8_204_8_for_end" ]
         %i.2 = local;
-        symbol [ i %i.2 165 17 18 ];
+        symbol [ i %i.2 193 17 18 ];
         %tmp.17 = 0;
         lputv %i.2 %tmp.17;
-        symbol [ i %i.2 165 17 18 ];
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_8_176_8_for_test:
+        symbol [ i %i.2 193 17 18 ];
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_8_204_8_for_test:
         %tmp.18 = lgetv %i.2;
-        symbol [ i %tmp.18 165 24 25 ];
+        symbol [ i %tmp.18 193 24 25 ];
         %tmp.19 = lgetv %iconIds;
-        symbol [ iconIds %tmp.19 165 28 35 ];
-        symbol [ size %tmp.20 165 36 40 ];
+        symbol [ iconIds %tmp.19 193 28 35 ];
+        symbol [ size %tmp.20 193 36 40 ];
         %tmp.20 = getv function %tmp.19 :size;
         %tmp.21 = invoke %tmp.19 %tmp.20();
         %tmp.22 = lt %tmp.18 %tmp.21;
-        bf %tmp.22 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_8_176_8_for_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_8_176_8_for_begin:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_49_176_8_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 166 12 ]
-        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_49_176_8_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_49_176_8_stop" ]
+        bf %tmp.22 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_8_204_8_for_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_8_204_8_for_begin:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_49_204_8_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 194 12 ]
+        [ "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_49_204_8_start" "_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_49_204_8_stop" ]
         %icon.3 = local;
-        symbol [ icon %icon.3 166 16 20 ];
-        symbol [ View %tmp.24 166 23 27 ];
+        symbol [ icon %icon.3 194 16 20 ];
+        symbol [ View %tmp.24 194 23 27 ];
         %tmp.24 = getv ? :View;
-        symbol [ findDrawableById %tmp.25 166 28 44 ];
+        symbol [ findDrawableById %tmp.25 194 28 44 ];
         %tmp.25 = getv function %tmp.24 :findDrawableById;
         %tmp.26 = lgetv %iconIds;
-        symbol [ iconIds %tmp.26 166 45 52 ];
+        symbol [ iconIds %tmp.26 194 45 52 ];
         %tmp.27 = lgetv %i.2;
-        symbol [ i %tmp.27 166 53 54 ];
+        symbol [ i %tmp.27 194 53 54 ];
         %tmp.28 = agetv %tmp.26 %tmp.27;
         %tmp.29 = invoke %tmp.24 %tmp.25(%tmp.28);
         %tmp.30 = as %tmp.29 Text;
-        symbol [ Text %tmp.30 166 60 64 ];
+        symbol [ Text %tmp.30 194 60 64 ];
         lputv %icon.3 %tmp.30;
-        symbol [ icon %icon.3 166 16 20 ];
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 168 12 ]
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_168_12_173_12_if_stmt:
+        symbol [ icon %icon.3 194 16 20 ];
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 196 12 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_196_12_201_12_if_stmt:
         %tmp.31 = lgetv %state;
-        symbol [ state %tmp.31 168 16 21 ];
+        symbol [ state %tmp.31 196 16 21 ];
         %tmp.32 = lgetv %thresholds.1;
-        symbol [ thresholds %tmp.32 168 25 35 ];
+        symbol [ thresholds %tmp.32 196 25 35 ];
         %tmp.33 = lgetv %i.2;
-        symbol [ i %tmp.33 168 36 37 ];
+        symbol [ i %tmp.33 196 36 37 ];
         %tmp.34 = agetv %tmp.32 %tmp.33;
         %tmp.35 = gte %tmp.31 %tmp.34;
-        bf %tmp.35 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_168_12_173_12_if_else_false;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_168_12_173_12_if_true:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_168_40_170_12_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 169 16 ]
+        bf %tmp.35 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_196_12_201_12_if_else_false;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_196_12_201_12_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_196_40_198_12_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 197 16 ]
         %tmp.36 = lgetv %icon.3;
-        symbol [ icon %tmp.36 169 16 20 ];
-        symbol [ setColor %tmp.37 169 21 29 ];
+        symbol [ icon %tmp.36 197 16 20 ];
+        symbol [ setColor %tmp.37 197 21 29 ];
         %tmp.37 = getv function %tmp.36 :setColor;
         %tmp.38 = lgetv %activeColor;
-        symbol [ activeColor %tmp.38 169 30 41 ];
+        symbol [ activeColor %tmp.38 197 30 41 ];
         invoke %tmp.36 %tmp.37(%tmp.38);
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_168_40_170_12_stop:
-        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_168_12_173_12_if_end;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_168_12_173_12_if_else_false:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_171_17_173_12_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 172 16 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_196_40_198_12_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_196_12_201_12_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_196_12_201_12_if_else_false:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_199_17_201_12_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 200 16 ]
         %tmp.39 = lgetv %icon.3;
-        symbol [ icon %tmp.39 172 16 20 ];
-        symbol [ setColor %tmp.40 172 21 29 ];
+        symbol [ icon %tmp.39 200 16 20 ];
+        symbol [ setColor %tmp.40 200 21 29 ];
         %tmp.40 = getv function %tmp.39 :setColor;
-        symbol [ Graphics %tmp.41 172 30 38 ];
+        symbol [ Graphics %tmp.41 200 30 38 ];
         %tmp.41 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.42 172 39 50 ];
+        symbol [ COLOR_WHITE %tmp.42 200 39 50 ];
         %tmp.42 = getv %tmp.41 :COLOR_WHITE;
         invoke %tmp.39 %tmp.40(%tmp.42);
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_171_17_173_12_stop:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_168_12_173_12_if_end:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 175 12 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_199_17_201_12_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_196_12_201_12_if_end:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 203 12 ]
         %tmp.43 = lgetv %icon.3;
-        symbol [ icon %tmp.43 175 12 16 ];
-        symbol [ setText %tmp.44 175 17 24 ];
+        symbol [ icon %tmp.43 203 12 16 ];
+        symbol [ setText %tmp.44 203 17 24 ];
         %tmp.44 = getv function %tmp.43 :setText;
         %tmp.45 = lgetv %charNum;
-        symbol [ charNum %tmp.45 175 25 32 ];
-        symbol [ toChar %tmp.46 175 33 39 ];
+        symbol [ charNum %tmp.45 203 25 32 ];
+        symbol [ toChar %tmp.46 203 33 39 ];
         %tmp.46 = getv function %tmp.45 :toChar;
         %tmp.47 = invoke %tmp.45 %tmp.46();
-        symbol [ toString %tmp.48 175 42 50 ];
+        symbol [ toString %tmp.48 203 42 50 ];
         %tmp.48 = getv function %tmp.47 :toString;
         %tmp.49 = invoke %tmp.47 %tmp.48();
         invoke %tmp.43 %tmp.44(%tmp.49);
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_49_176_8_stop:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_8_176_8_for_incr:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 165 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_49_204_8_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_8_204_8_for_incr:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 193 ]
         %tmp.52 = lgetv %i.2;
-        symbol [ i %tmp.52 165 44 45 ];
+        symbol [ i %tmp.52 193 44 45 ];
         %tmp.53 = add %tmp.52 1;
         lputv %i.2 %tmp.53;
-        symbol [ i %i.2 165 44 45 ];
-        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_8_176_8_for_test;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_165_8_176_8_for_end:
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_161_82_178_4_stop:
+        symbol [ i %i.2 193 44 45 ];
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_8_204_8_for_test;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_193_8_204_8_for_end:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_189_82_206_4_stop:
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 180; @symbol_functiondef = [feedingAnimation,180,13,29]; @symbol_param<0> = [dc,180,30,32]; @symbol_param<0>_type<0> = [Dc,180,36,38]; ]
-    function feedingAnimation(dc as Dc) as Void {
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 208; @symbol_functiondef = [feedingAnimation,208,13,29]; ]
+    function feedingAnimation() as Void {
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_208_40_220_4_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 210 8 ]
+        %tmp.1 = true;
+        symbol [ isAnimating ? 210 8 19 ];
+        putv self :isAnimating %tmp.1;
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 211 8 ]
+        %tmp.2 = 0;
+        symbol [ currentFrame ? 211 8 20 ];
+        putv self :currentFrame %tmp.2;
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 212 8 ]
+        %tmp.3 = 0;
+        symbol [ framesDisplayed ? 212 8 23 ];
+        putv self :framesDisplayed %tmp.3;
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 215 8 ]
+        symbol [ Timer %tmp.6 215 24 29 ];
+        %tmp.6 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.7 215 30 35 ];
+        %tmp.7 = getv function ? %tmp.6 :Timer;
+        %tmp.4 = newc %tmp.7 ();
+        symbol [ animTimer ? 215 8 17 ];
+        putv self :animTimer %tmp.4;
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 216 8 ]
+        symbol [ animTimer %tmp.9 216 8 17 ];
+        %tmp.9 = getv ? :animTimer;
+        symbol [ start %tmp.10 216 18 23 ];
+        %tmp.10 = getv function %tmp.9 :start;
+        %tmp.11 = self;
+        symbol [ method %tmp.12 216 24 30 ];
+        %tmp.12 = getv function %tmp.11 :method;
+        %tmp.14 = const :onAnimationFrame;
+        symbol [ onAnimationFrame %tmp.14 216 32 48 const ];
+        %tmp.15 = invoke %tmp.11 %tmp.12(%tmp.14);
+        symbol [ FRAME_DURATION_MS %tmp.17 216 51 68 ];
+        %tmp.17 = getv ? :FRAME_DURATION_MS;
+        %tmp.18 = true;
+        invoke %tmp.9 %tmp.10(%tmp.15, %tmp.17, %tmp.18);
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 219 8 ]
+        symbol [ WatchUi %tmp.19 219 8 15 ];
+        %tmp.19 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.20 219 16 29 ];
+        %tmp.20 = getv function %tmp.19 :requestUpdate;
+        invoke %tmp.19 %tmp.20();
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_208_40_220_4_stop:
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 189; @symbol_functiondef = [onHide,189,13,19]; ]
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 223; @symbol_functiondef = [onAnimationFrame,223,13,29]; ]
+    function onAnimationFrame() as Void {
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_223_40_239_4_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 224 8 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_224_8_226_8_if_stmt:
+        symbol [ isAnimating %tmp.2 224 13 24 ];
+        %tmp.2 = getv ? :isAnimating;
+        %tmp.3 = not %tmp.2;
+        bf %tmp.3 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_224_8_226_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_224_8_226_8_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_224_26_226_8_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 225 12 ]
+        ret ?;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_224_26_226_8_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_224_8_226_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_224_8_226_8_if_end:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 229 8 ]
+        symbol [ currentFrame %tmp.5 229 24 36 ];
+        %tmp.5 = getv ? :currentFrame;
+        %tmp.6 = 1;
+        %tmp.7 = add %tmp.5 %tmp.6;
+        symbol [ animationFrames %tmp.9 229 44 59 ];
+        %tmp.9 = getv ? :animationFrames;
+        symbol [ size %tmp.10 229 60 64 ];
+        %tmp.10 = getv function %tmp.9 :size;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = mod %tmp.7 %tmp.11;
+        symbol [ currentFrame ? 229 8 20 ];
+        putv self :currentFrame %tmp.12;
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 230 8 ]
+        symbol [ framesDisplayed %tmp.15 230 8 23 ];
+        %tmp.15 = getv ? :framesDisplayed;
+        %tmp.16 = add %tmp.15 1;
+        symbol [ framesDisplayed ? 230 8 23 ];
+        putv self :framesDisplayed dup %tmp.16;
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 233 8 ]
+        symbol [ WatchUi %tmp.17 233 8 15 ];
+        %tmp.17 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.18 233 16 29 ];
+        %tmp.18 = getv function %tmp.17 :requestUpdate;
+        invoke %tmp.17 %tmp.18();
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 236 8 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_236_8_238_8_if_stmt:
+        symbol [ framesDisplayed %tmp.20 236 12 27 ];
+        %tmp.20 = getv ? :framesDisplayed;
+        symbol [ TOTAL_FRAMES %tmp.22 236 31 43 ];
+        %tmp.22 = getv ? :TOTAL_FRAMES;
+        %tmp.23 = gte %tmp.20 %tmp.22;
+        bf %tmp.23 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_236_8_238_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_236_8_238_8_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_236_45_238_8_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 237 12 ]
+        %tmp.24 = self;
+        symbol [ stopAnimation %tmp.25 237 12 25 ];
+        %tmp.25 = getv function %tmp.24 :stopAnimation;
+        invoke %tmp.24 %tmp.25();
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_236_45_238_8_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_236_8_238_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_236_8_238_8_if_end:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_223_40_239_4_stop:
+    }
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 242; @symbol_functiondef = [stopAnimation,242,21,34]; ]
+    private
+    function stopAnimation() as Void {
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_242_45_254_4_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 243 8 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_243_8_246_8_if_stmt:
+        symbol [ animTimer %tmp.2 243 12 21 ];
+        %tmp.2 = getv ? :animTimer;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_243_8_246_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_243_8_246_8_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_243_31_246_8_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 244 12 ]
+        symbol [ animTimer %tmp.6 244 12 21 ];
+        %tmp.6 = getv ? :animTimer;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ stop %tmp.8 244 22 26 ];
+        %tmp.8 = getv function %tmp.7 :stop;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 245 12 ]
+        %tmp.9 = null;
+        symbol [ animTimer ? 245 12 21 ];
+        putv self :animTimer %tmp.9;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_243_31_246_8_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_243_8_246_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_243_8_246_8_if_end:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 248 8 ]
+        %tmp.10 = false;
+        symbol [ isAnimating ? 248 8 19 ];
+        putv self :isAnimating %tmp.10;
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 249 8 ]
+        %tmp.11 = 0;
+        symbol [ currentFrame ? 249 8 20 ];
+        putv self :currentFrame %tmp.11;
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 250 8 ]
+        %tmp.12 = 0;
+        symbol [ framesDisplayed ? 250 8 23 ];
+        putv self :framesDisplayed %tmp.12;
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 253 8 ]
+        symbol [ WatchUi %tmp.13 253 8 15 ];
+        %tmp.13 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.14 253 16 29 ];
+        %tmp.14 = getv function %tmp.13 :requestUpdate;
+        invoke %tmp.13 %tmp.14();
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_242_45_254_4_stop:
+    }
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 261; @symbol_functiondef = [onHide,261,13,19]; ]
     function onHide() as Void {
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_261_30_268_4_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 263 8 ]
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_263_8_266_8_if_stmt:
+        symbol [ animTimer %tmp.2 263 12 21 ];
+        %tmp.2 = getv ? :animTimer;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_263_8_266_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_263_8_266_8_if_true:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_263_31_266_8_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 264 12 ]
+        symbol [ animTimer %tmp.6 264 12 21 ];
+        %tmp.6 = getv ? :animTimer;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ stop %tmp.8 264 22 26 ];
+        %tmp.8 = getv function %tmp.7 :stop;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 265 12 ]
+        %tmp.9 = null;
+        symbol [ animTimer ? 265 12 21 ];
+        putv self :animTimer %tmp.9;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_263_31_266_8_stop:
+        goto @_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_263_8_266_8_if_end;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_263_8_266_8_if_end:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" 267 8 ]
+        %tmp.10 = false;
+        symbol [ isAnimating ? 267 8 19 ];
+        putv self :isAnimating %tmp.10;
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiView_mc_261_30_268_4_stop:
     }
 }
 [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc"; @line = 1; ]

@@ -4,440 +4,505 @@
     <pcToLineNum>
         <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="1" lineNum="8" parent="globals/TamagotchiApp" pc="268435460" symbol="&lt;init&gt;"/>
         <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiMenuDelegate.mc" id="2" lineNum="5" parent="globals/TamagotchiMenuDelegate" pc="268435472" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="3" lineNum="168" parent="globals" pc="268435484" symbol="getApp"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="3" lineNum="169" parent="globals" pc="268435494" symbol="getApp"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="3" lineNum="182" parent="globals" pc="268435484" symbol="getApp"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="3" lineNum="183" parent="globals" pc="268435494" symbol="getApp"/>
         <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="4" lineNum="4" parent="globals/TamagotchiDelegate" pc="268435505" symbol="&lt;init&gt;"/>
         <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="4" lineNum="6" parent="globals/TamagotchiDelegate" pc="268435516" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="5" lineNum="4" parent="globals/TamagotchiView" pc="268435530" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="5" lineNum="12" parent="globals/TamagotchiView" pc="268435541" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="5" lineNum="5" parent="globals/TamagotchiView" pc="268435530" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="5" lineNum="16" parent="globals/TamagotchiView" pc="268435541" symbol="&lt;init&gt;"/>
         <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="6" lineNum="7" parent="globals/Rez" pc="268435555" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="7" lineNum="88" parent="globals/TamagotchiApp" pc="268435575" symbol="play"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="7" lineNum="89" parent="globals/TamagotchiApp" pc="268435577" symbol="play"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="7" lineNum="90" parent="globals/TamagotchiApp" pc="268435592" symbol="play"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="7" lineNum="92" parent="globals/TamagotchiApp" pc="268435612" symbol="play"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="7" lineNum="93" parent="globals/TamagotchiApp" pc="268435627" symbol="play"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="7" lineNum="95" parent="globals/TamagotchiApp" pc="268435647" symbol="play"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="7" lineNum="96" parent="globals/TamagotchiApp" pc="268435662" symbol="play"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="8" lineNum="110" parent="globals/TamagotchiApp" pc="268435683" symbol="statMinMax"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="8" lineNum="111" parent="globals/TamagotchiApp" pc="268435685" symbol="statMinMax"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="8" lineNum="112" parent="globals/TamagotchiApp" pc="268435692" symbol="statMinMax"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="8" lineNum="114" parent="globals/TamagotchiApp" pc="268435697" symbol="statMinMax"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="8" lineNum="115" parent="globals/TamagotchiApp" pc="268435705" symbol="statMinMax"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="8" lineNum="117" parent="globals/TamagotchiApp" pc="268435711" symbol="statMinMax"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="9" lineNum="67" parent="globals/TamagotchiApp" pc="268435714" symbol="incIndexAction"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="9" lineNum="68" parent="globals/TamagotchiApp" pc="268435716" symbol="incIndexAction"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="9" lineNum="69" parent="globals/TamagotchiApp" pc="268435731" symbol="incIndexAction"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="9" lineNum="70" parent="globals/TamagotchiApp" pc="268435746" symbol="incIndexAction"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="10" lineNum="63" parent="globals/TamagotchiApp" pc="268435765" symbol="getInitialView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="10" lineNum="64" parent="globals/TamagotchiApp" pc="268435767" symbol="getInitialView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="11" lineNum="99" parent="globals/TamagotchiApp" pc="268435822" symbol="sleep"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="11" lineNum="100" parent="globals/TamagotchiApp" pc="268435824" symbol="sleep"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="11" lineNum="101" parent="globals/TamagotchiApp" pc="268435839" symbol="sleep"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="11" lineNum="103" parent="globals/TamagotchiApp" pc="268435859" symbol="sleep"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="11" lineNum="104" parent="globals/TamagotchiApp" pc="268435874" symbol="sleep"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="11" lineNum="106" parent="globals/TamagotchiApp" pc="268435894" symbol="sleep"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="11" lineNum="107" parent="globals/TamagotchiApp" pc="268435909" symbol="sleep"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="12" lineNum="124" parent="globals/TamagotchiApp" pc="268435930" symbol="getEnergy"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="12" lineNum="125" parent="globals/TamagotchiApp" pc="268435932" symbol="getEnergy"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="13" lineNum="77" parent="globals/TamagotchiApp" pc="268435938" symbol="feed"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="13" lineNum="78" parent="globals/TamagotchiApp" pc="268435940" symbol="feed"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="13" lineNum="79" parent="globals/TamagotchiApp" pc="268435955" symbol="feed"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="13" lineNum="81" parent="globals/TamagotchiApp" pc="268435975" symbol="feed"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="13" lineNum="82" parent="globals/TamagotchiApp" pc="268435990" symbol="feed"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="13" lineNum="84" parent="globals/TamagotchiApp" pc="268436010" symbol="feed"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="13" lineNum="85" parent="globals/TamagotchiApp" pc="268436025" symbol="feed"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="14" lineNum="128" parent="globals/TamagotchiApp" pc="268436046" symbol="getHappiness"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="14" lineNum="129" parent="globals/TamagotchiApp" pc="268436048" symbol="getHappiness"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="21" parent="globals/TamagotchiApp" pc="268436054" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="22" parent="globals/TamagotchiApp" pc="268436057" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="25" parent="globals/TamagotchiApp" pc="268436076" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="26" parent="globals/TamagotchiApp" pc="268436082" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="27" parent="globals/TamagotchiApp" pc="268436100" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="31" parent="globals/TamagotchiApp" pc="268436104" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="32" parent="globals/TamagotchiApp" pc="268436123" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="33" parent="globals/TamagotchiApp" pc="268436142" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="36" parent="globals/TamagotchiApp" pc="268436161" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="36" parent="globals/TamagotchiApp" pc="268436167" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="37" parent="globals/TamagotchiApp" pc="268436174" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="37" parent="globals/TamagotchiApp" pc="268436180" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="38" parent="globals/TamagotchiApp" pc="268436187" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="38" parent="globals/TamagotchiApp" pc="268436193" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="41" parent="globals/TamagotchiApp" pc="268436200" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="42" parent="globals/TamagotchiApp" pc="268436212" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="44" parent="globals/TamagotchiApp" pc="268436224" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="46" parent="globals/TamagotchiApp" pc="268436241" symbol="onStart"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="16" lineNum="73" parent="globals/TamagotchiApp" pc="268436290" symbol="getIndexAction"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="16" lineNum="74" parent="globals/TamagotchiApp" pc="268436292" symbol="getIndexAction"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="132" parent="globals/TamagotchiApp" pc="268436298" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="136" parent="globals/TamagotchiApp" pc="268436301" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="137" parent="globals/TamagotchiApp" pc="268436305" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="138" parent="globals/TamagotchiApp" pc="268436309" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="139" parent="globals/TamagotchiApp" pc="268436313" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="142" parent="globals/TamagotchiApp" pc="268436319" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="143" parent="globals/TamagotchiApp" pc="268436326" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="144" parent="globals/TamagotchiApp" pc="268436344" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="145" parent="globals/TamagotchiApp" pc="268436353" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="146" parent="globals/TamagotchiApp" pc="268436362" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="147" parent="globals/TamagotchiApp" pc="268436371" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="150" parent="globals/TamagotchiApp" pc="268436375" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="151" parent="globals/TamagotchiApp" pc="268436383" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="155" parent="globals/TamagotchiApp" pc="268436390" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="156" parent="globals/TamagotchiApp" pc="268436405" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="157" parent="globals/TamagotchiApp" pc="268436430" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="158" parent="globals/TamagotchiApp" pc="268436455" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="161" parent="globals/TamagotchiApp" pc="268436480" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="162" parent="globals/TamagotchiApp" pc="268436500" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="163" parent="globals/TamagotchiApp" pc="268436520" symbol="decayTime"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="18" lineNum="120" parent="globals/TamagotchiApp" pc="268436541" symbol="getHunger"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="18" lineNum="121" parent="globals/TamagotchiApp" pc="268436543" symbol="getHunger"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="16" parent="globals/TamagotchiApp" pc="268436549" symbol="initialize"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="17" parent="globals/TamagotchiApp" pc="268436551" symbol="initialize"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="20" lineNum="50" parent="globals/TamagotchiApp" pc="268436564" symbol="onStop"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="20" lineNum="51" parent="globals/TamagotchiApp" pc="268436567" symbol="onStop"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="20" lineNum="52" parent="globals/TamagotchiApp" pc="268436579" symbol="onStop"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="20" lineNum="54" parent="globals/TamagotchiApp" pc="268436588" symbol="onStop"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="20" lineNum="55" parent="globals/TamagotchiApp" pc="268436608" symbol="onStop"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="20" lineNum="56" parent="globals/TamagotchiApp" pc="268436631" symbol="onStop"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="20" lineNum="57" parent="globals/TamagotchiApp" pc="268436654" symbol="onStop"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="20" lineNum="59" parent="globals/TamagotchiApp" pc="268436677" symbol="onStop"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiMenuDelegate.mc" id="21" lineNum="11" parent="globals/TamagotchiMenuDelegate" pc="268436726" symbol="onMenuItem"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiMenuDelegate.mc" id="21" lineNum="12" parent="globals/TamagotchiMenuDelegate" pc="268436728" symbol="onMenuItem"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiMenuDelegate.mc" id="21" lineNum="13" parent="globals/TamagotchiMenuDelegate" pc="268436739" symbol="onMenuItem"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiMenuDelegate.mc" id="22" lineNum="7" parent="globals/TamagotchiMenuDelegate" pc="268436754" symbol="initialize"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiMenuDelegate.mc" id="22" lineNum="8" parent="globals/TamagotchiMenuDelegate" pc="268436756" symbol="initialize"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="23" lineNum="17" parent="globals/TamagotchiDelegate" pc="268436769" symbol="onBack"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="23" lineNum="18" parent="globals/TamagotchiDelegate" pc="268436771" symbol="onBack"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="23" lineNum="19" parent="globals/TamagotchiDelegate" pc="268436783" symbol="onBack"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="24" lineNum="12" parent="globals/TamagotchiDelegate" pc="268436785" symbol="onMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="24" lineNum="13" parent="globals/TamagotchiDelegate" pc="268436787" symbol="onMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="24" lineNum="14" parent="globals/TamagotchiDelegate" pc="268436856" symbol="onMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="25" lineNum="8" parent="globals/TamagotchiDelegate" pc="268436858" symbol="initialize"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="25" lineNum="9" parent="globals/TamagotchiDelegate" pc="268436860" symbol="initialize"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="22" parent="globals/TamagotchiDelegate" pc="268436873" symbol="onSelect"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="23" parent="globals/TamagotchiDelegate" pc="268436876" symbol="onSelect"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="25" parent="globals/TamagotchiDelegate" pc="268436889" symbol="onSelect"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="26" parent="globals/TamagotchiDelegate" pc="268436896" symbol="onSelect"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="27" parent="globals/TamagotchiDelegate" pc="268436908" symbol="onSelect"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="30" parent="globals/TamagotchiDelegate" pc="268436922" symbol="onSelect"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="31" parent="globals/TamagotchiDelegate" pc="268436930" symbol="onSelect"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="32" parent="globals/TamagotchiDelegate" pc="268436942" symbol="onSelect"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="35" parent="globals/TamagotchiDelegate" pc="268436956" symbol="onSelect"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="36" parent="globals/TamagotchiDelegate" pc="268436964" symbol="onSelect"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="37" parent="globals/TamagotchiDelegate" pc="268436976" symbol="onSelect"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="40" parent="globals/TamagotchiDelegate" pc="268436990" symbol="onSelect"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="27" lineNum="121" parent="globals/TamagotchiView" pc="268436992" symbol="hungerStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="27" lineNum="122" parent="globals/TamagotchiView" pc="268436995" symbol="hungerStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="27" lineNum="124" parent="globals/TamagotchiView" pc="268437015" symbol="hungerStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="27" lineNum="125" parent="globals/TamagotchiView" pc="268437022" symbol="hungerStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="27" lineNum="126" parent="globals/TamagotchiView" pc="268437035" symbol="hungerStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="27" lineNum="128" parent="globals/TamagotchiView" pc="268437050" symbol="hungerStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="28" lineNum="26" parent="globals/TamagotchiView" pc="268437071" symbol="onShow"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="28" lineNum="27" parent="globals/TamagotchiView" pc="268437073" symbol="onShow"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="28" lineNum="28" parent="globals/TamagotchiView" pc="268437111" symbol="onShow"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="28" lineNum="29" parent="globals/TamagotchiView" pc="268437149" symbol="onShow"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="28" lineNum="30" parent="globals/TamagotchiView" pc="268437187" symbol="onShow"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="28" lineNum="31" parent="globals/TamagotchiView" pc="268437225" symbol="onShow"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="28" lineNum="32" parent="globals/TamagotchiView" pc="268437263" symbol="onShow"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="29" lineNum="131" parent="globals/TamagotchiView" pc="268437302" symbol="energyStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="29" lineNum="132" parent="globals/TamagotchiView" pc="268437305" symbol="energyStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="29" lineNum="134" parent="globals/TamagotchiView" pc="268437325" symbol="energyStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="29" lineNum="136" parent="globals/TamagotchiView" pc="268437332" symbol="energyStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="29" lineNum="138" parent="globals/TamagotchiView" pc="268437347" symbol="energyStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="29" lineNum="140" parent="globals/TamagotchiView" pc="268437360" symbol="energyStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="30" lineNum="19" parent="globals/TamagotchiView" pc="268437381" symbol="onLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="30" lineNum="20" parent="globals/TamagotchiView" pc="268437383" symbol="onLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="88" parent="globals/TamagotchiView" pc="268437417" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="89" parent="globals/TamagotchiView" pc="268437420" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="90" parent="globals/TamagotchiView" pc="268437434" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="91" parent="globals/TamagotchiView" pc="268437441" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="93" parent="globals/TamagotchiView" pc="268437448" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="94" parent="globals/TamagotchiView" pc="268437464" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="95" parent="globals/TamagotchiView" pc="268437474" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="98" parent="globals/TamagotchiView" pc="268437484" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="99" parent="globals/TamagotchiView" pc="268437492" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="100" parent="globals/TamagotchiView" pc="268437509" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="101" parent="globals/TamagotchiView" pc="268437533" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="103" parent="globals/TamagotchiView" pc="268437549" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="107" parent="globals/TamagotchiView" pc="268437566" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="116" parent="globals/TamagotchiView" pc="268437602" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="117" parent="globals/TamagotchiView" pc="268437617" symbol="actionMenu"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="154" parent="globals/TamagotchiView" pc="268437632" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="156" parent="globals/TamagotchiView" pc="268437635" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="158" parent="globals/TamagotchiView" pc="268437642" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="159" parent="globals/TamagotchiView" pc="268437658" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="161" parent="globals/TamagotchiView" pc="268437678" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="162" parent="globals/TamagotchiView" pc="268437689" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="165" parent="globals/TamagotchiView" pc="268437704" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="168" parent="globals/TamagotchiView" pc="268437719" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="57" parent="globals/TamagotchiView" pc="268437753" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="58" parent="globals/TamagotchiView" pc="268437756" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="59" parent="globals/TamagotchiView" pc="268437769" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="60" parent="globals/TamagotchiView" pc="268437782" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="65" parent="globals/TamagotchiView" pc="268437795" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="66" parent="globals/TamagotchiView" pc="268437803" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="70" parent="globals/TamagotchiView" pc="268437812" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="71" parent="globals/TamagotchiView" pc="268437820" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="75" parent="globals/TamagotchiView" pc="268437829" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="76" parent="globals/TamagotchiView" pc="268437837" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="80" parent="globals/TamagotchiView" pc="268437846" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="81" parent="globals/TamagotchiView" pc="268437862" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="85" parent="globals/TamagotchiView" pc="268437871" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="34" lineNum="51" parent="globals/TamagotchiView" pc="268437877" symbol="petDraw"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="34" lineNum="52" parent="globals/TamagotchiView" pc="268437880" symbol="petDraw"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="34" lineNum="53" parent="globals/TamagotchiView" pc="268437888" symbol="petDraw"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="35" lineNum="14" parent="globals/TamagotchiView" pc="268437917" symbol="initialize"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="35" lineNum="15" parent="globals/TamagotchiView" pc="268437919" symbol="initialize"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="37" lineNum="143" parent="globals/TamagotchiView" pc="268437932" symbol="happinessStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="37" lineNum="144" parent="globals/TamagotchiView" pc="268437935" symbol="happinessStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="37" lineNum="145" parent="globals/TamagotchiView" pc="268437955" symbol="happinessStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="37" lineNum="147" parent="globals/TamagotchiView" pc="268437970" symbol="happinessStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="37" lineNum="149" parent="globals/TamagotchiView" pc="268437977" symbol="happinessStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="37" lineNum="151" parent="globals/TamagotchiView" pc="268437990" symbol="happinessStatView"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="36" parent="globals/TamagotchiView" pc="268438010" symbol="onUpdate"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="38" parent="globals/TamagotchiView" pc="268438013" symbol="onUpdate"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="40" parent="globals/TamagotchiView" pc="268438029" symbol="onUpdate"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="41" parent="globals/TamagotchiView" pc="268438038" symbol="onUpdate"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="43" parent="globals/TamagotchiView" pc="268438047" symbol="onUpdate"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="44" parent="globals/TamagotchiView" pc="268438062" symbol="onUpdate"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="45" parent="globals/TamagotchiView" pc="268438077" symbol="onUpdate"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="46" parent="globals/TamagotchiView" pc="268438088" symbol="onUpdate"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="47" parent="globals/TamagotchiView" pc="268438099" symbol="onUpdate"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="23" parent="globals/Rez/Layouts" pc="268438111" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="24" parent="globals/Rez/Layouts" pc="268438122" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="25" parent="globals/Rez/Layouts" pc="268438155" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="26" parent="globals/Rez/Layouts" pc="268438188" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="28" parent="globals/Rez/Layouts" pc="268438265" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="30" parent="globals/Rez/Layouts" pc="268438343" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="32" parent="globals/Rez/Layouts" pc="268438421" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="34" parent="globals/Rez/Layouts" pc="268438499" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="36" parent="globals/Rez/Layouts" pc="268438577" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="38" parent="globals/Rez/Layouts" pc="268438655" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="40" parent="globals/Rez/Layouts" pc="268438733" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="42" parent="globals/Rez/Layouts" pc="268438811" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="44" parent="globals/Rez/Layouts" pc="268438889" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="46" parent="globals/Rez/Layouts" pc="268438967" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="48" parent="globals/Rez/Layouts" pc="268439045" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="50" parent="globals/Rez/Layouts" pc="268439123" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="52" parent="globals/Rez/Layouts" pc="268439201" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="54" parent="globals/Rez/Layouts" pc="268439279" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="56" parent="globals/Rez/Layouts" pc="268439357" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="58" parent="globals/Rez/Layouts" pc="268439435" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="60" parent="globals/Rez/Layouts" pc="268439513" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="62" parent="globals/Rez/Layouts" pc="268439591" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="39" lineNum="64" parent="globals/Rez/Layouts" pc="268439669" symbol="MainLayout"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="40" lineNum="69" parent="globals/Rez/Menus/MainMenu" pc="268439769" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="41" lineNum="70" parent="globals/Rez/Menus/MainMenu" pc="268439781" symbol="initialize"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="41" lineNum="71" parent="globals/Rez/Menus/MainMenu" pc="268439783" symbol="initialize"/>
-        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="41" lineNum="72" parent="globals/Rez/Menus/MainMenu" pc="268439795" symbol="initialize"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="7" lineNum="90" parent="globals/TamagotchiApp" pc="268435575" symbol="play"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="7" lineNum="91" parent="globals/TamagotchiApp" pc="268435577" symbol="play"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="7" lineNum="92" parent="globals/TamagotchiApp" pc="268435592" symbol="play"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="7" lineNum="94" parent="globals/TamagotchiApp" pc="268435612" symbol="play"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="7" lineNum="95" parent="globals/TamagotchiApp" pc="268435627" symbol="play"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="7" lineNum="97" parent="globals/TamagotchiApp" pc="268435647" symbol="play"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="7" lineNum="98" parent="globals/TamagotchiApp" pc="268435662" symbol="play"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="8" lineNum="112" parent="globals/TamagotchiApp" pc="268435683" symbol="statMinMax"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="8" lineNum="113" parent="globals/TamagotchiApp" pc="268435685" symbol="statMinMax"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="8" lineNum="114" parent="globals/TamagotchiApp" pc="268435692" symbol="statMinMax"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="8" lineNum="116" parent="globals/TamagotchiApp" pc="268435697" symbol="statMinMax"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="8" lineNum="117" parent="globals/TamagotchiApp" pc="268435705" symbol="statMinMax"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="8" lineNum="119" parent="globals/TamagotchiApp" pc="268435711" symbol="statMinMax"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="9" lineNum="69" parent="globals/TamagotchiApp" pc="268435714" symbol="incIndexAction"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="9" lineNum="70" parent="globals/TamagotchiApp" pc="268435716" symbol="incIndexAction"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="9" lineNum="71" parent="globals/TamagotchiApp" pc="268435731" symbol="incIndexAction"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="9" lineNum="72" parent="globals/TamagotchiApp" pc="268435746" symbol="incIndexAction"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="10" lineNum="65" parent="globals/TamagotchiApp" pc="268435765" symbol="getInitialView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="10" lineNum="66" parent="globals/TamagotchiApp" pc="268435767" symbol="getInitialView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="11" lineNum="169" parent="globals/TamagotchiApp" pc="268435822" symbol="startFeedAnimation"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="11" lineNum="170" parent="globals/TamagotchiApp" pc="268435824" symbol="startFeedAnimation"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="12" lineNum="174" parent="globals/TamagotchiApp" pc="268435833" symbol="checkAndClearAnimationFlag"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="12" lineNum="175" parent="globals/TamagotchiApp" pc="268435836" symbol="checkAndClearAnimationFlag"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="12" lineNum="176" parent="globals/TamagotchiApp" pc="268435843" symbol="checkAndClearAnimationFlag"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="12" lineNum="177" parent="globals/TamagotchiApp" pc="268435851" symbol="checkAndClearAnimationFlag"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="13" lineNum="101" parent="globals/TamagotchiApp" pc="268435854" symbol="sleep"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="13" lineNum="102" parent="globals/TamagotchiApp" pc="268435856" symbol="sleep"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="13" lineNum="103" parent="globals/TamagotchiApp" pc="268435871" symbol="sleep"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="13" lineNum="105" parent="globals/TamagotchiApp" pc="268435891" symbol="sleep"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="13" lineNum="106" parent="globals/TamagotchiApp" pc="268435906" symbol="sleep"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="13" lineNum="108" parent="globals/TamagotchiApp" pc="268435926" symbol="sleep"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="13" lineNum="109" parent="globals/TamagotchiApp" pc="268435941" symbol="sleep"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="14" lineNum="126" parent="globals/TamagotchiApp" pc="268435962" symbol="getEnergy"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="14" lineNum="127" parent="globals/TamagotchiApp" pc="268435964" symbol="getEnergy"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="79" parent="globals/TamagotchiApp" pc="268435970" symbol="feed"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="80" parent="globals/TamagotchiApp" pc="268435972" symbol="feed"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="81" parent="globals/TamagotchiApp" pc="268435987" symbol="feed"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="83" parent="globals/TamagotchiApp" pc="268436007" symbol="feed"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="84" parent="globals/TamagotchiApp" pc="268436022" symbol="feed"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="86" parent="globals/TamagotchiApp" pc="268436042" symbol="feed"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="15" lineNum="87" parent="globals/TamagotchiApp" pc="268436057" symbol="feed"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="16" lineNum="130" parent="globals/TamagotchiApp" pc="268436078" symbol="getHappiness"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="16" lineNum="131" parent="globals/TamagotchiApp" pc="268436080" symbol="getHappiness"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="23" parent="globals/TamagotchiApp" pc="268436086" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="24" parent="globals/TamagotchiApp" pc="268436089" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="27" parent="globals/TamagotchiApp" pc="268436108" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="28" parent="globals/TamagotchiApp" pc="268436114" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="29" parent="globals/TamagotchiApp" pc="268436132" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="33" parent="globals/TamagotchiApp" pc="268436136" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="34" parent="globals/TamagotchiApp" pc="268436155" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="35" parent="globals/TamagotchiApp" pc="268436174" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="38" parent="globals/TamagotchiApp" pc="268436193" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="38" parent="globals/TamagotchiApp" pc="268436199" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="39" parent="globals/TamagotchiApp" pc="268436206" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="39" parent="globals/TamagotchiApp" pc="268436212" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="40" parent="globals/TamagotchiApp" pc="268436219" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="40" parent="globals/TamagotchiApp" pc="268436225" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="43" parent="globals/TamagotchiApp" pc="268436232" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="44" parent="globals/TamagotchiApp" pc="268436244" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="46" parent="globals/TamagotchiApp" pc="268436256" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="17" lineNum="48" parent="globals/TamagotchiApp" pc="268436273" symbol="onStart"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="18" lineNum="75" parent="globals/TamagotchiApp" pc="268436322" symbol="getIndexAction"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="18" lineNum="76" parent="globals/TamagotchiApp" pc="268436324" symbol="getIndexAction"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="134" parent="globals/TamagotchiApp" pc="268436330" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="138" parent="globals/TamagotchiApp" pc="268436333" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="139" parent="globals/TamagotchiApp" pc="268436337" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="140" parent="globals/TamagotchiApp" pc="268436341" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="141" parent="globals/TamagotchiApp" pc="268436345" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="144" parent="globals/TamagotchiApp" pc="268436351" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="145" parent="globals/TamagotchiApp" pc="268436358" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="146" parent="globals/TamagotchiApp" pc="268436376" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="147" parent="globals/TamagotchiApp" pc="268436385" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="148" parent="globals/TamagotchiApp" pc="268436394" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="149" parent="globals/TamagotchiApp" pc="268436403" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="152" parent="globals/TamagotchiApp" pc="268436407" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="153" parent="globals/TamagotchiApp" pc="268436415" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="157" parent="globals/TamagotchiApp" pc="268436422" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="158" parent="globals/TamagotchiApp" pc="268436437" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="159" parent="globals/TamagotchiApp" pc="268436462" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="160" parent="globals/TamagotchiApp" pc="268436487" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="163" parent="globals/TamagotchiApp" pc="268436512" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="164" parent="globals/TamagotchiApp" pc="268436532" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="19" lineNum="165" parent="globals/TamagotchiApp" pc="268436552" symbol="decayTime"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="20" lineNum="122" parent="globals/TamagotchiApp" pc="268436573" symbol="getHunger"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="20" lineNum="123" parent="globals/TamagotchiApp" pc="268436575" symbol="getHunger"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="21" lineNum="18" parent="globals/TamagotchiApp" pc="268436581" symbol="initialize"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="21" lineNum="19" parent="globals/TamagotchiApp" pc="268436583" symbol="initialize"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="22" lineNum="52" parent="globals/TamagotchiApp" pc="268436596" symbol="onStop"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="22" lineNum="53" parent="globals/TamagotchiApp" pc="268436599" symbol="onStop"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="22" lineNum="54" parent="globals/TamagotchiApp" pc="268436611" symbol="onStop"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="22" lineNum="56" parent="globals/TamagotchiApp" pc="268436620" symbol="onStop"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="22" lineNum="57" parent="globals/TamagotchiApp" pc="268436640" symbol="onStop"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="22" lineNum="58" parent="globals/TamagotchiApp" pc="268436663" symbol="onStop"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="22" lineNum="59" parent="globals/TamagotchiApp" pc="268436686" symbol="onStop"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" id="22" lineNum="61" parent="globals/TamagotchiApp" pc="268436709" symbol="onStop"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiMenuDelegate.mc" id="23" lineNum="11" parent="globals/TamagotchiMenuDelegate" pc="268436758" symbol="onMenuItem"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiMenuDelegate.mc" id="23" lineNum="12" parent="globals/TamagotchiMenuDelegate" pc="268436760" symbol="onMenuItem"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiMenuDelegate.mc" id="23" lineNum="13" parent="globals/TamagotchiMenuDelegate" pc="268436771" symbol="onMenuItem"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiMenuDelegate.mc" id="24" lineNum="7" parent="globals/TamagotchiMenuDelegate" pc="268436786" symbol="initialize"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiMenuDelegate.mc" id="24" lineNum="8" parent="globals/TamagotchiMenuDelegate" pc="268436788" symbol="initialize"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="25" lineNum="17" parent="globals/TamagotchiDelegate" pc="268436801" symbol="onBack"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="25" lineNum="18" parent="globals/TamagotchiDelegate" pc="268436803" symbol="onBack"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="25" lineNum="19" parent="globals/TamagotchiDelegate" pc="268436815" symbol="onBack"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="12" parent="globals/TamagotchiDelegate" pc="268436817" symbol="onMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="13" parent="globals/TamagotchiDelegate" pc="268436819" symbol="onMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="26" lineNum="14" parent="globals/TamagotchiDelegate" pc="268436888" symbol="onMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="27" lineNum="8" parent="globals/TamagotchiDelegate" pc="268436890" symbol="initialize"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="27" lineNum="9" parent="globals/TamagotchiDelegate" pc="268436892" symbol="initialize"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="28" lineNum="22" parent="globals/TamagotchiDelegate" pc="268436905" symbol="onSelect"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="28" lineNum="23" parent="globals/TamagotchiDelegate" pc="268436908" symbol="onSelect"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="28" lineNum="25" parent="globals/TamagotchiDelegate" pc="268436921" symbol="onSelect"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="28" lineNum="26" parent="globals/TamagotchiDelegate" pc="268436928" symbol="onSelect"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="28" lineNum="27" parent="globals/TamagotchiDelegate" pc="268436940" symbol="onSelect"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="28" lineNum="28" parent="globals/TamagotchiDelegate" pc="268436952" symbol="onSelect"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="28" lineNum="31" parent="globals/TamagotchiDelegate" pc="268436966" symbol="onSelect"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="28" lineNum="32" parent="globals/TamagotchiDelegate" pc="268436974" symbol="onSelect"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="28" lineNum="33" parent="globals/TamagotchiDelegate" pc="268436986" symbol="onSelect"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="28" lineNum="36" parent="globals/TamagotchiDelegate" pc="268437000" symbol="onSelect"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="28" lineNum="37" parent="globals/TamagotchiDelegate" pc="268437008" symbol="onSelect"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="28" lineNum="38" parent="globals/TamagotchiDelegate" pc="268437020" symbol="onSelect"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiDelegate.mc" id="28" lineNum="41" parent="globals/TamagotchiDelegate" pc="268437034" symbol="onSelect"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="29" lineNum="156" parent="globals/TamagotchiView" pc="268437036" symbol="hungerStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="29" lineNum="157" parent="globals/TamagotchiView" pc="268437039" symbol="hungerStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="29" lineNum="159" parent="globals/TamagotchiView" pc="268437059" symbol="hungerStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="29" lineNum="160" parent="globals/TamagotchiView" pc="268437066" symbol="hungerStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="29" lineNum="161" parent="globals/TamagotchiView" pc="268437079" symbol="hungerStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="29" lineNum="163" parent="globals/TamagotchiView" pc="268437094" symbol="hungerStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="30" lineNum="166" parent="globals/TamagotchiView" pc="268437115" symbol="energyStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="30" lineNum="167" parent="globals/TamagotchiView" pc="268437118" symbol="energyStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="30" lineNum="169" parent="globals/TamagotchiView" pc="268437138" symbol="energyStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="30" lineNum="171" parent="globals/TamagotchiView" pc="268437145" symbol="energyStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="30" lineNum="173" parent="globals/TamagotchiView" pc="268437160" symbol="energyStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="30" lineNum="175" parent="globals/TamagotchiView" pc="268437173" symbol="energyStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="208" parent="globals/TamagotchiView" pc="268437194" symbol="feedingAnimation"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="210" parent="globals/TamagotchiView" pc="268437196" symbol="feedingAnimation"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="211" parent="globals/TamagotchiView" pc="268437204" symbol="feedingAnimation"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="212" parent="globals/TamagotchiView" pc="268437212" symbol="feedingAnimation"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="215" parent="globals/TamagotchiView" pc="268437220" symbol="feedingAnimation"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="216" parent="globals/TamagotchiView" pc="268437249" symbol="feedingAnimation"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="31" lineNum="219" parent="globals/TamagotchiView" pc="268437280" symbol="feedingAnimation"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="92" parent="globals/TamagotchiView" pc="268437292" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="93" parent="globals/TamagotchiView" pc="268437295" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="94" parent="globals/TamagotchiView" pc="268437308" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="95" parent="globals/TamagotchiView" pc="268437321" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="100" parent="globals/TamagotchiView" pc="268437334" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="101" parent="globals/TamagotchiView" pc="268437342" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="105" parent="globals/TamagotchiView" pc="268437351" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="106" parent="globals/TamagotchiView" pc="268437359" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="110" parent="globals/TamagotchiView" pc="268437368" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="111" parent="globals/TamagotchiView" pc="268437376" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="115" parent="globals/TamagotchiView" pc="268437385" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="116" parent="globals/TamagotchiView" pc="268437401" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="32" lineNum="120" parent="globals/TamagotchiView" pc="268437410" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="78" parent="globals/TamagotchiView" pc="268437416" symbol="petDraw"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="82" parent="globals/TamagotchiView" pc="268437419" symbol="petDraw"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="83" parent="globals/TamagotchiView" pc="268437436" symbol="petDraw"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="85" parent="globals/TamagotchiView" pc="268437452" symbol="petDraw"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="33" lineNum="88" parent="globals/TamagotchiView" pc="268437460" symbol="petDraw"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="34" lineNum="261" parent="globals/TamagotchiView" pc="268437489" symbol="onHide"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="34" lineNum="263" parent="globals/TamagotchiView" pc="268437491" symbol="onHide"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="34" lineNum="264" parent="globals/TamagotchiView" pc="268437500" symbol="onHide"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="34" lineNum="265" parent="globals/TamagotchiView" pc="268437512" symbol="onHide"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="34" lineNum="267" parent="globals/TamagotchiView" pc="268437523" symbol="onHide"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="35" lineNum="178" parent="globals/TamagotchiView" pc="268437532" symbol="happinessStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="35" lineNum="179" parent="globals/TamagotchiView" pc="268437535" symbol="happinessStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="35" lineNum="180" parent="globals/TamagotchiView" pc="268437555" symbol="happinessStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="35" lineNum="182" parent="globals/TamagotchiView" pc="268437570" symbol="happinessStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="35" lineNum="184" parent="globals/TamagotchiView" pc="268437577" symbol="happinessStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="35" lineNum="186" parent="globals/TamagotchiView" pc="268437590" symbol="happinessStatView"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="36" lineNum="242" parent="globals/TamagotchiView" pc="268437610" symbol="&lt;globals/TamagotchiView/&lt;&gt;stopAnimation&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="36" lineNum="243" parent="globals/TamagotchiView" pc="268437612" symbol="&lt;globals/TamagotchiView/&lt;&gt;stopAnimation&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="36" lineNum="244" parent="globals/TamagotchiView" pc="268437621" symbol="&lt;globals/TamagotchiView/&lt;&gt;stopAnimation&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="36" lineNum="245" parent="globals/TamagotchiView" pc="268437633" symbol="&lt;globals/TamagotchiView/&lt;&gt;stopAnimation&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="36" lineNum="248" parent="globals/TamagotchiView" pc="268437644" symbol="&lt;globals/TamagotchiView/&lt;&gt;stopAnimation&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="36" lineNum="249" parent="globals/TamagotchiView" pc="268437652" symbol="&lt;globals/TamagotchiView/&lt;&gt;stopAnimation&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="36" lineNum="250" parent="globals/TamagotchiView" pc="268437660" symbol="&lt;globals/TamagotchiView/&lt;&gt;stopAnimation&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="36" lineNum="253" parent="globals/TamagotchiView" pc="268437668" symbol="&lt;globals/TamagotchiView/&lt;&gt;stopAnimation&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="37" lineNum="223" parent="globals/TamagotchiView" pc="268437680" symbol="onAnimationFrame"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="37" lineNum="224" parent="globals/TamagotchiView" pc="268437682" symbol="onAnimationFrame"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="37" lineNum="225" parent="globals/TamagotchiView" pc="268437691" symbol="onAnimationFrame"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="37" lineNum="229" parent="globals/TamagotchiView" pc="268437695" symbol="onAnimationFrame"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="37" lineNum="230" parent="globals/TamagotchiView" pc="268437722" symbol="onAnimationFrame"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="37" lineNum="233" parent="globals/TamagotchiView" pc="268437737" symbol="onAnimationFrame"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="37" lineNum="236" parent="globals/TamagotchiView" pc="268437748" symbol="onAnimationFrame"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="37" lineNum="237" parent="globals/TamagotchiView" pc="268437759" symbol="onAnimationFrame"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="41" parent="globals/TamagotchiView" pc="268437770" symbol="onShow"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="42" parent="globals/TamagotchiView" pc="268437772" symbol="onShow"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="43" parent="globals/TamagotchiView" pc="268437810" symbol="onShow"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="44" parent="globals/TamagotchiView" pc="268437848" symbol="onShow"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="45" parent="globals/TamagotchiView" pc="268437886" symbol="onShow"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="46" parent="globals/TamagotchiView" pc="268437924" symbol="onShow"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="47" parent="globals/TamagotchiView" pc="268437962" symbol="onShow"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="49" parent="globals/TamagotchiView" pc="268438000" symbol="onShow"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="50" parent="globals/TamagotchiView" pc="268438038" symbol="onShow"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="51" parent="globals/TamagotchiView" pc="268438076" symbol="onShow"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="38" lineNum="54" parent="globals/TamagotchiView" pc="268438114" symbol="onShow"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="39" lineNum="34" parent="globals/TamagotchiView" pc="268438150" symbol="onLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="39" lineNum="35" parent="globals/TamagotchiView" pc="268438152" symbol="onLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="123" parent="globals/TamagotchiView" pc="268438186" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="124" parent="globals/TamagotchiView" pc="268438189" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="125" parent="globals/TamagotchiView" pc="268438203" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="126" parent="globals/TamagotchiView" pc="268438210" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="128" parent="globals/TamagotchiView" pc="268438217" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="129" parent="globals/TamagotchiView" pc="268438233" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="130" parent="globals/TamagotchiView" pc="268438243" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="133" parent="globals/TamagotchiView" pc="268438253" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="134" parent="globals/TamagotchiView" pc="268438261" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="135" parent="globals/TamagotchiView" pc="268438278" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="136" parent="globals/TamagotchiView" pc="268438302" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="138" parent="globals/TamagotchiView" pc="268438318" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="142" parent="globals/TamagotchiView" pc="268438335" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="151" parent="globals/TamagotchiView" pc="268438371" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="40" lineNum="152" parent="globals/TamagotchiView" pc="268438386" symbol="actionMenu"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="41" lineNum="189" parent="globals/TamagotchiView" pc="268438401" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="41" lineNum="191" parent="globals/TamagotchiView" pc="268438404" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="41" lineNum="193" parent="globals/TamagotchiView" pc="268438411" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="41" lineNum="194" parent="globals/TamagotchiView" pc="268438427" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="41" lineNum="196" parent="globals/TamagotchiView" pc="268438447" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="41" lineNum="197" parent="globals/TamagotchiView" pc="268438458" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="41" lineNum="200" parent="globals/TamagotchiView" pc="268438473" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="41" lineNum="203" parent="globals/TamagotchiView" pc="268438488" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="42" lineNum="29" parent="globals/TamagotchiView" pc="268438522" symbol="initialize"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="42" lineNum="30" parent="globals/TamagotchiView" pc="268438524" symbol="initialize"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="43" lineNum="58" parent="globals/TamagotchiView" pc="268438537" symbol="onUpdate"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="43" lineNum="60" parent="globals/TamagotchiView" pc="268438540" symbol="onUpdate"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="43" lineNum="61" parent="globals/TamagotchiView" pc="268438554" symbol="onUpdate"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="43" lineNum="65" parent="globals/TamagotchiView" pc="268438564" symbol="onUpdate"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="43" lineNum="67" parent="globals/TamagotchiView" pc="268438580" symbol="onUpdate"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="43" lineNum="68" parent="globals/TamagotchiView" pc="268438589" symbol="onUpdate"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="43" lineNum="70" parent="globals/TamagotchiView" pc="268438598" symbol="onUpdate"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="43" lineNum="71" parent="globals/TamagotchiView" pc="268438613" symbol="onUpdate"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="43" lineNum="72" parent="globals/TamagotchiView" pc="268438628" symbol="onUpdate"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="43" lineNum="73" parent="globals/TamagotchiView" pc="268438639" symbol="onUpdate"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiView.mc" id="43" lineNum="74" parent="globals/TamagotchiView" pc="268438650" symbol="onUpdate"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="26" parent="globals/Rez/Layouts" pc="268438662" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="27" parent="globals/Rez/Layouts" pc="268438673" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="28" parent="globals/Rez/Layouts" pc="268438706" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="29" parent="globals/Rez/Layouts" pc="268438739" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="31" parent="globals/Rez/Layouts" pc="268438816" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="33" parent="globals/Rez/Layouts" pc="268438894" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="35" parent="globals/Rez/Layouts" pc="268438972" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="37" parent="globals/Rez/Layouts" pc="268439050" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="39" parent="globals/Rez/Layouts" pc="268439128" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="41" parent="globals/Rez/Layouts" pc="268439206" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="43" parent="globals/Rez/Layouts" pc="268439284" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="45" parent="globals/Rez/Layouts" pc="268439362" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="47" parent="globals/Rez/Layouts" pc="268439440" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="49" parent="globals/Rez/Layouts" pc="268439518" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="51" parent="globals/Rez/Layouts" pc="268439596" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="53" parent="globals/Rez/Layouts" pc="268439674" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="55" parent="globals/Rez/Layouts" pc="268439752" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="57" parent="globals/Rez/Layouts" pc="268439830" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="59" parent="globals/Rez/Layouts" pc="268439908" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="61" parent="globals/Rez/Layouts" pc="268439986" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="63" parent="globals/Rez/Layouts" pc="268440064" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="65" parent="globals/Rez/Layouts" pc="268440142" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="44" lineNum="67" parent="globals/Rez/Layouts" pc="268440220" symbol="MainLayout"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="45" lineNum="72" parent="globals/Rez/Menus/MainMenu" pc="268440320" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="46" lineNum="73" parent="globals/Rez/Menus/MainMenu" pc="268440332" symbol="initialize"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="46" lineNum="74" parent="globals/Rez/Menus/MainMenu" pc="268440334" symbol="initialize"/>
+        <entry filename="/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/bin/gen/006-B3906-00/source/Rez.mcgen" id="46" lineNum="75" parent="globals/Rez/Menus/MainMenu" pc="268440346" symbol="initialize"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry id="14" method="true" symbol="feed"/>
-        <entry id="24" method="true" symbol="statMinMax"/>
+        <entry id="15" method="true" symbol="feed"/>
+        <entry id="27" method="true" symbol="statMinMax"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry id="12" method="true" symbol="decayTime"/>
+        <entry id="13" method="true" symbol="decayTime"/>
         <entry id="6" module="true" symbol="globals/Rez/Menus"/>
-        <entry id="26" method="true" symbol="actionMenu"/>
-        <entry field="true" id="19" symbol="&lt;globals/TamagotchiApp/&lt;&gt;happiness&gt;"/>
-        <entry id="48" method="true" symbol="MainLayout"/>
-        <entry id="39" method="true" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
-        <entry field="true" id="29" symbol="&lt;globals/TamagotchiView/&lt;&gt;font18&gt;"/>
-        <entry field="true" id="13" symbol="&lt;globals/TamagotchiApp/&lt;&gt;energy&gt;"/>
+        <entry id="29" method="true" symbol="actionMenu"/>
+        <entry field="true" id="20" symbol="&lt;globals/TamagotchiApp/&lt;&gt;happiness&gt;"/>
+        <entry id="65" method="true" symbol="MainLayout"/>
+        <entry id="53" method="true" symbol="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;"/>
+        <entry field="true" id="36" symbol="&lt;globals/TamagotchiView/&lt;&gt;font18&gt;"/>
+        <entry field="true" id="14" symbol="&lt;globals/TamagotchiApp/&lt;&gt;energy&gt;"/>
         <entry id="9" object="true" symbol="TamagotchiDelegate"/>
-        <entry field="true" id="50" symbol="Font18"/>
-        <entry field="true" id="47" symbol="petSleeping"/>
-        <entry id="23" method="true" symbol="sleep"/>
+        <entry field="true" id="67" symbol="Font18"/>
+        <entry field="true" id="64" symbol="petSleeping"/>
+        <entry id="25" method="true" symbol="sleep"/>
         <entry id="8390424" module="true" symbol="Storage"/>
-        <entry field="true" id="27" symbol="&lt;globals/TamagotchiView/&lt;&gt;app&gt;"/>
+        <entry field="true" id="32" symbol="&lt;globals/TamagotchiView/&lt;&gt;app&gt;"/>
+        <entry field="true" id="37" symbol="&lt;globals/TamagotchiView/&lt;&gt;framesDisplayed&gt;"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="52" symbol="AppName"/>
-        <entry field="true" id="36" symbol="&lt;globals/TamagotchiView/&lt;&gt;petPlayBitmap&gt;"/>
+        <entry id="42" method="true" symbol="onAnimationFrame"/>
+        <entry field="true" id="69" symbol="AppName"/>
+        <entry field="true" id="49" symbol="&lt;globals/TamagotchiView/&lt;&gt;petPlayBitmap&gt;"/>
         <entry id="7" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8389080" method="true" symbol="onMenu"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-        <entry id="16" method="true" symbol="getHappiness"/>
+        <entry id="17" method="true" symbol="getHappiness"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="8389081" method="true" symbol="onBack"/>
-        <entry field="true" id="51" symbol="IconSet"/>
+        <entry field="true" id="68" symbol="IconSet"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
-        <entry field="true" id="55" symbol="prompt"/>
-        <entry id="32" method="true" symbol="hungerStatView"/>
+        <entry field="true" id="72" symbol="prompt"/>
+        <entry field="true" id="33" symbol="&lt;globals/TamagotchiView/&lt;&gt;currentFrame&gt;"/>
+        <entry id="40" method="true" symbol="hungerStatView"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
-        <entry id="31" method="true" symbol="happinessStatView"/>
+        <entry id="39" method="true" symbol="happinessStatView"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry field="true" id="44" symbol="petHungry"/>
-        <entry id="56" symbol="item_1"/>
-        <entry id="41" module="true" symbol="Menus"/>
-        <entry field="true" id="25" symbol="&lt;globals/TamagotchiDelegate/&lt;&gt;app&gt;"/>
+        <entry field="true" id="61" symbol="petHungry"/>
+        <entry id="73" symbol="item_1"/>
+        <entry id="55" module="true" symbol="Menus"/>
+        <entry field="true" id="28" symbol="&lt;globals/TamagotchiDelegate/&lt;&gt;app&gt;"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="5" module="true" symbol="globals/Rez/Layouts"/>
         <entry id="8391298" method="true" symbol="play"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
         <entry field="true" id="8389063" symbol="identifier"/>
         <entry id="8389349" symbol="justification"/>
-        <entry field="true" id="35" symbol="&lt;globals/TamagotchiView/&lt;&gt;petHungryBitmap&gt;"/>
+        <entry field="true" id="48" symbol="&lt;globals/TamagotchiView/&lt;&gt;petHungryBitmap&gt;"/>
+        <entry field="true" id="46" symbol="&lt;globals/TamagotchiView/&lt;&gt;petEating3&gt;"/>
+        <entry field="true" id="45" symbol="&lt;globals/TamagotchiView/&lt;&gt;petEating2&gt;"/>
+        <entry id="12" method="true" symbol="checkAndClearAnimationFlag"/>
+        <entry field="true" id="44" symbol="&lt;globals/TamagotchiView/&lt;&gt;petEating1&gt;"/>
+        <entry id="26" method="true" symbol="startFeedAnimation"/>
         <entry id="10" object="true" symbol="TamagotchiMenuDelegate"/>
-        <entry field="true" id="22" symbol="&lt;globals/TamagotchiApp/&lt;&gt;indexAction&gt;"/>
+        <entry field="true" id="23" symbol="&lt;globals/TamagotchiApp/&lt;&gt;indexAction&gt;"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry id="49" object="true" symbol="MainMenu"/>
-        <entry id="15" method="true" symbol="getEnergy"/>
-        <entry id="18" method="true" symbol="getIndexAction"/>
-        <entry field="true" id="37" symbol="&lt;globals/TamagotchiView/&lt;&gt;petSadBitmap&gt;"/>
-        <entry field="true" id="46" symbol="petSad"/>
+        <entry id="66" object="true" symbol="MainMenu"/>
+        <entry id="16" method="true" symbol="getEnergy"/>
+        <entry id="19" method="true" symbol="getIndexAction"/>
+        <entry field="true" id="50" symbol="&lt;globals/TamagotchiView/&lt;&gt;petSadBitmap&gt;"/>
+        <entry field="true" id="63" symbol="petSad"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry field="true" id="31" symbol="&lt;globals/TamagotchiView/&lt;&gt;animationFrames&gt;"/>
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry id="21" method="true" symbol="incIndexAction"/>
-        <entry field="true" id="45" symbol="petPlay"/>
+        <entry id="22" method="true" symbol="incIndexAction"/>
+        <entry field="true" id="62" symbol="petPlay"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry id="28" method="true" symbol="energyStatView"/>
-        <entry field="true" id="42" symbol="LauncherIcon"/>
+        <entry field="true" id="30" symbol="&lt;globals/TamagotchiView/&lt;&gt;animTimer&gt;"/>
+        <entry id="34" method="true" symbol="energyStatView"/>
+        <entry field="true" id="56" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
+        <entry field="true" id="59" symbol="petEating3"/>
+        <entry field="true" id="58" symbol="petEating2"/>
+        <entry field="true" id="57" symbol="petEating1"/>
+        <entry field="true" id="41" symbol="&lt;globals/TamagotchiView/&lt;&gt;isAnimating&gt;"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
-        <entry field="true" id="43" symbol="petHappy"/>
+        <entry field="true" id="60" symbol="petHappy"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry id="30" method="true" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
+        <entry id="38" method="true" symbol="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;"/>
         <entry id="8388641" module="true" symbol="Math"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8" object="true" symbol="TamagotchiApp"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="8389109" method="true" symbol="onMenuItem"/>
-        <entry field="true" id="38" symbol="&lt;globals/TamagotchiView/&lt;&gt;petSleepingBitmap&gt;"/>
-        <entry field="true" id="34" symbol="&lt;globals/TamagotchiView/&lt;&gt;petHappyBitmap&gt;"/>
-        <entry id="40" module="true" symbol="Layouts"/>
+        <entry field="true" id="51" symbol="&lt;globals/TamagotchiView/&lt;&gt;petSleepingBitmap&gt;"/>
+        <entry field="true" id="47" symbol="&lt;globals/TamagotchiView/&lt;&gt;petHappyBitmap&gt;"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="54" module="true" symbol="Layouts"/>
         <entry id="11" object="true" symbol="TamagotchiView"/>
-        <entry field="true" id="20" symbol="&lt;globals/TamagotchiApp/&lt;&gt;hunger&gt;"/>
-        <entry id="33" method="true" symbol="petDraw"/>
+        <entry field="true" id="21" symbol="&lt;globals/TamagotchiApp/&lt;&gt;hunger&gt;"/>
+        <entry field="true" id="24" symbol="&lt;globals/TamagotchiApp/&lt;&gt;shouldStartFeedAnimation&gt;"/>
+        <entry id="35" method="true" symbol="feedingAnimation"/>
+        <entry id="43" method="true" symbol="petDraw"/>
         <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
-        <entry id="17" method="true" symbol="getHunger"/>
+        <entry id="18" method="true" symbol="getHunger"/>
         <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="52" method="true" symbol="&lt;globals/TamagotchiView/&lt;&gt;stopAnimation&gt;"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry field="true" id="54" symbol="menu_label_2"/>
-        <entry field="true" id="53" symbol="menu_label_1"/>
+        <entry field="true" id="71" symbol="menu_label_2"/>
+        <entry field="true" id="70" symbol="menu_label_1"/>
     </symbolTable>
     <localVars>
         <entry arg="true" endPc="268435713" name="stat" stackId="1" startPc="268435683"/>
-        <entry arg="true" endPc="268436289" name="state" stackId="1" startPc="268436054"/>
-        <entry endPc="268436288" name="lastExitTime" stackId="2" startPc="268436057"/>
-        <entry endPc="268436288" name="savedHunger" stackId="3" startPc="268436057"/>
-        <entry endPc="268436288" name="savedEnergy" stackId="4" startPc="268436057"/>
-        <entry endPc="268436288" name="savedHappiness" stackId="5" startPc="268436057"/>
-        <entry endPc="268436288" name="currentTime" stackId="6" startPc="268436057"/>
-        <entry endPc="268436288" name="elapsedSeconds" stackId="7" startPc="268436057"/>
-        <entry arg="true" endPc="268436540" name="elapsedSeconds" stackId="1" startPc="268436298"/>
-        <entry arg="true" endPc="268436540" name="savedHunger" stackId="2" startPc="268436298"/>
-        <entry arg="true" endPc="268436540" name="savedEnergy" stackId="3" startPc="268436298"/>
-        <entry arg="true" endPc="268436540" name="savedHappiness" stackId="4" startPc="268436298"/>
-        <entry endPc="268436539" name="HUNGER_DECAY_PER_HOUR" stackId="5" startPc="268436301"/>
-        <entry endPc="268436539" name="ENERGY_DECAY_PER_HOUR" stackId="6" startPc="268436301"/>
-        <entry endPc="268436539" name="HAPPINESS_DECAY_PER_HOUR" stackId="7" startPc="268436301"/>
-        <entry endPc="268436539" name="MAX_DECAY_SECONDS" stackId="8" startPc="268436301"/>
-        <entry endPc="268436539" name="elapsedHours" stackId="9" startPc="268436301"/>
-        <entry endPc="268436539" name="hungerDecay" stackId="10" startPc="268436301"/>
-        <entry endPc="268436539" name="energyDecay" stackId="11" startPc="268436301"/>
-        <entry endPc="268436539" name="happinessDecay" stackId="12" startPc="268436301"/>
-        <entry arg="true" endPc="268436725" name="state" stackId="1" startPc="268436564"/>
-        <entry endPc="268436724" name="currentTime" stackId="2" startPc="268436567"/>
-        <entry endPc="268436724" name="timestamp" stackId="3" startPc="268436567"/>
-        <entry arg="true" endPc="268436753" name="item" stackId="1" startPc="268436726"/>
-        <entry endPc="268436991" name="indexAction" stackId="1" startPc="268436876"/>
-        <entry arg="true" endPc="268437070" name="dc" stackId="1" startPc="268436992"/>
-        <entry endPc="268437069" name="hungerView" stackId="2" startPc="268436995"/>
-        <entry endPc="268437069" name="iconIds" stackId="3" startPc="268436995"/>
-        <entry endPc="268437069" name="hunger" stackId="4" startPc="268436995"/>
-        <entry arg="true" endPc="268437380" name="dc" stackId="1" startPc="268437302"/>
-        <entry endPc="268437379" name="energyView" stackId="2" startPc="268437305"/>
-        <entry endPc="268437379" name="iconIds" stackId="3" startPc="268437305"/>
-        <entry endPc="268437379" name="energy" stackId="4" startPc="268437305"/>
-        <entry arg="true" endPc="268437416" name="dc" stackId="1" startPc="268437381"/>
-        <entry arg="true" endPc="268437631" name="dc" stackId="1" startPc="268437417"/>
-        <entry arg="true" endPc="268437631" name="w" stackId="2" startPc="268437417"/>
-        <entry arg="true" endPc="268437631" name="h" stackId="3" startPc="268437417"/>
-        <entry endPc="268437630" name="indexAction" stackId="4" startPc="268437420"/>
-        <entry endPc="268437630" name="menuItems" stackId="5" startPc="268437420"/>
-        <entry endPc="268437630" name="positions" stackId="6" startPc="268437420"/>
-        <entry endPc="268437601" name="i" stackId="7" startPc="268437464"/>
-        <entry endPc="268437591" name="xPos" stackId="8" startPc="268437464"/>
-        <entry endPc="268437591" name="yPos" stackId="9" startPc="268437464"/>
-        <entry arg="true" endPc="268437752" name="state" stackId="1" startPc="268437632"/>
-        <entry arg="true" endPc="268437752" name="iconIds" stackId="2" startPc="268437632"/>
-        <entry arg="true" endPc="268437752" name="activeColor" stackId="3" startPc="268437632"/>
-        <entry arg="true" endPc="268437752" name="charNum" stackId="4" startPc="268437632"/>
-        <entry endPc="268437751" name="thresholds" stackId="5" startPc="268437635"/>
-        <entry endPc="268437751" name="i" stackId="6" startPc="268437658"/>
-        <entry endPc="268437741" name="icon" stackId="7" startPc="268437658"/>
-        <entry endPc="268437876" name="hunger" stackId="1" startPc="268437756"/>
-        <entry endPc="268437876" name="energy" stackId="2" startPc="268437756"/>
-        <entry endPc="268437876" name="happiness" stackId="3" startPc="268437756"/>
-        <entry arg="true" endPc="268437916" name="dc" stackId="1" startPc="268437877"/>
-        <entry arg="true" endPc="268437916" name="w" stackId="2" startPc="268437877"/>
-        <entry arg="true" endPc="268437916" name="h" stackId="3" startPc="268437877"/>
-        <entry endPc="268437915" name="currentBitmap" stackId="4" startPc="268437880"/>
-        <entry arg="true" endPc="268438009" name="dc" stackId="1" startPc="268437932"/>
-        <entry endPc="268438008" name="happinessView" stackId="2" startPc="268437935"/>
-        <entry endPc="268438008" name="iconIds" stackId="3" startPc="268437935"/>
-        <entry endPc="268438008" name="happiness" stackId="4" startPc="268437935"/>
-        <entry arg="true" endPc="268438110" name="dc" stackId="1" startPc="268438010"/>
-        <entry endPc="268438109" name="w" stackId="2" startPc="268438013"/>
-        <entry endPc="268438109" name="h" stackId="3" startPc="268438013"/>
-        <entry arg="true" endPc="268439768" name="dc" stackId="1" startPc="268438111"/>
-        <entry endPc="268439768" name="local_Rez_Fonts_IconSet" stackId="2" startPc="268438122"/>
-        <entry endPc="268439768" name="local_Rez_Fonts_Font18" stackId="3" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_Feed" stackId="4" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_Hunger" stackId="5" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_HungerIcon1" stackId="6" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_HungerIcon2" stackId="7" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_HungerIcon3" stackId="8" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_HungerIcon4" stackId="9" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_HungerIcon5" stackId="10" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_Energy" stackId="11" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_EnergyIcon1" stackId="12" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_EnergyIcon2" stackId="13" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_EnergyIcon3" stackId="14" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_EnergyIcon4" stackId="15" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_EnergyIcon5" stackId="16" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_Happiness" stackId="17" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_HappinessIcon1" stackId="18" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_HappinessIcon2" stackId="19" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_HappinessIcon3" stackId="20" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_HappinessIcon4" stackId="21" startPc="268438122"/>
-        <entry endPc="268439768" name="rez_cmp_local_text_HappinessIcon5" stackId="22" startPc="268438122"/>
+        <entry endPc="268435853" name="result" stackId="1" startPc="268435836"/>
+        <entry arg="true" endPc="268436321" name="state" stackId="1" startPc="268436086"/>
+        <entry endPc="268436320" name="lastExitTime" stackId="2" startPc="268436089"/>
+        <entry endPc="268436320" name="savedHunger" stackId="3" startPc="268436089"/>
+        <entry endPc="268436320" name="savedEnergy" stackId="4" startPc="268436089"/>
+        <entry endPc="268436320" name="savedHappiness" stackId="5" startPc="268436089"/>
+        <entry endPc="268436320" name="currentTime" stackId="6" startPc="268436089"/>
+        <entry endPc="268436320" name="elapsedSeconds" stackId="7" startPc="268436089"/>
+        <entry arg="true" endPc="268436572" name="elapsedSeconds" stackId="1" startPc="268436330"/>
+        <entry arg="true" endPc="268436572" name="savedHunger" stackId="2" startPc="268436330"/>
+        <entry arg="true" endPc="268436572" name="savedEnergy" stackId="3" startPc="268436330"/>
+        <entry arg="true" endPc="268436572" name="savedHappiness" stackId="4" startPc="268436330"/>
+        <entry endPc="268436571" name="HUNGER_DECAY_PER_HOUR" stackId="5" startPc="268436333"/>
+        <entry endPc="268436571" name="ENERGY_DECAY_PER_HOUR" stackId="6" startPc="268436333"/>
+        <entry endPc="268436571" name="HAPPINESS_DECAY_PER_HOUR" stackId="7" startPc="268436333"/>
+        <entry endPc="268436571" name="MAX_DECAY_SECONDS" stackId="8" startPc="268436333"/>
+        <entry endPc="268436571" name="elapsedHours" stackId="9" startPc="268436333"/>
+        <entry endPc="268436571" name="hungerDecay" stackId="10" startPc="268436333"/>
+        <entry endPc="268436571" name="energyDecay" stackId="11" startPc="268436333"/>
+        <entry endPc="268436571" name="happinessDecay" stackId="12" startPc="268436333"/>
+        <entry arg="true" endPc="268436757" name="state" stackId="1" startPc="268436596"/>
+        <entry endPc="268436756" name="currentTime" stackId="2" startPc="268436599"/>
+        <entry endPc="268436756" name="timestamp" stackId="3" startPc="268436599"/>
+        <entry arg="true" endPc="268436785" name="item" stackId="1" startPc="268436758"/>
+        <entry endPc="268437035" name="indexAction" stackId="1" startPc="268436908"/>
+        <entry arg="true" endPc="268437114" name="dc" stackId="1" startPc="268437036"/>
+        <entry endPc="268437113" name="hungerView" stackId="2" startPc="268437039"/>
+        <entry endPc="268437113" name="iconIds" stackId="3" startPc="268437039"/>
+        <entry endPc="268437113" name="hunger" stackId="4" startPc="268437039"/>
+        <entry arg="true" endPc="268437193" name="dc" stackId="1" startPc="268437115"/>
+        <entry endPc="268437192" name="energyView" stackId="2" startPc="268437118"/>
+        <entry endPc="268437192" name="iconIds" stackId="3" startPc="268437118"/>
+        <entry endPc="268437192" name="energy" stackId="4" startPc="268437118"/>
+        <entry endPc="268437415" name="hunger" stackId="1" startPc="268437295"/>
+        <entry endPc="268437415" name="energy" stackId="2" startPc="268437295"/>
+        <entry endPc="268437415" name="happiness" stackId="3" startPc="268437295"/>
+        <entry arg="true" endPc="268437488" name="dc" stackId="1" startPc="268437416"/>
+        <entry arg="true" endPc="268437488" name="w" stackId="2" startPc="268437416"/>
+        <entry arg="true" endPc="268437488" name="h" stackId="3" startPc="268437416"/>
+        <entry endPc="268437487" name="currentBitmap" stackId="4" startPc="268437419"/>
+        <entry arg="true" endPc="268437609" name="dc" stackId="1" startPc="268437532"/>
+        <entry endPc="268437608" name="happinessView" stackId="2" startPc="268437535"/>
+        <entry endPc="268437608" name="iconIds" stackId="3" startPc="268437535"/>
+        <entry endPc="268437608" name="happiness" stackId="4" startPc="268437535"/>
+        <entry arg="true" endPc="268438185" name="dc" stackId="1" startPc="268438150"/>
+        <entry arg="true" endPc="268438400" name="dc" stackId="1" startPc="268438186"/>
+        <entry arg="true" endPc="268438400" name="w" stackId="2" startPc="268438186"/>
+        <entry arg="true" endPc="268438400" name="h" stackId="3" startPc="268438186"/>
+        <entry endPc="268438399" name="indexAction" stackId="4" startPc="268438189"/>
+        <entry endPc="268438399" name="menuItems" stackId="5" startPc="268438189"/>
+        <entry endPc="268438399" name="positions" stackId="6" startPc="268438189"/>
+        <entry endPc="268438370" name="i" stackId="7" startPc="268438233"/>
+        <entry endPc="268438360" name="xPos" stackId="8" startPc="268438233"/>
+        <entry endPc="268438360" name="yPos" stackId="9" startPc="268438233"/>
+        <entry arg="true" endPc="268438521" name="state" stackId="1" startPc="268438401"/>
+        <entry arg="true" endPc="268438521" name="iconIds" stackId="2" startPc="268438401"/>
+        <entry arg="true" endPc="268438521" name="activeColor" stackId="3" startPc="268438401"/>
+        <entry arg="true" endPc="268438521" name="charNum" stackId="4" startPc="268438401"/>
+        <entry endPc="268438520" name="thresholds" stackId="5" startPc="268438404"/>
+        <entry endPc="268438520" name="i" stackId="6" startPc="268438427"/>
+        <entry endPc="268438510" name="icon" stackId="7" startPc="268438427"/>
+        <entry arg="true" endPc="268438661" name="dc" stackId="1" startPc="268438537"/>
+        <entry endPc="268438660" name="w" stackId="2" startPc="268438540"/>
+        <entry endPc="268438660" name="h" stackId="3" startPc="268438540"/>
+        <entry arg="true" endPc="268440319" name="dc" stackId="1" startPc="268438662"/>
+        <entry endPc="268440319" name="local_Rez_Fonts_IconSet" stackId="2" startPc="268438673"/>
+        <entry endPc="268440319" name="local_Rez_Fonts_Font18" stackId="3" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_Feed" stackId="4" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_Hunger" stackId="5" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_HungerIcon1" stackId="6" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_HungerIcon2" stackId="7" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_HungerIcon3" stackId="8" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_HungerIcon4" stackId="9" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_HungerIcon5" stackId="10" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_Energy" stackId="11" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_EnergyIcon1" stackId="12" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_EnergyIcon2" stackId="13" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_EnergyIcon3" stackId="14" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_EnergyIcon4" stackId="15" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_EnergyIcon5" stackId="16" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_Happiness" stackId="17" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_HappinessIcon1" stackId="18" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_HappinessIcon2" stackId="19" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_HappinessIcon3" stackId="20" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_HappinessIcon4" stackId="21" startPc="268438673"/>
+        <entry endPc="268440319" name="rez_cmp_local_text_HappinessIcon5" stackId="22" startPc="268438673"/>
     </localVars>
     <deviceInfo deviceVersion="90325a5ba4f163ec5ad32845d0e0beee034c6cee" partNumber="006-B3906-00"/>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
         <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="IconSet"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="petHungry"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="petHappy"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="petEating3"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="petSad"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="petEating1"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="petEating2"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
         <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="Font18"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="petPlay"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="petSleeping"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
-        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="petSad"/>
     </annotations>
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="76" parentId="" symbolId="globals" type="module"/>
         <dataEntry label="globals/TamagotchiApp" offset="161" parentId="globals" symbolId="TamagotchiApp" type="class"/>
-        <dataEntry label="globals/TamagotchiMenuDelegate" offset="358" parentId="globals" symbolId="TamagotchiMenuDelegate" type="class"/>
-        <dataEntry label="globals/TamagotchiDelegate" offset="411" parentId="globals" symbolId="TamagotchiDelegate" type="class"/>
-        <dataEntry label="globals/TamagotchiView" offset="491" parentId="globals" symbolId="TamagotchiView" type="class"/>
-        <dataEntry label="globals/Rez" offset="697" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/Rez/Drawables" offset="768" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="848" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="883" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Fonts" offset="918" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="962" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1024" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/TamagotchiMenuDelegate" offset="385" parentId="globals" symbolId="TamagotchiMenuDelegate" type="class"/>
+        <dataEntry label="globals/TamagotchiDelegate" offset="438" parentId="globals" symbolId="TamagotchiDelegate" type="class"/>
+        <dataEntry label="globals/TamagotchiView" offset="518" parentId="globals" symbolId="TamagotchiView" type="class"/>
+        <dataEntry label="globals/Rez" offset="823" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="894" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1001" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1036" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="1071" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1115" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1177" parentId="Menus" symbolId="MainMenu" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="TamagotchiApp" startPc="268435460">
@@ -471,109 +536,124 @@
         <functionEntry accessMode="public" endPc="268435821" name="getInitialView" parent="TamagotchiApp" startPc="268435765">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435929" name="sleep" parent="TamagotchiApp" startPc="268435822">
+        <functionEntry accessMode="public" endPc="268435832" name="startFeedAnimation" parent="TamagotchiApp" startPc="268435822">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435937" name="getEnergy" parent="TamagotchiApp" startPc="268435930">
+        <functionEntry accessMode="public" endPc="268435853" name="checkAndClearAnimationFlag" parent="TamagotchiApp" startPc="268435833">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436045" name="feed" parent="TamagotchiApp" startPc="268435938">
+        <functionEntry accessMode="public" endPc="268435961" name="sleep" parent="TamagotchiApp" startPc="268435854">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436053" name="getHappiness" parent="TamagotchiApp" startPc="268436046">
+        <functionEntry accessMode="public" endPc="268435969" name="getEnergy" parent="TamagotchiApp" startPc="268435962">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436289" name="onStart" parent="TamagotchiApp" startPc="268436054">
+        <functionEntry accessMode="public" endPc="268436077" name="feed" parent="TamagotchiApp" startPc="268435970">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436085" name="getHappiness" parent="TamagotchiApp" startPc="268436078">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436321" name="onStart" parent="TamagotchiApp" startPc="268436086">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436297" name="getIndexAction" parent="TamagotchiApp" startPc="268436290">
+        <functionEntry accessMode="public" endPc="268436329" name="getIndexAction" parent="TamagotchiApp" startPc="268436322">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436540" name="decayTime" parent="TamagotchiApp" startPc="268436298">
+        <functionEntry accessMode="public" endPc="268436572" name="decayTime" parent="TamagotchiApp" startPc="268436330">
             <param id="elapsedSeconds"/>
             <param id="savedHunger"/>
             <param id="savedEnergy"/>
             <param id="savedHappiness"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436548" name="getHunger" parent="TamagotchiApp" startPc="268436541">
+        <functionEntry accessMode="public" endPc="268436580" name="getHunger" parent="TamagotchiApp" startPc="268436573">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436563" name="initialize" parent="TamagotchiApp" startPc="268436549">
+        <functionEntry accessMode="public" endPc="268436595" name="initialize" parent="TamagotchiApp" startPc="268436581">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436725" name="onStop" parent="TamagotchiApp" startPc="268436564">
+        <functionEntry accessMode="public" endPc="268436757" name="onStop" parent="TamagotchiApp" startPc="268436596">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436753" name="onMenuItem" parent="TamagotchiMenuDelegate" startPc="268436726">
+        <functionEntry accessMode="public" endPc="268436785" name="onMenuItem" parent="TamagotchiMenuDelegate" startPc="268436758">
             <param id="item"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436768" name="initialize" parent="TamagotchiMenuDelegate" startPc="268436754">
+        <functionEntry accessMode="public" endPc="268436800" name="initialize" parent="TamagotchiMenuDelegate" startPc="268436786">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436784" name="onBack" parent="TamagotchiDelegate" startPc="268436769">
+        <functionEntry accessMode="public" endPc="268436816" name="onBack" parent="TamagotchiDelegate" startPc="268436801">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436857" name="onMenu" parent="TamagotchiDelegate" startPc="268436785">
+        <functionEntry accessMode="public" endPc="268436889" name="onMenu" parent="TamagotchiDelegate" startPc="268436817">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436872" name="initialize" parent="TamagotchiDelegate" startPc="268436858">
+        <functionEntry accessMode="public" endPc="268436904" name="initialize" parent="TamagotchiDelegate" startPc="268436890">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436991" name="onSelect" parent="TamagotchiDelegate" startPc="268436873">
+        <functionEntry accessMode="public" endPc="268437035" name="onSelect" parent="TamagotchiDelegate" startPc="268436905">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437070" name="hungerStatView" parent="TamagotchiView" startPc="268436992">
+        <functionEntry accessMode="public" endPc="268437114" name="hungerStatView" parent="TamagotchiView" startPc="268437036">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437301" name="onShow" parent="TamagotchiView" startPc="268437071">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437380" name="energyStatView" parent="TamagotchiView" startPc="268437302">
+        <functionEntry accessMode="public" endPc="268437193" name="energyStatView" parent="TamagotchiView" startPc="268437115">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437416" name="onLayout" parent="TamagotchiView" startPc="268437381">
-            <param id="dc"/>
+        <functionEntry accessMode="public" endPc="268437291" name="feedingAnimation" parent="TamagotchiView" startPc="268437194">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437631" name="actionMenu" parent="TamagotchiView" startPc="268437417">
+        <functionEntry accessMode="private" endPc="268437415" name="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;" parent="TamagotchiView" startPc="268437292">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437488" name="petDraw" parent="TamagotchiView" startPc="268437416">
             <param id="dc"/>
             <param id="w"/>
             <param id="h"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268437752" name="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;" parent="TamagotchiView" startPc="268437632">
+        <functionEntry accessMode="public" endPc="268437531" name="onHide" parent="TamagotchiView" startPc="268437489">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437609" name="happinessStatView" parent="TamagotchiView" startPc="268437532">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437679" name="&lt;globals/TamagotchiView/&lt;&gt;stopAnimation&gt;" parent="TamagotchiView" startPc="268437610">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437769" name="onAnimationFrame" parent="TamagotchiView" startPc="268437680">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438149" name="onShow" parent="TamagotchiView" startPc="268437770">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438185" name="onLayout" parent="TamagotchiView" startPc="268438150">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438400" name="actionMenu" parent="TamagotchiView" startPc="268438186">
+            <param id="dc"/>
+            <param id="w"/>
+            <param id="h"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438521" name="&lt;globals/TamagotchiView/&lt;&gt;updateStatView&gt;" parent="TamagotchiView" startPc="268438401">
             <param id="state"/>
             <param id="iconIds"/>
             <param id="activeColor"/>
             <param id="charNum"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268437876" name="&lt;globals/TamagotchiView/&lt;&gt;getPetStateBitmap&gt;" parent="TamagotchiView" startPc="268437753">
+        <functionEntry accessMode="public" endPc="268438536" name="initialize" parent="TamagotchiView" startPc="268438522">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437916" name="petDraw" parent="TamagotchiView" startPc="268437877">
-            <param id="dc"/>
-            <param id="w"/>
-            <param id="h"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437931" name="initialize" parent="TamagotchiView" startPc="268437917">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onHide" parent="TamagotchiView">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268438009" name="happinessStatView" parent="TamagotchiView" startPc="268437932">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268438110" name="onUpdate" parent="TamagotchiView" startPc="268438010">
+        <functionEntry accessMode="public" endPc="268438661" name="onUpdate" parent="TamagotchiView" startPc="268438537">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
@@ -592,14 +672,14 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439768" name="MainLayout" parent="Layouts" startPc="268438111">
+        <functionEntry accessMode="public" endPc="268440319" name="MainLayout" parent="Layouts" startPc="268438662">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439780" name="&lt;init&gt;" parent="MainMenu" startPc="268439769">
+        <functionEntry accessMode="public" endPc="268440331" name="&lt;init&gt;" parent="MainMenu" startPc="268440320">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439814" name="initialize" parent="MainMenu" startPc="268439781">
+        <functionEntry accessMode="public" endPc="268440365" name="initialize" parent="MainMenu" startPc="268440332">
             <documentation/>
         </functionEntry>
     </functions>
