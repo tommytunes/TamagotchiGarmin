@@ -1,5 +1,6 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
+using Toybox.Timer;
 
 class TamagotchiView extends WatchUi.View {
 
@@ -13,6 +14,8 @@ class TamagotchiView extends WatchUi.View {
     private var petEating3 as BitmapResource?;
     private var font18;
     private var app = getApp();
+    private var myCount = 0;
+    private var myTimer = new Timer.Timer();
 
     function initialize() {
         View.initialize();
@@ -52,6 +55,7 @@ class TamagotchiView extends WatchUi.View {
         hungerStatView(dc);
         energyStatView(dc);
         happinessStatView(dc);
+        feedingAnimation(dc, w, h);
 
     }
 
@@ -177,8 +181,21 @@ class TamagotchiView extends WatchUi.View {
 
     }
 
-    function feedingAnimation(dc as Dc) as Void {
-        
+    function feedingAnimation(dc as Dc, w, h) as Void {
+
+        if (app.getFeedAnimation()) {
+            myTimer.start(method(:timerCallBack), 1000, true);
+
+            if (myCount <= 20) {
+            dc.drawBitmap(w * 0.32, h * 0.4, petEating2);
+            System.println(myCount);
+            }
+            app.setFeedingAnimation(false);
+        }
+    }
+
+    function timerCallBack() {
+        myCount += 1;
     }
 
     

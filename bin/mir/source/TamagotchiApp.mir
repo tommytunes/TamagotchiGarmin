@@ -780,41 +780,47 @@ _Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiA
         putv self :happiness %tmp.65;
 _Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiApp_mc_135_80_166_4_stop:
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc"; @line = 168; @symbol_functiondef = [getFeedAnimation,168,21,37]; ]
-    private
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc"; @line = 168; @symbol_functiondef = [getFeedAnimation,168,13,29]; ]
     function getFeedAnimation() {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiApp_mc_168_40_170_4_start:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiApp_mc_168_32_170_4_start:
 [ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" 169 8 ]
         symbol [ feedAnimation %tmp.2 169 15 28 ];
         %tmp.2 = getv ? :feedAnimation;
         ret %tmp.2;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiApp_mc_168_40_170_4_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiApp_mc_168_32_170_4_stop:
     }
-    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc"; @line = 172; @symbol_functiondef = [setFeedAnimation,172,21,37]; @symbol_param<0> = [boolean,172,38,45]; @symbol_param<0>_type<0> = [Boolean,172,49,56]; ]
-    private
-    function setFeedAnimation(boolean as Boolean) {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiApp_mc_172_58_174_4_start:
+    [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc"; @line = 172; @symbol_functiondef = [setFeedingAnimation,172,13,32]; @symbol_param<0> = [boolean,172,33,40]; @symbol_param<0>_type<0> = [Boolean,172,44,51]; ]
+    function setFeedingAnimation(boolean as Boolean) {
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiApp_mc_172_53_175_4_start:
 [ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" 173 8 ]
         %tmp.1 = lgetv %boolean;
         symbol [ boolean %tmp.1 173 24 31 ];
         symbol [ feedAnimation ? 173 8 21 ];
         putv self :feedAnimation %tmp.1;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiApp_mc_172_58_174_4_stop:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" 174 8 ]
+        symbol [ System %tmp.3 174 8 14 ];
+        %tmp.3 = getv ? :System;
+        symbol [ println %tmp.4 174 15 22 ];
+        %tmp.4 = getv function %tmp.3 :println;
+        symbol [ feedAnimation %tmp.6 174 23 36 ];
+        %tmp.6 = getv ? :feedAnimation;
+        invoke %tmp.3 %tmp.4(%tmp.6);
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiApp_mc_172_53_175_4_stop:
     }
 }
-[ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc"; @line = 178; @symbol_functiondef = [getApp,178,9,15]; @symbol_return<0> = [TamagotchiApp,178,21,34]; ]
+[ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc"; @line = 179; @symbol_functiondef = [getApp,179,9,15]; @symbol_return<0> = [TamagotchiApp,179,21,34]; ]
 function getApp() as TamagotchiApp {
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiApp_mc_178_35_180_0_start:
-[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" 179 4 ]
-    symbol [ Application %tmp.1 179 11 22 ];
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiApp_mc_179_35_181_0_start:
+[ "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc" 180 4 ]
+    symbol [ Application %tmp.1 180 11 22 ];
     %tmp.1 = getm $.Toybox.Application;
-    symbol [ getApp %tmp.2 179 23 29 ];
+    symbol [ getApp %tmp.2 180 23 29 ];
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 TamagotchiApp;
-    symbol [ TamagotchiApp %tmp.4 179 35 48 ];
+    symbol [ TamagotchiApp %tmp.4 180 35 48 ];
     ret %tmp.4;
-_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiApp_mc_178_35_180_0_stop:
+_Users_thomasstaples_Documents_Garmin_Projects_Pet_Tamagotchi_source_TamagotchiApp_mc_179_35_181_0_stop:
 }
 [ @file = "/Users/thomasstaples/Documents/Garmin Projects/Pet/Tamagotchi/source/TamagotchiApp.mc"; @line = 1; ]
 <init> {

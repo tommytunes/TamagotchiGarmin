@@ -165,12 +165,13 @@ class TamagotchiApp extends Application.AppBase {
         happiness = statMinMax(savedHappiness - happinessDecay);
     }
 
-    private function getFeedAnimation() {
+    function getFeedAnimation() {
         return feedAnimation;
     }
 
-    private function setFeedAnimation(boolean as Boolean) {
+    function setFeedingAnimation(boolean as Boolean) {
         feedAnimation = boolean;
+        System.println(feedAnimation);
     }
 
 }
