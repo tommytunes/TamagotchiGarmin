@@ -14,6 +14,9 @@ module Rez {
         (:initialized) var petEating1 as ResourceId;
         (:initialized) var petEating2 as ResourceId;
         (:initialized) var petEating3 as ResourceId;
+        (:initialized) var petPlaying1 as ResourceId;
+        (:initialized) var petPlaying2 as ResourceId;
+        (:initialized) var petPlaying3 as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
 
@@ -26,43 +29,47 @@ module Rez {
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
             var local_Rez_Fonts_IconSet = (WatchUi.loadResource($.Rez.Fonts.IconSet) as Graphics.FontReference);
             var local_Rez_Fonts_Font18 = (WatchUi.loadResource($.Rez.Fonts.Font18) as Graphics.FontReference);
-            var rez_cmp_local_text_Feed = new WatchUi.Text({:identifier=>"Feed", :locX=>(260 * (25 / 100.0)), :locY=>(260 * (80 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_var_dc_getHeight = dc.getHeight();
 
-            var rez_cmp_local_text_Hunger = new WatchUi.Text({:identifier=>"Hunger", :locX=>(260 * (30 / 100.0)), :locY=>(260 * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_Font18});
+            var rez_cmp_local_var_dc_getWidth = dc.getWidth();
 
-            var rez_cmp_local_text_HungerIcon1 = new WatchUi.Text({:identifier=>"HungerIcon1", :locX=>(260 * (45 / 100.0)), :locY=>(260 * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_Feed = new WatchUi.Text({:identifier=>"Feed", :locX=>(rez_cmp_local_var_dc_getWidth * (25 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (80 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_text_HungerIcon2 = new WatchUi.Text({:identifier=>"HungerIcon2", :locX=>(260 * (52 / 100.0)), :locY=>(260 * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_Hunger = new WatchUi.Text({:identifier=>"Hunger", :locX=>(rez_cmp_local_var_dc_getWidth * (30 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_Font18});
 
-            var rez_cmp_local_text_HungerIcon3 = new WatchUi.Text({:identifier=>"HungerIcon3", :locX=>(260 * (59 / 100.0)), :locY=>(260 * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_HungerIcon1 = new WatchUi.Text({:identifier=>"HungerIcon1", :locX=>(rez_cmp_local_var_dc_getWidth * (45 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
 
-            var rez_cmp_local_text_HungerIcon4 = new WatchUi.Text({:identifier=>"HungerIcon4", :locX=>(260 * (66 / 100.0)), :locY=>(260 * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_HungerIcon2 = new WatchUi.Text({:identifier=>"HungerIcon2", :locX=>(rez_cmp_local_var_dc_getWidth * (52 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
 
-            var rez_cmp_local_text_HungerIcon5 = new WatchUi.Text({:identifier=>"HungerIcon5", :locX=>(260 * (73 / 100.0)), :locY=>(260 * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_HungerIcon3 = new WatchUi.Text({:identifier=>"HungerIcon3", :locX=>(rez_cmp_local_var_dc_getWidth * (59 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
 
-            var rez_cmp_local_text_Energy = new WatchUi.Text({:identifier=>"Energy", :locX=>(260 * (30 / 100.0)), :locY=>(260 * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_Font18});
+            var rez_cmp_local_text_HungerIcon4 = new WatchUi.Text({:identifier=>"HungerIcon4", :locX=>(rez_cmp_local_var_dc_getWidth * (66 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
 
-            var rez_cmp_local_text_EnergyIcon1 = new WatchUi.Text({:identifier=>"EnergyIcon1", :locX=>(260 * (45 / 100.0)), :locY=>(260 * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_HungerIcon5 = new WatchUi.Text({:identifier=>"HungerIcon5", :locX=>(rez_cmp_local_var_dc_getWidth * (73 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
 
-            var rez_cmp_local_text_EnergyIcon2 = new WatchUi.Text({:identifier=>"EnergyIcon2", :locX=>(260 * (52 / 100.0)), :locY=>(260 * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_Energy = new WatchUi.Text({:identifier=>"Energy", :locX=>(rez_cmp_local_var_dc_getWidth * (30 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_Font18});
 
-            var rez_cmp_local_text_EnergyIcon3 = new WatchUi.Text({:identifier=>"EnergyIcon3", :locX=>(260 * (59 / 100.0)), :locY=>(260 * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_EnergyIcon1 = new WatchUi.Text({:identifier=>"EnergyIcon1", :locX=>(rez_cmp_local_var_dc_getWidth * (45 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
 
-            var rez_cmp_local_text_EnergyIcon4 = new WatchUi.Text({:identifier=>"EnergyIcon4", :locX=>(260 * (66 / 100.0)), :locY=>(260 * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_EnergyIcon2 = new WatchUi.Text({:identifier=>"EnergyIcon2", :locX=>(rez_cmp_local_var_dc_getWidth * (52 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
 
-            var rez_cmp_local_text_EnergyIcon5 = new WatchUi.Text({:identifier=>"EnergyIcon5", :locX=>(260 * (73 / 100.0)), :locY=>(260 * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_EnergyIcon3 = new WatchUi.Text({:identifier=>"EnergyIcon3", :locX=>(rez_cmp_local_var_dc_getWidth * (59 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
 
-            var rez_cmp_local_text_Happiness = new WatchUi.Text({:identifier=>"Happiness", :locX=>(260 * (26 / 100.0)), :locY=>(260 * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_Font18});
+            var rez_cmp_local_text_EnergyIcon4 = new WatchUi.Text({:identifier=>"EnergyIcon4", :locX=>(rez_cmp_local_var_dc_getWidth * (66 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
 
-            var rez_cmp_local_text_HappinessIcon1 = new WatchUi.Text({:identifier=>"HappinessIcon1", :locX=>(260 * (45 / 100.0)), :locY=>(260 * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_EnergyIcon5 = new WatchUi.Text({:identifier=>"EnergyIcon5", :locX=>(rez_cmp_local_var_dc_getWidth * (73 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
 
-            var rez_cmp_local_text_HappinessIcon2 = new WatchUi.Text({:identifier=>"HappinessIcon2", :locX=>(260 * (52 / 100.0)), :locY=>(260 * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_Happiness = new WatchUi.Text({:identifier=>"Happiness", :locX=>(rez_cmp_local_var_dc_getWidth * (26 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_Font18});
 
-            var rez_cmp_local_text_HappinessIcon3 = new WatchUi.Text({:identifier=>"HappinessIcon3", :locX=>(260 * (59 / 100.0)), :locY=>(260 * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_HappinessIcon1 = new WatchUi.Text({:identifier=>"HappinessIcon1", :locX=>(rez_cmp_local_var_dc_getWidth * (45 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
 
-            var rez_cmp_local_text_HappinessIcon4 = new WatchUi.Text({:identifier=>"HappinessIcon4", :locX=>(260 * (66 / 100.0)), :locY=>(260 * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_HappinessIcon2 = new WatchUi.Text({:identifier=>"HappinessIcon2", :locX=>(rez_cmp_local_var_dc_getWidth * (52 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
 
-            var rez_cmp_local_text_HappinessIcon5 = new WatchUi.Text({:identifier=>"HappinessIcon5", :locX=>(260 * (73 / 100.0)), :locY=>(260 * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+            var rez_cmp_local_text_HappinessIcon3 = new WatchUi.Text({:identifier=>"HappinessIcon3", :locX=>(rez_cmp_local_var_dc_getWidth * (59 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+
+            var rez_cmp_local_text_HappinessIcon4 = new WatchUi.Text({:identifier=>"HappinessIcon4", :locX=>(rez_cmp_local_var_dc_getWidth * (66 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
+
+            var rez_cmp_local_text_HappinessIcon5 = new WatchUi.Text({:identifier=>"HappinessIcon5", :locX=>(rez_cmp_local_var_dc_getWidth * (73 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (26 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_IconSet});
 
             return [rez_cmp_local_text_Feed, rez_cmp_local_text_Hunger, rez_cmp_local_text_HungerIcon1, rez_cmp_local_text_HungerIcon2, rez_cmp_local_text_HungerIcon3, rez_cmp_local_text_HungerIcon4, rez_cmp_local_text_HungerIcon5, rez_cmp_local_text_Energy, rez_cmp_local_text_EnergyIcon1, rez_cmp_local_text_EnergyIcon2, rez_cmp_local_text_EnergyIcon3, rez_cmp_local_text_EnergyIcon4, rez_cmp_local_text_EnergyIcon5, rez_cmp_local_text_Happiness, rez_cmp_local_text_HappinessIcon1, rez_cmp_local_text_HappinessIcon2, rez_cmp_local_text_HappinessIcon3, rez_cmp_local_text_HappinessIcon4, rez_cmp_local_text_HappinessIcon5] as Array<WatchUi.Drawable>;
         }

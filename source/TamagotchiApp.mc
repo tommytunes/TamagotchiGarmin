@@ -14,6 +14,7 @@ class TamagotchiApp extends Application.AppBase {
     private var indexAction = 0;
 
     private var shouldStartFeedAnimation = false;
+    private var shouldStartPlayAnimation = false;
 
     function initialize() {
         AppBase.initialize();
@@ -23,23 +24,19 @@ class TamagotchiApp extends Application.AppBase {
     function onStart(state as Dictionary?) as Void {
         var lastExitTime = Storage.getValue("lastExitTime");
 
-        // First-time run check
         if (lastExitTime == null) {
             System.println("First launch - using defaults");
             return;
         }
 
-        // Load saved stats
         var savedHunger = Storage.getValue("hunger");
         var savedEnergy = Storage.getValue("energy");
         var savedHappiness = Storage.getValue("happiness");
 
-        // Defensive null checks
         if (savedHunger == null) { savedHunger = 100; }
         if (savedEnergy == null) { savedEnergy = 100; }
         if (savedHappiness == null) { savedHappiness = 100; }
 
-        // Calculate elapsed time and apply decay
         var currentTime = Time.now();
         var elapsedSeconds = currentTime.value() - lastExitTime;
 
@@ -134,13 +131,11 @@ class TamagotchiApp extends Application.AppBase {
     function decayTime(elapsedSeconds as Number, savedHunger as Number,
                        savedEnergy as Number, savedHappiness as Number) as Void {
 
-        // Decay rates (points per hour)
         var HUNGER_DECAY_PER_HOUR = 5;
         var ENERGY_DECAY_PER_HOUR = 3;
         var HAPPINESS_DECAY_PER_HOUR = 4;
-        var MAX_DECAY_SECONDS = 86400;  // 24 hours cap
+        var MAX_DECAY_SECONDS = 86400;
 
-        // Handle edge cases
         if (elapsedSeconds < 0) {
             System.println("Warning: Negative elapsed time, skipping decay");
             hunger = savedHunger;
@@ -153,13 +148,11 @@ class TamagotchiApp extends Application.AppBase {
             elapsedSeconds = MAX_DECAY_SECONDS;
         }
 
-        // Calculate decay
         var elapsedHours = elapsedSeconds.toFloat() / 3600.0;
         var hungerDecay = Math.floor(elapsedHours * HUNGER_DECAY_PER_HOUR).toNumber();
         var energyDecay = Math.floor(elapsedHours * ENERGY_DECAY_PER_HOUR).toNumber();
         var happinessDecay = Math.floor(elapsedHours * HAPPINESS_DECAY_PER_HOUR).toNumber();
 
-        // Apply decay with bounds enforcement
         hunger = statMinMax(savedHunger - hungerDecay);
         energy = statMinMax(savedEnergy - energyDecay);
         happiness = statMinMax(savedHappiness - happinessDecay);
@@ -170,10 +163,22 @@ class TamagotchiApp extends Application.AppBase {
         shouldStartFeedAnimation = true;
     }
 
+    // Request play animation start (called by delegate)
+    function startPlayAnimation() as Void {
+        shouldStartPlayAnimation = true;
+    }
+
     // Check and clear animation flag (called by view)
     function checkAndClearAnimationFlag() as Boolean {
         var result = shouldStartFeedAnimation;
         shouldStartFeedAnimation = false;
+        return result;
+    }
+
+    // Check and clear play animation flag (called by view)
+    function checkAndClearPlayAnimationFlag() as Boolean {
+        var result = shouldStartPlayAnimation;
+        shouldStartPlayAnimation = false;
         return result;
     }
 

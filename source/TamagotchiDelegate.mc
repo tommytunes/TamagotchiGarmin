@@ -23,13 +23,14 @@ class TamagotchiDelegate extends WatchUi.BehaviorDelegate {
         var indexAction = app.getIndexAction();
 
         if (indexAction == 0) {
-            app.feed();  // Update stats first
-            app.startFeedAnimation();  // Request animation start
-            WatchUi.requestUpdate();  // Trigger view update to check flag
+            app.feed();
+            app.startFeedAnimation();
+            WatchUi.requestUpdate();
         }
 
         else if (indexAction == 1) {
             app.play();
+            app.startPlayAnimation();
             WatchUi.requestUpdate();
         }
 
