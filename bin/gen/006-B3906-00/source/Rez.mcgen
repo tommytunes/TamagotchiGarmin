@@ -8,15 +8,17 @@ module Rez {
     module Drawables {
         (:initialized) var petHappy as ResourceId;
         (:initialized) var petHungry as ResourceId;
-        (:initialized) var petPlay as ResourceId;
         (:initialized) var petSad as ResourceId;
-        (:initialized) var petSleeping as ResourceId;
         (:initialized) var petEating1 as ResourceId;
         (:initialized) var petEating2 as ResourceId;
         (:initialized) var petEating3 as ResourceId;
         (:initialized) var petPlaying1 as ResourceId;
         (:initialized) var petPlaying2 as ResourceId;
         (:initialized) var petPlaying3 as ResourceId;
+        (:initialized) var petSleeping1 as ResourceId;
+        (:initialized) var petSleeping2 as ResourceId;
+        (:initialized) var petSleeping3 as ResourceId;
+        (:initialized) var petTired as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
 

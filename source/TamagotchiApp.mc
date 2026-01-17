@@ -15,6 +15,7 @@ class TamagotchiApp extends Application.AppBase {
 
     private var shouldStartFeedAnimation = false;
     private var shouldStartPlayAnimation = false;
+    private var shouldStartSleepAnimation = false;
 
     function initialize() {
         AppBase.initialize();
@@ -168,6 +169,10 @@ class TamagotchiApp extends Application.AppBase {
         shouldStartPlayAnimation = true;
     }
 
+    function startSleepAnimation() as Void {
+        shouldStartSleepAnimation = true;
+    }
+
     // Check and clear animation flag (called by view)
     function checkAndClearAnimationFlag() as Boolean {
         var result = shouldStartFeedAnimation;
@@ -179,6 +184,12 @@ class TamagotchiApp extends Application.AppBase {
     function checkAndClearPlayAnimationFlag() as Boolean {
         var result = shouldStartPlayAnimation;
         shouldStartPlayAnimation = false;
+        return result;
+    }
+
+    function checkAndClearSleepAnimationFlag() as Boolean {
+        var result = shouldStartSleepAnimation;
+        shouldStartSleepAnimation = false;
         return result;
     }
 

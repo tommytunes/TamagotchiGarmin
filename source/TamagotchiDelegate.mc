@@ -36,6 +36,7 @@ class TamagotchiDelegate extends WatchUi.BehaviorDelegate {
 
         else if (indexAction == 2) {
             app.sleep();
+            app.startSleepAnimation();
             WatchUi.requestUpdate();
         }
 

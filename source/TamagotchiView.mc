@@ -6,9 +6,9 @@ class TamagotchiView extends WatchUi.View {
 
     private var petHappyBitmap as BitmapResource?;
     private var petHungryBitmap as BitmapResource?;
-    private var petPlayBitmap as BitmapResource?;
     private var petSadBitmap as BitmapResource?;
-    private var petSleepingBitmap as BitmapResource?;
+    private var petTiredBitmap as BitmapResource?;
+
     private var petEating1 as BitmapResource?;
     private var petEating2 as BitmapResource?;
     private var petEating3 as BitmapResource?;
@@ -16,6 +16,10 @@ class TamagotchiView extends WatchUi.View {
     private var petPlaying1 as BitmapResource?;
     private var petPlaying2 as BitmapResource?;
     private var petPlaying3 as BitmapResource?;
+
+    private var petSleeping1 as BitmapResource?;
+    private var petSleeping2 as BitmapResource?;
+    private var petSleeping3 as BitmapResource?;
 
     private var font18;
     private var app = getApp();
@@ -46,9 +50,7 @@ class TamagotchiView extends WatchUi.View {
     function onShow() as Void {
         petHappyBitmap = WatchUi.loadResource(Rez.Drawables.petHappy) as BitmapResource;
         petHungryBitmap = WatchUi.loadResource(Rez.Drawables.petHungry) as BitmapResource;
-        petPlayBitmap = WatchUi.loadResource(Rez.Drawables.petPlay) as BitmapResource;
         petSadBitmap = WatchUi.loadResource(Rez.Drawables.petSad) as BitmapResource;
-        petSleepingBitmap = WatchUi.loadResource(Rez.Drawables.petSleeping) as BitmapResource;
         font18 = WatchUi.loadResource(Rez.Fonts.Font18) as BitmapResource;
 
         petEating1 = WatchUi.loadResource(Rez.Drawables.petEating1) as BitmapResource;
@@ -58,6 +60,12 @@ class TamagotchiView extends WatchUi.View {
         petPlaying1 = WatchUi.loadResource(Rez.Drawables.petPlaying1) as BitmapResource;
         petPlaying2 = WatchUi.loadResource(Rez.Drawables.petPlaying2) as BitmapResource;
         petPlaying3 = WatchUi.loadResource(Rez.Drawables.petPlaying3) as BitmapResource;
+
+        petSleeping1 = WatchUi.loadResource(Rez.Drawables.petSleeping1) as BitmapResource;
+        petSleeping2 = WatchUi.loadResource(Rez.Drawables.petSleeping2) as BitmapResource;
+        petSleeping3 = WatchUi.loadResource(Rez.Drawables.petSleeping3) as BitmapResource;
+
+        petTiredBitmap = WatchUi.loadResource(Rez.Drawables.petTired) as BitmapResource;
 
         animationFrames = [petEating1, petEating2, petEating3];
     }
@@ -70,6 +78,10 @@ class TamagotchiView extends WatchUi.View {
 
         if (app.checkAndClearPlayAnimationFlag()) {
             playingAnimation();
+        }
+
+        if (app.checkAndClearSleepAnimationFlag()) {
+            sleepingAnimation();
         }
 
         View.onUpdate(dc);
@@ -106,7 +118,7 @@ class TamagotchiView extends WatchUi.View {
         // Priority order: Sleeping > Hungry > Sad > Play > Happy
 
         if (energy < 20) {
-            return petSleepingBitmap;
+            return petTiredBitmap;
         }
 
         if (hunger < 30) {
@@ -117,9 +129,9 @@ class TamagotchiView extends WatchUi.View {
             return petSadBitmap;
         }
 
-        if (energy > 60 && happiness > 40) {
-            return petPlayBitmap;
-        }
+        //if (energy > 60 && happiness > 40) {
+       //     return petPlayBitmap;
+        //}
 
         return petHappyBitmap;
     }
@@ -135,7 +147,7 @@ class TamagotchiView extends WatchUi.View {
 
           if (indexAction == i) {
               dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-              dc.fillRectangle(xPos - 20, yPos - 10, 40, 20);
+              dc.fillRectangle(xPos - w * 0.077, yPos - h * 0.038, h * 0.154, w * 0.077);
               dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
           } else {
               dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
@@ -230,6 +242,23 @@ class TamagotchiView extends WatchUi.View {
         }
 
         animationFrames = [petPlaying1, petPlaying2, petPlaying3];
+
+        isAnimating = true;
+        currentFrame = 0;
+        framesDisplayed = 0;
+
+        animTimer = new Timer.Timer();
+        animTimer.start(method(:onAnimationFrame), FRAME_DURATION_MS, true);
+
+        WatchUi.requestUpdate();
+    }
+
+    function sleepingAnimation() as Void {
+        if (isAnimating) {
+            return;
+        }
+
+        animationFrames = [petSleeping1, petSleeping2, petSleeping3];
 
         isAnimating = true;
         currentFrame = 0;
